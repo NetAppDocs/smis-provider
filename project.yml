@@ -1,2 +1,9 @@
+---
+settings:
+  name: NetApp SMI-S Provider
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
 sidebar:
   
