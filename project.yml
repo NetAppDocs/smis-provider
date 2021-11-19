@@ -1,10 +1,5 @@
----
 settings:
   name: NetApp SMI-S Provider
   platform: catalyst
   internal:
-    pdf_enabled: true
-  prod:
-    pdf_enabled: true
-sidebar:
-  
+    pdf_enabled: false
