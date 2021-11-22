@@ -1,9 +1,0 @@
----
-permalink: README.html
-sidebar: sidebar
-keywords: 
-summary: ''
----
-= smis-provider-internal
-:icons: font
-:imagesdir: ../media/

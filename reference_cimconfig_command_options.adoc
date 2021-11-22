@@ -1,0 +1,75 @@
+---
+permalink: reference_cimconfig_command_options.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the cimconfig command to manage CIMOM configuration settings. After entering the cimconfig command or creating an environment variable for the NetApp SMI-S Provider configuration value, you must restart the CIM server by using the smis cimserver restart command.'
+---
+= cimconfig
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You can use the `cimconfig` command to manage CIMOM configuration settings. After entering the `cimconfig` command or creating an environment variable for the NetApp SMI-S Provider configuration value, you must restart the CIM server by using the `smis cimserver restart` command.
+
+== Syntax
+
+----
+
+        cimconfig *options*
+----
+
+== Location
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+== Privilege level
+
+Administrator (Windows)
+
+== Options
+
+* *-c*
++
+Specifies that the configuration setting applies to the current CIMOM configuration.
+
+* *-d*
++
+Specifies that the configuration setting applies to the default CIMOM configuration.
+
+* *-g*
++
+Gets the value of a specified configuration property.
+
+* *-h, --help*
++
+Displays help for the `cimconfig` command.
+
+* *-l*
++
+Lists all CIMOM configuration properties.
+
+* *-p*
++
+Specifies that the configuration setting is applied when the CIM server is next started.
+
+* *-s*
++
+Sets the specified configuration property value.
+
+* *-u*
++
+Resets the configuration property to its default value.
+
+* *--version*
++
+Displays the version of the CIM server.
+
+== Example
+
+Change the maximum log file size to 15000 KB:
+
+----
+cimconfig -s maxLogFileSizeKBytes=15000
+Current value for the property maxLogFileSizeKBytes is set to "15000" in CIMServer.
+smis cimserver restart
+----

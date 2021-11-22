@@ -1,0 +1,44 @@
+---
+permalink: task_configuring_log_settings.html
+sidebar: sidebar
+keywords: 
+summary: 'By default, all system messages are logged. In addition, by default, the system message logs are located in the logs directory in the directory in which NetApp SMI-S Provider is installed. You can change the location of and the level of system messages that are written to the CIM server log. For example, you can choose to have logs stored in a directory that you specify and have only fatal system messages written to the CIM server log.'
+---
+= Configuring log settings
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+By default, all system messages are logged. In addition, by default, the system message logs are located in the `logs` directory in the directory in which NetApp SMI-S Provider is installed. You can change the location of and the level of system messages that are written to the CIM server log. For example, you can choose to have logs stored in a directory that you specify and have only fatal system messages written to the CIM server log.
+
+== Before you begin
+
+* You must already have login credentials as Administrator.
+* You must already have logged in to the host system as Administrator.
+
+== Steps
+
+. Access NetApp SMI-S Provider.
+. Complete one of the following actions:
++
+|===
+| Action| Command| Additional information
+a|
+Change the system message logging level
+a|
+`cimconfig -s logLevel=new_log_level -p`
+a|
+If you wanted to change the logging level to "`INFORMATION`", for example, you would input this command:``cimconfig -s logLevel=INFORMATION -p``
+a|
+Change the system message log directory
+a|
+`cimconfig -s logdir=new_log_directory -p`     If the `new_log_directory` contains space, you must enclose it in quotation marks ("``new log directory``").
+a|
+If you wanted to change the log directory to "`serverlogs`", for example, you would input this command: `cimconfig -s logdir=serverlogs -p`
+|===
+
+. Restart the CIM server: `smis cimserver restart`
+
+*Related information*
+
+xref:reference_logging_levels.adoc[Logging levels]

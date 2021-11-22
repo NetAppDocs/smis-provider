@@ -1,0 +1,43 @@
+---
+permalink: reference_cannot_connect_to_localhost_5988_error.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Cannot connect to localhost:5988
+:icons: font
+:imagesdir: ./media/
+
+* *Message*
++
+`Cannot connect to localhost:5988. Connection failed. Trying to connect to localhost:5988`
+
+* *Description*
++
+This message occurs when HTTPS connections are disabled or the HTTPS port is not set to 5988, or if the provider has stopped working and remains in a hanging state.
+
+* *Corrective action*
++
+Verify that the values of `enableHttpsConnection` and `httpsPort` are correct:
++
+`cimconfig -g enableHttpConnection`
++
+`cimconfig -g enableHttpsConnection`
++
+`cimconfig -g httpPort`
++
+`cimconfig -g httpsPort`
++
+If `enableHttpConnection` or `enableHttpsConnection` is not set to `true`, enter the following commands:
++
+`cimconfig -s enableHttpConnection -p`
++
+`smis cimserver restart`
++
+If `httpPort` is not set to 5988, enter the following commands:
++
+`cimconfig -s httpPort=5988 -p`
++
+`smis cimserver restart`
++
+If the provider has stopped working and remains in a hanging state, open Task Manager and end the process, and then restart the provider.

@@ -1,0 +1,34 @@
+---
+permalink: reference_logging_levels.html
+sidebar: sidebar
+keywords: 
+summary: 'You can specify the types of messages that are logged \(for example, you want only fatal system messages to be logged\).'
+---
+= Logging levels
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You can specify the types of messages that are logged (for example, you want only fatal system messages to be logged).
+
+You can configure the logging level to one of the following:
+
+* *TRACE*
++
+Saves trace messages in the cimserver_standard log.
+
+* *INFORMATION*
++
+Logs all (informational, warning, severe, and fatal) system messages.
+
+* *WARNING*
++
+Logs warning, severe, and fatal system messages.
+
+* *SEVERE*
++
+Logs severe and fatal system messages
+
+* *FATAL*
++
+Logs only fatal system messages.

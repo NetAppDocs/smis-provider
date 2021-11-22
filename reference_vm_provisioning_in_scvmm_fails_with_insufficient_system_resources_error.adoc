@@ -1,0 +1,25 @@
+---
+permalink: reference_vm_provisioning_in_scvmm_fails_with_insufficient_system_resources_error.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Insufficient system resources exist to complete the requested service
+:icons: font
+:imagesdir: ./media/
+
+* *Message*
++
+`Insufficient system resources exist to complete the requested service`
+
+* *Description*
++
+This message occurs when the maximum limit on user sessions from the same user per connection has been reached when provisioning a large number of VMs on a single file share in SCVMM.
++
+SCVMM creates one TCP connection per Hyper-V host, and each connection creates many sessions with two users: the computer name (COMPUTER$) of the Hyper-V host and the SCVMM "`Run As account`". The number of sessions with COMPUTER$ is exactly one more than number of virtual hard disks deployed in that Hyper-V host.
++
+The default value of `Max Same User Session Per Connection` is 50. This limit blocks a large-scale VM deployment with SCVMM. If you deploy more than 50 VMs per Hyper-V host, then you encounter this issue.
+
+* *Corrective action*
++
+Increase the counter that controls the maximum number of sessions on the same connection for CIFS protocol. For example, the following command changes the maximum user sessions on the same connection from the default 50 to 100:``SVM::*> cifs op modify -max-same-user-sessions-per-connection 100``

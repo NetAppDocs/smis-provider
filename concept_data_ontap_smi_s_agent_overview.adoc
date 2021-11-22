@@ -1,0 +1,26 @@
+---
+permalink: concept_data_ontap_smi_s_agent_overview.html
+sidebar: sidebar
+keywords: SMI-S Provider
+summary: 'NetApp SMI-S Provider 5.2.5 enables you to manage and monitor storage systems and to manage LUNs and volumes of storage systems, CIMOM configuration settings, and CIM server users.'
+---
+= NetApp SMI-S Provider overview
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+NetApp SMI-S Provider 5.2.5 enables you to manage and monitor storage systems and to manage LUNs and volumes of storage systems, CIMOM configuration settings, and CIM server users.
+
+NetApp SMI-S Provider is a command-based interface that detects and manages platforms that run ONTAP software. SMI-S Provider uses Web-Based Enterprise Management (WBEM) protocols, which enable you to manage, monitor, and report on storage elements.
+
+NetApp SMI-S Provider follows schemas standardized by two organizations:
+
+* Distributed Management Task Force (DMTF)
++
+http://www.dmtf.org/home
+
+* Storage Networking Industry Association (SNIA)
++
+http://www.snia.org/home
+
+SMI-S Provider replaces the use of multiple managed-object models, protocols, and transports with a single object-oriented model for all components in a storage network.

@@ -1,0 +1,25 @@
+---
+permalink: reference_no_ontap_element_in_response_error.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Filer return: No ontap element in response
+:icons: font
+:imagesdir: ./media/
+
+* *Message*
++
+`Filer return: No ontap element in response`.
+
+* *Description*
++
+This message occurs when the ONTAPI API times out. The default ONTAPI API timeout is 60 seconds, which might be too short in some scenarios.
+
+* *Corrective action*
++
+Change the ONTAPI API timeout to a value greater than 60 seconds by setting the environment variable `ONTAPI_TIMEOUT_SEC`, and then restart SMI-S Provider.
+
+*Related information*
+
+xref:task_specifying_the_ontapi_timeout_value.adoc[Specifying the ONTAPI timeout value]

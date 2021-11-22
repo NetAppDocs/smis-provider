@@ -1,0 +1,27 @@
+---
+permalink: reference_no_response_from_the_server.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= No response from the server
+:icons: font
+:imagesdir: ./media/
+
+* *Issue*
++
+The server does not respond when queried.
+
+* *Cause*
++
+This issue occurs when there is no storage system added to the CIMOM repository.
+
+* *Corrective action*
++
+Enter the following command to verify that a storage system is added:
++
+`smis list`
++
+If there is no storage system listed, add a storage system by entering the following command:
++
+`smis add storage_sys storage_sys_user storage_sys_pwd`

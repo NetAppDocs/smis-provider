@@ -1,0 +1,29 @@
+---
+permalink: reference_cannot_add_a_storage_system_using_a_nondefault_http_or_https_port.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Cannot add a storage system using a nondefault HTTP or HTTPS port
+:icons: font
+:imagesdir: ./media/
+
+* *Issue*
++
+You cannot add a storage system running HTTP or HTTPS on a nondefault port.
+
+* *Cause*
++
+By default, NetApp SMI-S Provider uses port 80 for communicating with storage systems over HTTP and port 443 for communicating over HTTPS.
+
+* *Corrective action*
++
+Use the following command to add a storage system that uses a port other than 80 for HTTP traffic or port 443 for HTTPS traffic:
++
+`cimcli ci -n root/ontap ONTAP_FilerData hostName=storage_sys_ip_address port=non_default_port userName=storage_sys_user password=storage_sys_pwd comMechanism=HTTP -uagent_user-pagent_pwd-llocalhost:5989 -s`
++
+`-u`, `-p`, `-l`, and `-s` are optional parameters.
+
+== Adding a storage system that uses port 8000 for HTTP traffic
+
+`cimcli ci -n root/ontap ONTAP_FilerData hostName=10.60.167.12 port=8000 userName=root password=netapp1! comMechanism=HTTP -u root -p netapp1! -l localhost:5989 -s --timeout 180`
