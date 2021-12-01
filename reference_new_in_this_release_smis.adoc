@@ -1,0 +1,17 @@
+---
+permalink: reference_new_in_this_release_smis.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= New in this release
+:icons: font
+:imagesdir: ./media/
+
+* There is no upgrade path available for SMI-S Provider 5.2.5.
+* You must deploy SMI-S Provider 5.2.5 as a new installation.
+
+*For Windows users:*
+
+* This release is not compatible with Windows Server 2012 or System Center Virtual Machine Manager (SCVMM) 2012.
+* SMI-S Provider 5.2.5 supports Windows Server 2016, Windows Server 2019, SCVMM 2016 and SCVMM 2019.

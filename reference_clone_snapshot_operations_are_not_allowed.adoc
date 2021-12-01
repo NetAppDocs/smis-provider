@@ -1,0 +1,21 @@
+---
+permalink: reference_clone_snapshot_operations_are_not_allowed.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Clone/Snapshot operations are not allowed
+:icons: font
+:imagesdir: ./media/
+
+* *Message*
++
+`Clone/Snapshot operations are not allowed while LUN clone split operations are going on in the volume. Please wait for some time and try again.`
+
+* *Description*
++
+This error occurs if you attempt to execute Snapshot operations during a LUN clone split. You cannot perform Snapshot operations in a volume where a LUN is being split, if that LUN clone split is running in the background.
+
+* *Corrective action*
++
+Try your Snapshot operations after the LUN is split.

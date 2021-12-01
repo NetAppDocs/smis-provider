@@ -1,0 +1,47 @@
+---
+permalink: reference_smis_licensed.html
+sidebar: sidebar
+keywords: 
+summary: 'The smis licensed command lists the licensed features for storage systems.'
+---
+= smis licensed
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `smis licensed` command lists the licensed features for storage systems.
+
+== Syntax
+
+----
+
+        smis licensed
+ \[-t \{http | https\}\]
+----
+
+== Location
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+== Privilege level
+
+A user with a valid user name and password
+
+== Parameters
+
+* *[`-t` {`http | https`}]*
++
+Protocol to be used: HTTPS (default) or HTTP
+
+== Example
+
+The `smis licensed` command and its abbreviated output:
+
+----
+smis licensed
+ONTAP_SoftwareIdentity.InstanceID="ONTAP:0084259609:cifs"
+ONTAP_SoftwareIdentity.InstanceID="ONTAP:0084259609:cluster"
+ONTAP_SoftwareIdentity.InstanceID="ONTAP:0084259609:fcp"
+ONTAP_SoftwareIdentity.InstanceID="ONTAP:0084259609:iscsi"
+ONTAP_SoftwareIdentity.InstanceID="ONTAP:0084259609:nfs"
+----

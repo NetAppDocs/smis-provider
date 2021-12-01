@@ -1,0 +1,22 @@
+---
+permalink: reference_runtime_library_issues.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Runtime library issues
+:icons: font
+:imagesdir: ./media/
+:pp: {plus}{plus}
+
+* *Issue*
++
+You encounter runtime library issues.
+
+* *Corrective action*
++
+Install the Microsoft Visual C{pp} 2010 Redistributable Package (x86) from www.microsoft.com.
+
+*Related information*
+
+http://www.microsoft.com[Microsoft]

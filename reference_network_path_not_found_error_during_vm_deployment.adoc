@@ -1,0 +1,25 @@
+---
+permalink: reference_network_path_not_found_error_during_vm_deployment.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Network path not found
+:icons: font
+:imagesdir: ./media/
+
+* *Message*
++
+`Network path not found`
+
+* *Description*
++
+This message reflects a DNS issue and occurs during VM deployment on an SMB share when the host does not have a record on the DNS server.
++
+Typically, the domain DNS server should automatically update the host record within 24 to 48 hours when a new host is configured in the domain. However, this update does not always automatically happen.
+
+* *Corrective action*
+ ** If you are a domain administrator, manually update the DNS host record.
+ ** If you are not a domain administrator, update the host file (`C:\Windows\System32\drivers\etc\hosts`).
++
+The host file does not have a file extension (`.txt`).

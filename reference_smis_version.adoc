@@ -1,0 +1,43 @@
+---
+permalink: reference_smis_version.html
+sidebar: sidebar
+keywords: 
+summary: 'The smis version command displays the version of NetApp SMI-S Provider.'
+---
+= smis version
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `smis version` command displays the version of NetApp SMI-S Provider.
+
+== Syntax
+
+----
+
+        smis version
+ \[-t \{http | https\}\]
+----
+
+== Location
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+== Privilege level
+
+A user with a valid user name and password
+
+== Parameters
+
+* *[`-t` {`http | https`}]*
++
+Protocol to be used: HTTPS (default) or HTTP
+
+== Example
+
+The `smis version` command and its output:
+
+----
+smis version
+ONTAP_SMIAgentSoftware.InstanceID="ONTAP5.2.2"
+----

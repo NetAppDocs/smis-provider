@@ -1,0 +1,49 @@
+---
+permalink: reference_slptool_command_options.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use these options with the slptool command.'
+---
+= slptool
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You can use these options with the `slptool` command.
+
+== Syntax
+
+----
+
+        slptool \[options\] subcommand
+----
+
+== Location
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+== Privilege level
+
+Administrator (Windows)
+
+== Options
+
+* *-i*
++
+Specifies one or more interfaces.
+
+* *-l*
++
+Specifies a language tag.
+
+* *-s*
++
+Specifies a list of scopes (separated by commas).
+
+* *-u*
++
+Specifies one interface.
+
+* *-v*
++
+Displays the version of `slptool` and OpenSLP.
