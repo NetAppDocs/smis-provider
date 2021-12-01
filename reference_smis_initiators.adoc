@@ -1,0 +1,45 @@
+---
+permalink: reference_smis_initiators.html
+sidebar: sidebar
+keywords: 
+summary: 'The smis initiators command displays Fibre Channel and iSCSI port information for storage systems.'
+---
+= smis initiators
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `smis initiators` command displays Fibre Channel and iSCSI port information for storage systems.
+
+== Syntax
+
+----
+
+        smis initiators
+ \[-t \{http | https\}\]
+----
+
+== Location
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+== Privilege level
+
+A user with a valid user name and password
+
+== Parameters
+
+* *[`-t` {`http | https`}]*
++
+Protocol to be used: HTTPS (default) or HTTP
+
+== Example
+
+The `smis initiators` command and its abbreviated output:
+
+----
+smis initiators
+ONTAP_StorageHardwareID.InstanceID="ONTAP:0084259609:iqn.1991-05.com.microsoft:sf-tpc1"
+ONTAP_StorageHardwareID.InstanceID="ONTAP:0084259609:21:00:00:e0:8b:86:f2:89"
+ONTAP_StorageHardwareID.InstanceID="ONTAP:0084259609:iqn.1991-05.com.microsoft:went2k3x32-01"
+----

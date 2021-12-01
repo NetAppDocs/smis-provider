@@ -1,0 +1,52 @@
+---
+permalink: task_specifying_trace_settings.html
+sidebar: sidebar
+keywords: 
+summary: 'Having tracing enabled is important for gathering information for troubleshooting. However, having tracing enabled can impact performance, so carefully consider what must be traced and how long you need tracing enabled.'
+---
+= Specifying trace settings
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Having tracing enabled is important for gathering information for troubleshooting. However, having tracing enabled can impact performance, so carefully consider what must be traced and how long you need tracing enabled.
+
+== Before you begin
+
+* You must already have login credentials as Administrator.
+* You must already have logged in to the host system as Administrator.
+
+== Steps
+
+. Access NetApp SMI-S Provider.
+. Specify various trace settings as applicable:
++
+|===
+| Action| Command
+a|
+Specify the components to be traced
+a|
+`cimconfig -s traceComponents=components -p`
+a|
+Specify the trace facility
+a|
+`cimconfig -s traceFacility=facility -p`
+a|
+Specify the location of the trace file
+a|
+`cimconfig -s traceFilePath=path_name -p`
+a|
+Specify the trace level
+a|
+`cimconfig -s traceLevel=level -p`
+|===
+
+. Restart the CIM server: `smis cimserver restart`
+
+*Related information*
+
+xref:reference_trace_setting_values.adoc[Trace setting values]
+
+xref:task_specifying_trace_file_size.adoc[Specifying trace file size]
+
+xref:task_specifying_the_number_of_trace_files_saved.adoc[Specifying the number of trace files saved]

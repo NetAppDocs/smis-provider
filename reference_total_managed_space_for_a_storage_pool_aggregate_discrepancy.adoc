@@ -1,0 +1,21 @@
+---
+permalink: reference_total_managed_space_for_a_storage_pool_aggregate_discrepancy.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Total managed space for a storage pool (volume) discrepancy
+:icons: font
+:imagesdir: ./media/
+
+* *Issue*
++
+If you are using another storage management tool, such as FilerView, you might notice a different size reported for the total managed space for a storage pool (volume) than the size returned by SMI-S Provider.
+
+* *Cause*
++
+This discrepancy occurs because the size returned by SMI-S Provider includes the WAFL and Snapshot reserve, while FilerView and other tools show only the usable space, excluding WAFL and Snapshot reserve.
+
+* *Corrective action*
++
+This is an expected behavior; no corrective action.

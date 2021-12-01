@@ -1,0 +1,14 @@
+---
+permalink: concept_managing_slp.html
+sidebar: sidebar
+keywords: 
+summary: 'The SLP service broadcasts WBEM services. When the SLP service is enabled, client applications can discover the CIMOM server. You can also specify SLP configuration settings using the slp.conf file.'
+---
+= Managing SLP
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The SLP service broadcasts WBEM services. When the SLP service is enabled, client applications can discover the CIMOM server. You can also specify SLP configuration settings using the `slp.conf` file.
+
+If the SLP service is not already enabled, you can start the SLP service by using the `smis slpd start` command. To stop the SLP service, use the `smis slpd stop` command.

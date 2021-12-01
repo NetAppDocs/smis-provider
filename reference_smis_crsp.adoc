@@ -1,0 +1,91 @@
+---
+permalink: reference_smis_crsp.html
+sidebar: sidebar
+keywords: 
+summary: 'The smis crsp command describes CIM-registered subprofiles supported by NetApp SMI-S Provider, including NetApp SMI-S Provider subprofiles.'
+---
+= smis crsp
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `smis crsp` command describes CIM-registered subprofiles supported by NetApp SMI-S Provider, including NetApp SMI-S Provider subprofiles.
+
+== Syntax
+
+----
+
+        smis crsp
+ \[-t \{http | https\}\]
+----
+
+== Location
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+== Privilege level
+
+A user with a valid user name and password
+
+== Parameters
+
+* *[`-t` {`http | https`}]*
++
+Protocol to be used: HTTPS (default) or HTTP
+
+== Example
+
+The `smis crsp` command and its abbreviated output:
+
+----
+smis crsp
+
+PG_RegisteredSubProfile.InstanceID="SNIA:Indication:1.4.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Indication:1.5.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Indication:1.6.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Software:1.4.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Software:1.5.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Software:1.6.0"
+PG_RegisteredSubProfile.InstanceID="SNIA:Object Manager Adapter:1.3.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:iSCSI Target Ports:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:iSCSI Target Ports:1.2.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Software:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Disk Drive Lite:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Disk Drive Lite:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Disk Drive Lite:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Multiple Computer System:1.2.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Access Points:1.3.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:FC Target Port:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:FC Initiator Ports:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:FC Initiator Ports:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:FC Initiator Ports:1.3.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Masking and Mapping:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Masking and Mapping:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Extent Composition:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Extent Composition:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Extent Composition:1.2.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Block Server Performance:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Block Server Performance:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Physical Package:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Physical Package:1.3.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Block Services:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Block Services:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Block Services:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Health:1.2.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:FileSystem:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:File Storage:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:File Export:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:File Export Manipulation:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:File Export Manipulation:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:File System Manipulation:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Filesystem Manipulation:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:File Server Manipulation:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:FileSystem Quotas:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Job Control:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Job Control:1.3.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Location:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:NAS Network Port:1.4.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Replication Services:1.5.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Replication Services:1.6.0"
+ONTAP_RegisteredSubProfile.InstanceID="ONTAP:Capacity Utilization:1.4.0"
+----

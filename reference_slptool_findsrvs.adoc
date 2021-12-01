@@ -1,0 +1,61 @@
+---
+permalink: reference_slptool_findsrvs.html
+sidebar: sidebar
+keywords: 
+summary: 'The slptool findsrvs command finds WBEM services that run on a network.'
+---
+= slptool findsrvs
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `slptool findsrvs` command finds WBEM services that run on a network.
+
+== Syntax
+
+----
+
+        slptool findsrvs service
+----
+
+== Location
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+== Privilege level
+
+A user with a valid user name and password
+
+== Parameters
+
+* *`service`*
++
+Specifies the service type.
+
+== Example
+
+The `slptool findsrvs` command and its output:
+
+----
+slptool findsrvs service:wbem
+service:wbem:http://10.60.167.143:5988,65535
+service:wbem:http://10.60.167.246:5988,65535
+service:wbem:https://10.60.167.143:5989,65535
+service:wbem:https://10.60.167.246:5989,65535
+service:wbem:http://10.60.167.151:5988,65535
+service:wbem:http://10.60.167.250:5988,65535
+service:wbem:https://10.60.167.151:5989,65535
+service:wbem:https://10.60.167.250:5989,65535
+service:wbem:http://10.60.167.141:5988,65535
+service:wbem:https://10.60.167.141:5989,65535
+service:wbem:http://10.60.167.147:5988,65535
+service:wbem:https://10.60.167.147:5989,65535
+service:wbem:http://10.60.167.139:5988,65535
+service:wbem:http://[fe80::7804:75ad:ab59:28c]:5988,65535
+service:wbem:http://[fe80::3cb1:12da:f5c3:5874]:5988,65535
+service:wbem:http://[2001::4137:9e76:3cb1:12da:f5c3:5874]:5988,65535
+service:wbem:https://10.60.167.139:5989,65535
+service:wbem:https://[fe80::7804:75ad:ab59:28c]:5989,65535
+service:wbem:https://[fe80::3cb1:12da:f5c3:5874]:5989,65535
+service:wbem:https://[2001::4137:9e76:3cb1:12da:f5c3:5874]:5989,65535
+----

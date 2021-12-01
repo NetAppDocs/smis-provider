@@ -1,0 +1,12 @@
+---
+permalink: concept_managing_logging_and_tracing.html
+sidebar: sidebar
+keywords: 
+summary: 'You can configure how SMI-S Provider manages log and trace files, such as specifying the levels of messages to be logged and the directory to which logs are saved. You also specify the components to be traced, the target to which trace messages are written, the level of tracing, and the trace file location.'
+---
+= Managing logging and tracing
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You can configure how SMI-S Provider manages log and trace files, such as specifying the levels of messages to be logged and the directory to which logs are saved. You also specify the components to be traced, the target to which trace messages are written, the level of tracing, and the trace file location.

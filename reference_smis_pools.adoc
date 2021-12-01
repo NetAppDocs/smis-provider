@@ -1,0 +1,47 @@
+---
+permalink: reference_smis_pools.html
+sidebar: sidebar
+keywords: 
+summary: 'The smis pools command lists the storage pools for storage systems.'
+---
+= smis pools
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `smis pools` command lists the storage pools for storage systems.
+
+== Syntax
+
+----
+
+        smis pools
+ \[-t \{http | https\}\]
+----
+
+== Location
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+== Privilege level
+
+A user with a valid user name and password
+
+== Parameters
+
+* *[`-t` {`http | https`}]*
++
+Protocol to be used: HTTPS (default) or HTTP
+
+== Example
+
+The `smis pools` command and its abbreviated output:
+
+----
+smis pools
+ONTAP_ConcretePool.InstanceID="ONTAP:0084259609:d46de7f0-3925-11df-8516-00a0980558ea"
+ONTAP_ConcretePool.InstanceID="ONTAP:0084259609:51927ab0-28b5-11df-92b2-00a0980558ea"
+ONTAP_DiskPrimordialPool.InstanceID="ONTAP:0084259609:Spare"
+ONTAP_DiskPrimordialPool.InstanceID="ONTAP:0084259609:Other"
+ONTAP_DiskPrimordialPool.InstanceID="ONTAP:0084259609:Present"
+----

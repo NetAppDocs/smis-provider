@@ -1,0 +1,28 @@
+---
+permalink: concept_smi_s_provider_commands.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the smis commands to manage storage systems and to display information about the CIM object manager.'
+---
+= SMI-S Provider commands
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You can use the `smis` commands to manage storage systems and to display information about the CIM object manager.
+
+Help is available for the `smis` command by using the `-help` option.
+
+* *smis `-help`*
++
+Displays a command summary.
+
+* *smis `-help` examples*
++
+Displays usage examples.
+
+* *smis `-help``subcommand`*
++
+Displays help for the specified subcommand.
+
+The default timeout value for the smis tool is 180 seconds.
