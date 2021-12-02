@@ -1,8 +1,8 @@
 ---
 permalink: concept_managing_tracing.html
 sidebar: sidebar
-keywords: 
-summary: 'You can configure how SMI-S Provider manages trace files, such as specifying the components to be traced, the target to which trace messages are written, the level of tracing, and the trace file location.'
+keywords: configure, smis-provider, trace, files, components, trace, write, trace, file location
+summary: "You can configure how SMI-S Provider manages trace files, such as specifying the components to be traced, the target to which trace messages are written, the level of tracing, and the trace file location."
 ---
 = Managing tracing
 :icons: font

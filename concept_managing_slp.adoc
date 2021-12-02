@@ -1,8 +1,8 @@
 ---
 permalink: concept_managing_slp.html
 sidebar: sidebar
-keywords: 
-summary: 'The SLP service broadcasts WBEM services. When the SLP service is enabled, client applications can discover the CIMOM server. You can also specify SLP configuration settings using the slp.conf file.'
+keywords: slp, service broadcasts, wbem services, slp, ebable, client, application, discover, cimom, configuration, settings
+summary: "The SLP service broadcasts WBEM services. When the SLP service is enabled, client applications can discover the CIMOM server. You can also specify SLP configuration settings using the slp.conf file."
 ---
 = Managing SLP
 :icons: font

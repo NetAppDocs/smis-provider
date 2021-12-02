@@ -1,8 +1,8 @@
 ---
 permalink: concept_requirement_for_using_fileshares_in_windows.html
 sidebar: sidebar
-keywords: NetApp SMI-S Provider
-summary: 'When using fileshares \(CIFS shares\) on Windows, the volume on which the fileshare is created must be an NTFS-only volume.'
+keywords: netApp smis-s provider, fileshare, ntfs-only volume
+summary: "When using fileshares (CIFS shares) on Windows, the volume on which the fileshare is created must be an NTFS-only volume."
 ---
 = Requirement for using fileshares on Windows
 :icons: font
@@ -17,4 +17,4 @@ From System Center 2016 Virtual Machine Manager (SCVMM), you can create virtual 
 
 == Creating a volume to be used for CIFS shares and SCVMM
 
-When creating a volume to be used for CIFS shares and System Center Virtual Machine Manager (SCVMM), the volume has to be of NTFS type. To create the volume with NTFS, enter the following: `vol create -vserver <vserver_name> -volume <volume_name> -aggregate <aggr_name> -size<volume_size> -security-style ntfs`
+When creating a volume to be used for CIFS shares and System Center Virtual Machine Manager (SCVMM), the volume has to be of NTFS type. To create the volume with NTFS, enter the following: `_vol create -vserver <vserver_name> -volume <volume_name> -aggregate <aggr_name> -size<volume_size> -security-style ntfs_`
