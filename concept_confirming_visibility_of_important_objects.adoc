@@ -1,8 +1,8 @@
 ---
 permalink: concept_confirming_visibility_of_important_objects.html
 sidebar: sidebar
-keywords: 
-summary: 'After adding a managed storage system, you should confirm that you can see all the important logical and physical objects in NetApp SMI-S Provider.'
+keywords: manage, storage, system, confirm, important, logic, physical, object, netapp smis-s provider
+summary: "After adding a managed storage system, you should confirm that you can see all the important logical and physical objects in NetApp SMI-S Provider."
 ---
 = Confirming visibility of important objects
 :icons: font

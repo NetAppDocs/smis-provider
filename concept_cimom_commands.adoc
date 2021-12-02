@@ -1,8 +1,8 @@
 ---
 permalink: concept_cimom_commands.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the cimconfig command to configure CIMOM settings, such as enabling and disabling HTTP and HTTPS and changing the HTTP and HTTPS port numbers.'
+keywords: cimconfig, command, configure, cimom, settings, enable, disable, http, https, port numbers
+summary: "You can use the cimconfig command to configure CIMOM settings, such as enabling and disabling HTTP and HTTPS and changing the HTTP and HTTPS port numbers."
 ---
 = CIMOM commands
 :icons: font
