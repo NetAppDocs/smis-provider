@@ -1,8 +1,8 @@
 ---
 permalink: concept_smi_s_provider_commands.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the smis commands to manage storage systems and to display information about the CIM object manager.'
+keywords: smis, commands, manage, storage, system, display, cim object manager
+summary: "You can use the smis commands to manage storage systems and to display information about the CIM object manager."
 ---
 = SMI-S Provider commands
 :icons: font
@@ -21,7 +21,7 @@ Displays a command summary.
 +
 Displays usage examples.
 
-* *smis `-help``subcommand`*
+* *smis `-help _subcommand_`*
 +
 Displays help for the specified subcommand.
 

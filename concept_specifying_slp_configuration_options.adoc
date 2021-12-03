@@ -1,8 +1,8 @@
 ---
 permalink: concept_specifying_slp_configuration_options.html
 sidebar: sidebar
-keywords: 
-summary: 'You can edit the slp.conf configuration file to manage the service location protocol daemon \(SLPD\) service.'
+keywords: editing, slp.conf, configuration, file, manage, service location protocol daemon, service
+summary: "You can edit the slp.conf configuration file to manage the service location protocol daemon (SLPD) service."
 ---
 = Specifying SLP configuration options
 :icons: font
