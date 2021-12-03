@@ -1,8 +1,8 @@
 ---
 permalink: reference_handling_smi_s_agent_crashes_in_windows.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = SMI-S Provider crashes in Windows
 :icons: font
@@ -20,9 +20,9 @@ This issue occurs for a variety of reasons, documented in files generated at the
 +
 Restart the provider and send the following information to technical support for further analysis:
 
- ** Dump file from the `C:\Program Files (x86)\NetApp\smis\pegasus``\pegasus\logs` directory
- ** Log files from the `C:\Program Files (x86)\NetApp\smis\pegasus``\pegasus\logs` directory
- ** Trace files from the `C:\Program Files (x86)\NetApp\smis\pegasus``\pegasus\traces` directory
+ ** Dump file from the `C:\Program Files (x86)\NetApp\smis\pegasus\pegasus\logs` directory
+ ** Log files from the `C:\Program Files (x86)\NetApp\smis\pegasus\pegasus\logs` directory
+ ** Trace files from the `C:\Program Files (x86)\NetApp\smis\pegasus\pegasus\traces` directory
 +
 Messages similar to the following also appear in the trace file:
 +
@@ -30,4 +30,4 @@ Messages similar to the following also appear in the trace file:
 +
 `23-May-2013 20:46:37.14 INFO cimserver: createMiniDump: Process dumped to C:\Program Files (x86)\netapp\smis\pegasus\logs\SMI-S Agent-8be55da-2011_05_23-20_46_36.dmp`
 
- ** The files `version.txt` and `cimserver_current.conf` from the `C:\Program Files (x86)\NetApp\smis\pegasus``\pegasus` directory
+ ** The files `version.txt` and `cimserver_current.conf` from the `C:\Program Files (x86)\NetApp\smis\pegasus\pegasus` directory

@@ -1,8 +1,8 @@
 ---
 permalink: reference_hardware_requirements.html
 sidebar: sidebar
-keywords: SMI-S Provider,SMI-S Agent
-summary: 'You must verify that the Windows host meets the minimum hardware requirements before installing NetApp SMI-S Provider.'
+keywords: smi-s provider, smi-s agent
+summary: "You must verify that the Windows host meets the minimum hardware requirements before installing NetApp SMI-S Provider."
 ---
 = Hardware requirements
 :icons: font
@@ -11,6 +11,7 @@ summary: 'You must verify that the Windows host meets the minimum hardware requi
 [.lead]
 You must verify that the Windows host meets the minimum hardware requirements before installing NetApp SMI-S Provider.
 
+[cols="2*",options="header"]
 |===
 | Hardware| Requirements
 a|
