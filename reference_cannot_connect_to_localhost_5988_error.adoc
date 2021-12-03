@@ -1,8 +1,8 @@
 ---
 permalink: reference_cannot_connect_to_localhost_5988_error.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = Cannot connect to localhost:5988
 :icons: font

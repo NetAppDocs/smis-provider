@@ -1,8 +1,8 @@
 ---
 permalink: reference_cimconfig_command_options.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the cimconfig command to manage CIMOM configuration settings. After entering the cimconfig command or creating an environment variable for the NetApp SMI-S Provider configuration value, you must restart the CIM server by using the smis cimserver restart command.'
+keywords: cimconfig, command, cimom configuration, settings, variable, mis cimserver restart command
+summary: "You can use the cimconfig command to manage CIMOM configuration settings. After entering the cimconfig command or creating an environment variable for the NetApp SMI-S Provider configuration value, you must restart the CIM server by using the smis cimserver restart command."
 ---
 = cimconfig
 :icons: font
@@ -13,10 +13,7 @@ You can use the `cimconfig` command to manage CIMOM configuration settings. Afte
 
 == Syntax
 
-----
-
-        cimconfig *options*
-----
+`cimconfig _options_`
 
 == Location
 
