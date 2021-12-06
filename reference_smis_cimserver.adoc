@@ -20,7 +20,7 @@ The `smis cimserver` command starts, stops, restarts, or gets the status of the 
 
 == Location
 
-`C:\Program Files (x86)\NetAppsmispegasus\bin`
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
 == Privilege level
 

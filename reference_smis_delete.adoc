@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_delete.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis delete command deletes a storage system.'
+keywords: smis debate, command, storage system
+summary: "The smis delete command deletes a storage system."
 ---
 = smis delete
 :icons: font
@@ -13,12 +13,11 @@ The `smis delete` command deletes a storage system.
 
 == Syntax
 
-----
+`smis delete`
 
-        smis delete
- storage_sys
- \[-t \{http | https\}\]
-----
+`_storage_sys_`
+
+`[-t {*http* | *https*}]`
 
 == Location
 
@@ -30,11 +29,11 @@ Administrator (Windows)
 
 == Parameters
 
-* *`storage_sys`*
+* `*_storage_sys_*`
 +
 Name or the IP address of the storage system that you are adding
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 
@@ -42,6 +41,6 @@ Protocol to be used: HTTPS (default) or HTTP
 
 Delete a storage system labeled mgt-1:
 
-`smis delete mgt-1`
+`*smis delete mgt-1*`
 
 If no error message appears, the storage system was successfully deleted.

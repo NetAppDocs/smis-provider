@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_disks.html
 sidebar: sidebar
-keywords: 
-summary: 'Thesmis disks command displays disk information for storage systems. smis disks only functions when used with Data ONTAP 7-Mode controllers.'
+keywords: thesmis, disk, command, display, information, storage, systems
+summary: "Thesmis disks command displays disk information for storage systems. smis disks only functions when used with Data ONTAP 7-Mode controllers."
 ---
 = smis disks
 :icons: font
@@ -13,11 +13,9 @@ The``smis disks`` command displays disk information for storage systems. `smis d
 
 == Syntax
 
-----
+smis disks
 
-        smis disks
- \[-t \{http | https\}\]
-----
+`[-t {*http* | *https*}]`
 
 == Location
 
@@ -29,7 +27,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 
