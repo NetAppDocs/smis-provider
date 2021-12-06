@@ -1,8 +1,8 @@
 ---
 permalink: reference_slptool_findsrvs.html
 sidebar: sidebar
-keywords: 
-summary: 'The slptool findsrvs command finds WBEM services that run on a network.'
+keywords: slptool, findsrvs, command, wbem, service, run, network
+summary: "The slptool findsrvs command finds WBEM services that run on a network."
 ---
 = slptool findsrvs
 :icons: font
@@ -13,10 +13,7 @@ The `slptool findsrvs` command finds WBEM services that run on a network.
 
 == Syntax
 
-----
-
-        slptool findsrvs service
-----
+`slptool findsrvs _service_`
 
 == Location
 
@@ -28,7 +25,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *`service`*
+* `*_service_*`
 +
 Specifies the service type.
 

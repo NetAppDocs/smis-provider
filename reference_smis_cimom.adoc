@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_cimom.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis cimom command describes the CIM object manager.'
+keywords: smis cimon, command, cim object manager
+summary: "The smis cimom command describes the CIM object manager."
 ---
 = smis cimom
 :icons: font
@@ -13,11 +13,9 @@ The `smis cimom` command describes the CIM object manager.
 
 == Syntax
 
-----
+smis cimom
+ `[-t {*http* | *https*}]`
 
-        smis cimom
- \[-t \{http | https\}\]
-----
 
 == Location
 
@@ -29,7 +27,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 
