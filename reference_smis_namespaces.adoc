@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_namespaces.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis namespaces command lists the registered namespaces for the CIMOM.'
+keywords: smis namespace, command, list, registered, namespace, cimom
+summary: "The smis namespaces command lists the registered namespaces for the CIMOM."
 ---
 = smis namespaces
 :icons: font
@@ -13,11 +13,9 @@ The `smis namespaces` command lists the registered namespaces for the CIMOM.
 
 == Syntax
 
-----
+smis namespaces
 
-        smis namespaces
- \[-t \{http | https\}\]
-----
+`[-t {*http* | *https*}]`
 
 == Location
 
@@ -31,7 +29,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 

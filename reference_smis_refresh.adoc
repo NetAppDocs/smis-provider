@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_refresh.html
 sidebar: sidebar
-keywords: 
-summary: 'By default, SMI-S Provider automatically gets information from storage systems every 60 minutes \(3600 seconds\). You can use the smis refresh command to manually refresh a particular storage system.'
+keywords: smi-s provider, automatic, information, storage systems
+summary: "By default, SMI-S Provider automatically gets information from storage systems every 60 minutes (3600 seconds). You can use the smis refresh command to manually refresh a particular storage system."
 ---
 = smis refresh
 :icons: font
@@ -13,11 +13,10 @@ By default, SMI-S Provider automatically gets information from storage systems e
 
 == Syntax
 
-----
+`smis refresh _storage_system_ip_`
 
-        smis refresh storage_system_ip
-\[-t \{http | https\}\]
-----
+`[-t {*http* | *https*}]`
+
 
 == Location
 
@@ -29,11 +28,11 @@ A user with a valid user name and password
 
 == Parameters
 
-* *`storage_system_ip`*
+* `*_storage_system_ip_*`
 +
 Refreshes a specific storage system.
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 
@@ -45,7 +44,3 @@ The `smis refresh` command and its output:
 smis refresh 10.32.1.4
 Return Value= 0
 ----
-
-*Related information*
-
-xref:task_specifying_the_smi_s_agent_cache_refresh_interval.adoc[Specifying the SMI-S Provider automatic cache refresh interval]

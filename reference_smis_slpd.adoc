@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_slpd.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis slpd command starts or stops the SLP daemon.'
+keywords: smis slpd, command, start, stop, slp daemon
+summary: "The smis slpd command starts or stops the SLP daemon."
 ---
 = smis slpd
 :icons: font
@@ -13,11 +13,10 @@ The `smis slpd` command starts or stops the SLP daemon.
 
 == Syntax
 
-----
+`smis slpd`
 
-        smis slpd
- \{start | stop\}
-----
+`{*start* | *stop*}`
+
 
 == Location
 

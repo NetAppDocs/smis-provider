@@ -1,8 +1,8 @@
 ---
 permalink: reference_supported_platforms.html
 sidebar: sidebar
-keywords: NetApp SMI-S Provider
-summary: 'NetApp SMI-S Provider supports cluster platforms that run Data ONTAP 8.3.2 and ONTAP 9 and later.'
+keywords: netApp smi-s provider, cluster, platforms
+summary: "NetApp SMI-S Provider supports cluster platforms that run Data ONTAP 8.3.2 and ONTAP 9 and later."
 ---
 = Supported cluster platforms
 :icons: font

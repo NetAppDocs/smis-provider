@@ -1,8 +1,8 @@
 ---
 permalink: reference_supported_operating_systems.html
 sidebar: sidebar
-keywords: 
-summary: 'Before installing SMI-S Provider, you must verify that the Windows host is running a supported operating system.'
+keywords: installing, smi-s provider, verify, windows, host, operating systems
+summary: "Before installing SMI-S Provider, you must verify that the Windows host is running a supported operating system."
 ---
 = Supported operating system versions
 :icons: font
@@ -12,6 +12,7 @@ summary: 'Before installing SMI-S Provider, you must verify that the Windows hos
 [.lead]
 Before installing SMI-S Provider, you must verify that the Windows host is running a supported operating system.
 
+[cols="3*",options="header"]
 |===
 | Operating system| Supported versions| Required client software
 a|
@@ -29,7 +30,7 @@ The Microsoft Visual C{pp} 2010 runtime libraries are automatically installed du
 
 System Center Virtual Machine Manager (SCVMM) 2016 Update Rollup (UR) 2.1 is required to manage NetApp File Server with NetApp SMI-S Provider 5.2.4 and later.
 
-Without this UR, SCVMM 2016 displays the value of the `Total Capacity` and `Available Capacity` options as `0 GB` for the existing file shares in NetApp File Server.
+Without this UR, SCVMM 2016 displays the value of the `Total Capacity` and `Available Capacity` options as `*0 GB*` for the existing file shares in NetApp File Server.
 
 To run SMI-S Provider, the provider host machine must meet the following specifications:
 
