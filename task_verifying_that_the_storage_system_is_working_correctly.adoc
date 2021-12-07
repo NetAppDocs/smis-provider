@@ -1,8 +1,8 @@
 ---
 permalink: task_verifying_that_the_storage_system_is_working_correctly.html
 sidebar: sidebar
-keywords: 
-summary: 'Before SMI-S Provider can be configured, you must add at least one storage system to the CIMOM repository, and then verify that the storage system is working correctly.'
+keywords: smi-s provider, configure, least storage, cimom repository storage, working, correctly
+summary: "Before SMI-S Provider can be configured, you must add at least one storage system to the CIMOM repository, and then verify that the storage system is working correctly."
 ---
 = Verifying that the storage system is working correctly
 :icons: font
@@ -11,7 +11,7 @@ summary: 'Before SMI-S Provider can be configured, you must add at least one sto
 [.lead]
 Before SMI-S Provider can be configured, you must add at least one storage system to the CIMOM repository, and then verify that the storage system is working correctly.
 
-== Before you begin
+== What you'll need
 
 * You must already have logged in as Administrator.
 * You must already have accessed SMI-S Provider.
@@ -20,21 +20,23 @@ Before SMI-S Provider can be configured, you must add at least one storage syste
 
 . Add at least one storage system to the CIMOM repository:
 +
+[cols="2*",options="header"]
 |===
 | To add a storage system with an...| Enter this command...
 a|
 HTTP connection between the provider and the storage system
 a|
-`smis add storage_sys storage_sys_user`
+`*smis add _storage_sys storage_sys_user_*`
 a|
 HTTPS connection between the provider and the storage system
 a|
-`smis addsecure storage_sys storage_sys_user`
+`*smis addsecure _storage_sys storage_sys_user_*`
 |===
 The command waits for up to 15 minutes for the provider to update the cache and respond.
 
 . Verify the output for the following commands:
 +
+[cols="2*",options="header"]
 |===
 | For this command...| Verify that...
 a|
@@ -58,19 +60,3 @@ a|
 a|
 The number of volumes matches the total number of volumes on all storage systems.
 |===
-
-*Related information*
-
-xref:reference_smis_add.adoc[smis add]
-
-xref:reference_smis_addsecure.adoc[smis addsecure]
-
-xref:reference_smis_disks.adoc[smis disks]
-
-xref:reference_smis_list.adoc[smis list]
-
-xref:reference_smis_luns.adoc[smis luns]
-
-xref:reference_smis_pools.adoc[smis pools]
-
-xref:reference_smis_volumes.adoc[smis volumes]
