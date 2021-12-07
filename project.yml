@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Catalyst migration
+  name: NetApp SMIS-Provider 5.2.6
   internal:
     pdf_enabled: true
   prod:
@@ -9,6 +9,8 @@ sidebar:
   entries:
   - title: Home
     url: "/index.html"
+  - title: Release notes
+    url: "/releasenotes.html"
   - title: NetApp SMI-S Provider overview
     url: "/concept_data_ontap_smi_s_agent_overview.html"
     entries:
@@ -233,3 +235,5 @@ sidebar:
       url: "/reference_smb_share_size_dropping_to_0_in_scvmm.html"
     - title: SCVMM rescan operation failed to locate or communicate with SMI-S Provider
       url: "/reference_scvmm_rescan_operation_failed_to_locate_or_communicate_with_smi_s_provider.html"
+    - title: Legal notices
+      url: "/reference_legal_notices.html"

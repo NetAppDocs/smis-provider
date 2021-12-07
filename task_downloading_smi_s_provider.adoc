@@ -1,8 +1,8 @@
 ---
 permalink: task_downloading_smi_s_provider.html
 sidebar: sidebar
-keywords: NetApp SMI-S Provider
-summary: 'Before installing NetApp SMI-S Provider, you must download the software package from the NetApp Support Site.'
+keywords: netapp smi-s provider, installing, download
+summary: "Before installing NetApp SMI-S Provider, you must download the software package from the NetApp Support Site."
 ---
 = Downloading the NetApp SMI-S Provider software package
 :icons: font

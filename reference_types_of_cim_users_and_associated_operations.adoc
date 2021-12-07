@@ -1,8 +1,8 @@
 ---
 permalink: reference_types_of_cim_users_and_associated_operations.html
 sidebar: sidebar
-keywords: 
-summary: 'When using SMI-S Provider, there are various types of user that you can assign to a user to control their access to the CIM server.'
+keywords: smi-s provider, various types, control, access
+summary: "When using SMI-S Provider, there are various types of user that you can assign to a user to control their access to the CIM server."
 ---
 = Types of CIM users and associated operations
 :icons: font
@@ -15,6 +15,7 @@ Starting with this release, the Domain user is allowed to modify the SMI-S Provi
 
 The following table lists the supported users of the CIM server and the operations that each type can perform.
 
+[cols="2*",options="header"]
 |===
 | Type of user| Operations
 a|

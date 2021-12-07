@@ -1,8 +1,8 @@
 ---
 permalink: task_enabling_or_disabling_audit_logging_for_smi_s_commands.html
 sidebar: sidebar
-keywords: 
-summary: 'All incoming SMI-S commands are recorded in audit log files, which enables auditors to track activities of WBEM client operations and provider use. You can enable or disable the logging of these incoming commands by setting a dynamic configuration property.'
+keywords: incoming smi-s command, record, log files, auditor, wbem client
+summary: "All incoming SMI-S commands are recorded in audit log files, which enables auditors to track activities of WBEM client operations and provider use. You can enable or disable the logging of these incoming commands by setting a dynamic configuration property."
 ---
 = Enabling or disabling audit logging for SMI-S commands
 :icons: font
@@ -35,14 +35,15 @@ NetApp SMI-S Provider maintains the six most recent audit log files: `cimserver_
 . Access NetApp SMI-S Provider.
 . Set the audit logging of SMI-S commands at runtime:
 +
+[cols="2*",options="header"]
 |===
 | Action| Command
 a|
 *Enable SMI-S audit logging*
 a|
-`cimconfig -s enableAuditLog=true`
+`*cimconfig -s enableAuditLog=true*`
 a|
 *Disable SMI-S audit logging*
 a|
-`cimconfig -s enableAuditLog=false`
+`*cimconfig -s enableAuditLog=false*`
 |===

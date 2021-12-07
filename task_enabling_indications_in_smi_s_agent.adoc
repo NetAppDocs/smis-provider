@@ -1,8 +1,8 @@
 ---
 permalink: task_enabling_indications_in_smi_s_agent.html
 sidebar: sidebar
-keywords: NetApp SMI-S Provider
-summary: 'Alert, FileSystem Quota, and Lifecycle indications are disabled by default. You can enable these indications by setting the environment variable PEGASUS_DISABLE_INDICATIONS to false.'
+keywords: netApp smi-s provider, lifecycle, disable, default, indication
+summary: "Alert, FileSystem Quota, and Lifecycle indications are disabled by default. You can enable these indications by setting the environment variable PEGASUS_DISABLE_INDICATIONS to false."
 ---
 = Enabling indications in SMI-S Provider
 :icons: font
@@ -26,4 +26,4 @@ When `PEGASUS_DISABLE_INDICATIONS` is set to `false`, then Alert (`ONTAP_AlertIn
 . Set the `PEGASUS_DISABLE_INDICATIONS` environment variable to `false`.
 . Restart the CIM server:
 +
-`smis cimserver restart`
+`*smis cimserver restart*`

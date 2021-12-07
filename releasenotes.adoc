@@ -1,0 +1,13 @@
+---
+permalink: releasenotes.html
+sidebar: sidebar
+keywords: netapp smi-s provider, relnotes, limitations, fixes, known issues
+summary: "Provides information about the features, limitations, and known issues for the NetApp SMI-S Provider 5.2.6 software."
+---
+= NatApp SMIS-Provider 5.2.6 Release Notes
+:icons: font
+:imagesdir: ./media/
+
+The https://library.netapp.com/ecm/ecm_download_file/ECMLP2862930[NatApp SMIS-Provider 5.2.6 Release Notes] describe new features, upgrade notes, fixed issues, known limitations, and known issues. You are required to sign on to the NetApp Support Site to access the Release Notes.
+
+NatApp SMIS-Provider Release Notes
