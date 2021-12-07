@@ -1,7 +1,7 @@
 ---
 permalink: task_managing_the_cim_server.html
 sidebar: sidebar
-keywords: 
+keywords: smi-s provider, start, stop, cim server, review, status
 summary: 'You can use SMI-S Provider to start, stop, and restart the CIM server and to review its status.'
 ---
 = Managing the CIM server
@@ -11,7 +11,7 @@ summary: 'You can use SMI-S Provider to start, stop, and restart the CIM server 
 [.lead]
 You can use SMI-S Provider to start, stop, and restart the CIM server and to review its status.
 
-== Before you begin
+== What you'll need
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
@@ -21,34 +21,31 @@ You can use SMI-S Provider to start, stop, and restart the CIM server and to rev
 . Access NetApp SMI-S Provider.
 . Complete one of the following actions:
 +
+[cols="3*",options="header"]
 |===
 | Action| Command| Additional information
 a|
 Start the CIM server
 a|
-`smis cimserver start`
+`*smis cimserver start*`
 a|
 After entering the command, a status message appears every three minutes. If an attempt to reach the CIM server fails, five more attempts are made to contact the server.
 a|
 Stop the CIM server
 a|
-`smis cimserver stop`
+`*smis cimserver stop*`
 a|
 NA
 a|
 Restart the CIM server
 a|
-`smis cimserver restart`
+`*smis cimserver restart*`
 a|
 NA
 a|
 View the CIM server status
 a|
-`smis cimserver status`
+`*smis cimserver status*`
 a|
 NA
 |===
-
-*Related information*
-
-xref:reference_smis_cimserver.adoc[smis cimserver]

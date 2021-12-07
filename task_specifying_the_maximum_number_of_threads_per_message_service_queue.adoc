@@ -1,8 +1,8 @@
 ---
 permalink: task_specifying_the_maximum_number_of_threads_per_message_service_queue.html
 sidebar: sidebar
-keywords: 
-summary: 'By default, SMI-S Provider allows 80 threads per message service queue. You can specify the maximum thread value as 1 through 5000. Increasing the maximum number of threads can impact the SMI-S Provider machine’s performance, so carefully consider whether you need to increase this value.'
+keywords: default, smi-s provider, 80 threads, per message, service queue, machine performance
+summary: "By default, SMI-S Provider allows 80 threads per message service queue. You can specify the maximum thread value as 1 through 5000. Increasing the maximum number of threads can impact the SMI-S Provider machine’s performance, so carefully consider whether you need to increase this value."
 ---
 = Specifying the maximum number of threads per message service queue
 :icons: font
@@ -11,7 +11,7 @@ summary: 'By default, SMI-S Provider allows 80 threads per message service queue
 [.lead]
 By default, SMI-S Provider allows 80 threads per message service queue. You can specify the maximum thread value as 1 through 5000. Increasing the maximum number of threads can impact the SMI-S Provider machine's performance, so carefully consider whether you need to increase this value.
 
-== Before you begin
+== What you'll need
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
@@ -20,7 +20,7 @@ By default, SMI-S Provider allows 80 threads per message service queue. You can 
 
 If your trace file shows many lines of `insufficient resources` output, you must increase the number of threads in increments of 500.
 
-If you set the maximum number of threads to fewer than 20, using the `cimcli -n root/ontap niall` command, the provider becomes unresponsive and returns the `Insufficient threadpool` message in the trace file. If this occurs, you must increase the number of threads in increments of 500 and then restart the provider.
+If you set the maximum number of threads to fewer than 20, using the `*cimcli -n root/ontap niall*` command, the provider becomes unresponsive and returns the `Insufficient threadpool` message in the trace file. If this occurs, you must increase the number of threads in increments of 500 and then restart the provider.
 
 == Steps
 
@@ -29,4 +29,6 @@ If you set the maximum number of threads to fewer than 20, using the `cimcli -n 
 +
 For information about creating environment variables, see your Windows documentation.
 
-. Restart the CIM server: `smis cimserver restart`
+. Restart the CIM server:
++
+`*smis cimserver restart*`

@@ -1,8 +1,8 @@
 ---
 permalink: task_managing_cim_server_users.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use SMI-S Provider to add and remove CIM users that are authorized to use the CIM server. You can also list all current CIM users and modify their passwords.'
+keywords: smi-s provider, add, remove, remove, cim users, authorized, cim server, cim user, password, modify
+summary: "You can use SMI-S Provider to add and remove CIM users that are authorized to use the CIM server. You can also list all current CIM users and modify their passwords."
 ---
 = Managing CIM server users
 :icons: font
@@ -11,7 +11,7 @@ summary: 'You can use SMI-S Provider to add and remove CIM users that are author
 [.lead]
 You can use SMI-S Provider to add and remove CIM users that are authorized to use the CIM server. You can also list all current CIM users and modify their passwords.
 
-== Before you begin
+== What you'll need
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
@@ -26,38 +26,31 @@ For more information, see _System documentation_.
 
 . Complete one of the following actions:
 +
+[cols="3*",options="header"]
 |===
 | Action| Command| Additional information
 a|
 Add a CIM server user
 a|
-`cimuser -a -u user_name`
+`*cimuser -a -u _user_name_*`
 a|
 After entering the command, enter and reenter the password when prompted.
 a|
 List the current users authorized to use the CIM server
 a|
-`cimuser -l`
+`*cimuser -l*`
 a|
 NA
 a|
 Change the password for a CIM server user
 a|
-`cimuser -m -u user_name`
+`*cimuser -m -u _user_name_*`
 a|
 After entering the command, enter and reenter the new and old password when prompted.
 a|
 Remove a CIM server user not authorized to use the CIM server
 a|
-`cimuser -r -u user_name`
+`*cimuser -r -u _user_name_*`
 a|
 NA
 |===
-
-*Related information*
-
-xref:reference_cimuser_command_options.adoc[cimuser]
-
-xref:reference_types_of_cim_users_and_associated_operations.adoc[Types of CIM users and associated operations]
-
-xref:reference_entering_passwords_containing_special_characters.adoc[Issue entering passwords containing special characters]

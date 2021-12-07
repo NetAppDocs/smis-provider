@@ -1,8 +1,8 @@
 ---
 permalink: task_managing_storage_systems.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use NetApp SMI-S Provider commands to add, delete, and list storage systems in the CIMOM repository. You can also list NFS and CIFS exports and exported LUNs for storage systems.'
+keywords: smis-provider, commands, add, delete, list, storage, systems, cimom repository
+summary: "You can use NetApp SMI-S Provider commands to add, delete, and list storage systems in the CIMOM repository. You can also list NFS and CIFS exports and exported LUNs for storage systems."
 ---
 = Managing storage systems
 :icons: font
@@ -11,7 +11,7 @@ summary: 'You can use NetApp SMI-S Provider commands to add, delete, and list st
 [.lead]
 You can use NetApp SMI-S Provider commands to add, delete, and list storage systems in the CIMOM repository. You can also list NFS and CIFS exports and exported LUNs for storage systems.
 
-== Before you begin
+== What you'll need
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
@@ -30,92 +30,69 @@ You should set the data protocol value to `none` for the management LIF when you
 . Access NetApp SMI-S Provider.
 . Complete one of the following actions:
 +
+[cols="3*",options="header"]
 |===
 | Action| Command| Additional information
 a|
 Add a storage system with an HTTP connection between the provider and the storage system
 a|
-`smis add storage_sys storage_sys_user`
+`*smis add _storage_sys storage_sys_user_*`
 a|
 The command waits for up to 15 minutes for the provider to update the cache and respond.
 a|
 Add a storage system with an HTTPS connection between the provider and the storage system
 a|
-`smis addsecure storage_sys storage_sys_user`
+`*smis addsecure _storage_sys storage_sys_user_*`
 a|
 The command waits for up to 15 minutes for the provider to update the cache and respond.
 a|
 List NFS and CIFS exports for a storage system
 a|
-`smis exports`
+`*smis exports*`
 a|
 None
 a|
 List the storage systems for the CIMOM repository
 a|
-`smis list`
+`*smis list*`
 a|
 You can run this command to verify the storage systems in the CIMOM repository before adding or deleting storage systems.
 a|
 List exported LUNs for a storage system
 a|
-`smis luns`
+`*smis luns*`
 a|
 None
 a|
 Delete a storage system from the CIMOM repository
 a|
-`smis delete storage_sys`
+`*smis delete _storage_sys_*`
 a|
-    If you no longer need to manage a storage system, you can delete it from the CIMOM repository.
-+
+If you no longer need to manage a storage system, you can delete it from the CIMOM repository.
+
 Because SMI-S Provider gathers information from all storage systems in the CIMOM repository, you should delete an unused storage system from the repository to maintain optimal performance.
 a|
 List the current CIM server configuration information
 a|
-`smis config show`
+`*smis config show*`
 a|
 None
 a|
 List the FC and iSCSI port information for storage system
 a|
-`smis initiators`
+`*smis initiators*`
 a|
 None
 a|
 List the storage pools for storage system
 a|
-`smis pools`
+`*smis pools*`
 a|
 None
 a|
 List the traditional and flexible volumes for storage system
 a|
-`smis volumes`
+`*smis volumes*`
 a|
 None
 |===
-
-*Related information*
-
-xref:reference_smis_add.adoc[smis add]
-
-xref:reference_smis_addsecure.adoc[smis addsecure]
-
-xref:reference_smis_exports.adoc[smis exports]
-
-xref:reference_smis_list.adoc[smis list]
-
-xref:reference_smis_luns.adoc[smis luns]
-
-xref:reference_smis_delete.adoc[smis delete]
-
-xref:reference_smis_config_show.adoc[smis config show]
-
-xref:reference_smis_initiators.adoc[smis initiators]
-
-xref:reference_smis_pools.adoc[smis pools]
-
-xref:reference_smis_volumes.adoc[smis volumes]
-
-xref:reference_entering_passwords_containing_special_characters.adoc[Issue entering passwords containing special characters]
