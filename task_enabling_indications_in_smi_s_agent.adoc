@@ -11,7 +11,7 @@ summary: "Alert, FileSystem Quota, and Lifecycle indications are disabled by def
 [.lead]
 Alert, FileSystem Quota, and Lifecycle indications are disabled by default. You can enable these indications by setting the environment variable `PEGASUS_DISABLE_INDICATIONS` to `false`.
 
-== Before you begin
+== What you'll need
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.

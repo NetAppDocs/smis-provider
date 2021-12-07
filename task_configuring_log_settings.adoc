@@ -11,7 +11,7 @@ summary: "By default, all system messages are logged. In addition, by default, t
 [.lead]
 By default, all system messages are logged. In addition, by default, the system message logs are located in the `logs` directory in the directory in which NetApp SMI-S Provider is installed. You can change the location of and the level of system messages that are written to the CIM server log. For example, you can choose to have logs stored in a directory that you specify and have only fatal system messages written to the CIM server log.
 
-== Before you begin
+== What you'll need
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
