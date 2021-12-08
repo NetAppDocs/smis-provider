@@ -10,7 +10,3 @@ summary: "SMI-S Provider uses profiles and subprofiles that comply with SMI-S v1
 
 [.lead]
 SMI-S Provider uses profiles and subprofiles that comply with SMI-S v1.7. For information about SMI-S v1.7, see the SNIA: Technology Standards and Software page.
-
-*Related information*
-
-http://www.snia.org/tech_activities/standards/curr_standards/smi/[SNIA: Technology Standards and Software]

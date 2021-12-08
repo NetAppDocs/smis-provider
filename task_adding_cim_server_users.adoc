@@ -23,7 +23,9 @@ Before you can validate the storage system, you must add a CIM user authorized t
 +
 For more information, see _System documentation_.
 
-. Add a CIM server user: `*cimuser -a -u _user_name_*`
+. Add a CIM server user:
++
+`*cimuser -a -u _user_name_*`
 +
 For example, to add a CIM server user named "`chris`":
 +

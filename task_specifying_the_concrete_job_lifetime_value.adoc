@@ -16,7 +16,7 @@ SMI-S Provider tracks the progress of asynchronous operations by creating _concr
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
 
-== Steps
+== Step
 
 . Create a system or user environment variable named `JOB_LIFETIME_SEC` with the new lifetime value (in seconds).
 +

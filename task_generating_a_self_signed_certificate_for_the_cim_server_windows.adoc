@@ -34,6 +34,6 @@ You can provide a different number of days for which the certificate is valid.
 
 . Copy the `cimom.key` and `cimom.cert` files to the `pegasus` directory (Windows: `C:\Program Files (x86)\NetApp\smis\pegasus`).
 
-== Results
+== Result
 
 The certificate date range starts at the current date and runs for the number of days specified.
