@@ -30,13 +30,18 @@ a|
 `*cimconfig -s logLevel=_new_log_level_ -p*`
 a|
 If you wanted to change the logging level to "`INFORMATION`", for example, you would input this command:
+ +
  `*cimconfig -s logLevel=INFORMATION -p*`
 a|
 Change the system message log directory
 a|
 `*cimconfig -s logdir=new_log_directory -p*` If the `_new_log_directory_` contains space, you must enclose it in quotation marks (`"_new log directory_"`).
 a|
-If you wanted to change the log directory to "`serverlogs`", for example, you would input this command: `*cimconfig -s logdir=serverlogs -p*`
+If you wanted to change the log directory to "`serverlogs`", for example, you would input this command:
+
+`*cimconfig -s logdir=serverlogs -p*`
 |===
 
-. Restart the CIM server: `*smis cimserver restart*`
+. Restart the CIM server:
++
+`*smis cimserver restart*`

@@ -27,7 +27,7 @@ This installation procedure reflects a fresh install.
 == Steps
 
 . Log in as Administrator.
-. Navigate to the directory that contains the NetApp SMI-S Provider software package (`smisprovider-_version_number.msi_`), and then double-click the package name.
+. Navigate to the directory that contains the NetApp SMI-S Provider software package (`smisprovider-_version_number_.msi`), and then double-click the package name.
 . Complete the steps in the setup wizard.
 
 == Result
