@@ -1,7 +1,7 @@
 ---
 permalink: index.html
 sidebar: sidebar
-keywords: netapp smis-provider, documentation, installation, command based interface, netapp storage system 
+keywords: netapp smis-provider, documentation, installation, command based interface, netapp storage system
 summary: "Describes how to install and manage NetApp SMI-S Provider, a command-based interface that detects and manages NetApp storage systems."
 ---
 = NetApp SMIS-Provider Documentation
