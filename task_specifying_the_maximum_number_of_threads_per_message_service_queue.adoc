@@ -11,7 +11,7 @@ summary: "By default, SMI-S Provider allows 80 threads per message service queue
 [.lead]
 By default, SMI-S Provider allows 80 threads per message service queue. You can specify the maximum thread value as 1 through 5000. Increasing the maximum number of threads can impact the SMI-S Provider machine's performance, so carefully consider whether you need to increase this value.
 
-== What you'll need
+== Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.

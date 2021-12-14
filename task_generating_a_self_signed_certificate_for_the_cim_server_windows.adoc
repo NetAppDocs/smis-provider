@@ -11,7 +11,7 @@ summary: "By default, SSL authentication is enabled for the CIM server. During t
 [.lead]
 By default, SSL authentication is enabled for the CIM server. During the SMI-S Provider installation, a self-signed certificate for the CIM server is installed in the `pegasus` directory. You can generate your own self-signed certificate and use it rather than the default certificate.
 
-== What you'll need
+== Before you begin
 
 * You must already have logged in as Administrator.
 * You must already have accessed SMI-S Provider.

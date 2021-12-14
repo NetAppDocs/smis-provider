@@ -11,7 +11,7 @@ summary: "If tracing is enabled, the maximum trace file size is 100 MB by defaul
 [.lead]
 If tracing is enabled, the maximum trace file size is 100 MB by default. You can increase or decrease the maximum trace file size by setting the environment variable `PEGASUS_TRACE_FILE_SIZE`. The value of the trace file size can be 10 MB through 2 GB.
 
-== What you'll need
+== Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.

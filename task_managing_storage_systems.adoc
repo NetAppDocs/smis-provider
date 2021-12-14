@@ -11,7 +11,7 @@ summary: "You can use NetApp SMI-S Provider commands to add, delete, and list st
 [.lead]
 You can use NetApp SMI-S Provider commands to add, delete, and list storage systems in the CIMOM repository. You can also list NFS and CIFS exports and exported LUNs for storage systems.
 
-== What you'll need
+== Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.

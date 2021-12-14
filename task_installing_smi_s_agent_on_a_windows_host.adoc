@@ -11,7 +11,7 @@ summary: "You can install NetApp SMI-S Provider software so that you can manage 
 [.lead]
 You can install NetApp SMI-S Provider software so that you can manage storage systems that run Data ONTAP. By default, the NetApp SMI-S Provider software is installed in the `C:\Program Files (x86)\NetApp\smis\pegasus` directory.
 
-== What you'll need
+== Before you begin
 
 You must already have the following credentials and software:
 

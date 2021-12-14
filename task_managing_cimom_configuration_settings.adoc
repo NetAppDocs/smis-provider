@@ -11,7 +11,7 @@ summary: "You can use SMI-S Provider to manage the CIMOM configuration, such as 
 [.lead]
 You can use SMI-S Provider to manage the CIMOM configuration, such as enabling or disabling HTTP and HTTPS connections and changing HTTP and HTTPS port numbers. By default, HTTP connections are enabled, allowing clients to connect to the CIM server without using SSL encryption.
 
-== What you'll need
+== Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.

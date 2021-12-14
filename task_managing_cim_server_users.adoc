@@ -11,7 +11,7 @@ summary: "You can use SMI-S Provider to add and remove CIM users that are author
 [.lead]
 You can use SMI-S Provider to add and remove CIM users that are authorized to use the CIM server. You can also list all current CIM users and modify their passwords.
 
-== What you'll need
+== Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
