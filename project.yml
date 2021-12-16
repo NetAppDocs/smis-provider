@@ -41,13 +41,13 @@ sidebar:
       url: "/reference_required_licenses.html"
     - title: Supported cluster platforms
       url: "/reference_supported_platforms.html"
-    - title: Downloading the NetApp SMI-S Provider software package
-      url: "/task_downloading_smi_s_provider.html"
+    - title: Download the NetApp SMI-S Provider software package
+      url: "/task_download_smi_s_provider.html"
   - title: Install NetApp SMI-S Provider
     url: "/concept_install_and_uninstall_ontap_smi_s_agent.html"
     entries:
-    - title: Installing NetApp SMI-S Provider on a Windows host
-      url: "/task_installing_smi_s_agent_on_a_windows_host.html"
+    - title: Install NetApp SMI-S Provider on a Windows host
+      url: "/task_install_smi_s_agent_on_a_windows_host.html"
   - title: Uninstall NetApp SMI-S Provider
     url: "/concept_uninstall_smi_s_provider.html"
     entries:
@@ -58,28 +58,28 @@ sidebar:
     entries:
     - title: Verifying the CIM server status
       url: "/task_verifying_the_cim_server_status.html"
-    - title: Adding a CIM server user
-      url: "/task_adding_cim_server_users.html"
+    - title: Add a CIM server user
+      url: "/task_add_cim_server_users.html"
     - title: Verifying that the storage system is working correctly
       url: "/task_verifying_that_the_storage_system_is_working_correctly.html"
-    - title: Generating a self-signed certificate for the CIM server
-      url: "/task_generating_a_self_signed_certificate_for_the_cim_server_windows.html"
+    - title: Generate a self-signed certificate for the CIM server
+      url: "/task_generate_a_self_signed_certificate_for_the_cim_server_windows.html"
   - title: Managing the CIM server
     url: "/task_managing_the_cim_server.html"
   - title: Managing storage systems
     url: "/task_managing_storage_systems.html"
-  - title: Managing CIM server users
-    url: "/task_managing_cim_server_users.html"
+  - title: Manage CIM server users
+    url: "/task_manage_cim_server_users.html"
     entries:
     - title: Types of CIM users and associated operations
       url: "/reference_types_of_cim_users_and_associated_operations.html"
-  - title: Managing CIMOM configuration settings
-    url: "/task_managing_cimom_configuration_settings.html"
+  - title: Manage CIMOM configuration settings
+    url: "/task_manage_cimom_configuration_settings.html"
   - title: Manage logging and tracing
     url: "/concept_manage_logging_and_tracing.html"
     entries:
-    - title: Configuring log settings
-      url: "/task_configuring_log_settings.html"
+    - title: Configure log settings
+      url: "/task_configure_log_settings.html"
       entries:
       - title: Logging levels
         url: "/reference_logging_levels.html"
@@ -95,8 +95,8 @@ sidebar:
         url: "/task_specifying_trace_file_size.html"
       - title: Specifying the number of trace files saved
         url: "/task_specifying_the_number_of_trace_files_saved.html"
-    - title: Enabling or disabling audit logging for SMI-S commands
-      url: "/task_enabling_or_disabling_audit_logging_for_smi_s_commands.html"
+    - title: Enable or disable audit log for SMI-S commands
+      url: "/task_enable_or_disable_audit_log_for_smi_s_commands.html"
   - title: Manage SMI-S Provider advanced settings
     url: "/concept_manage_smi_s_agent_advanced_settings.html"
     entries:
@@ -108,10 +108,10 @@ sidebar:
       url: "/task_specifying_the_ontapi_timeout_value.html"
     - title: Specifying the maximum number of threads per message service queue
       url: "/task_specifying_the_maximum_number_of_threads_per_message_service_queue.html"
-    - title: Enabling or disabling authentication for NetApp SMI-S Provider
-      url: "/task_enabling_or_disabling_authentication_for_smi_s_provider.html"
-    - title: Enabling indications in SMI-S Provider
-      url: "/task_enabling_indications_in_smi_s_agent.html"
+    - title: Enable or disable authentication for NetApp SMI-S Provider
+      url: "/task_enable_or_disable_authentication_for_smi_s_provider.html"
+    - title: Enable indications in SMI-S Provider
+      url: "/task_enable_indications_in_smi_s_agent.html"
   - title: Manage SLP
     url: "/concept_manage_slp.html"
     entries:

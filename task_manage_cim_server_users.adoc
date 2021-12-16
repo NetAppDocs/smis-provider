@@ -1,10 +1,10 @@
 ---
-permalink: task_managing_cim_server_users.html
+permalink: task_manage_cim_server_users.html
 sidebar: sidebar
 keywords: smi-s provider, add, remove, remove, cim users, authorized, cim server, cim user, password, modify
 summary: "You can use SMI-S Provider to add and remove CIM users that are authorized to use the CIM server. You can also list all current CIM users and modify their passwords."
 ---
-= Managing CIM server users
+= Manage CIM server users
 :icons: font
 :imagesdir: ./media/
 

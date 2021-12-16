@@ -1,10 +1,10 @@
 ---
-permalink: task_generating_a_self_signed_certificate_for_the_cim_server_windows.html
+permalink: task_generate_a_self_signed_certificate_for_the_cim_server_windows.html
 sidebar: sidebar
 keywords: ssl authentication, enable, cim server, installation, self-signed certificate
 summary: "By default, SSL authentication is enabled for the CIM server. During the SMI-S Provider installation, a self-signed certificate for the CIM server is installed in the pegasus directory. You can generate your own self-signed certificate and use it rather than the default certificate."
 ---
-= Generating a self-signed certificate for the CIM server
+= Generate a self-signed certificate for the CIM server
 :icons: font
 :imagesdir: ./media/
 

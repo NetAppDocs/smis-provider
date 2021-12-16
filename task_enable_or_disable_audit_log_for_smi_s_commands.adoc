@@ -1,10 +1,10 @@
 ---
-permalink: task_enabling_or_disabling_audit_logging_for_smi_s_commands.html
+permalink: task_enable_or_disable_audit_log_for_smi_s_commands.html
 sidebar: sidebar
 keywords: incoming smi-s command, record, log files, auditor, wbem client
 summary: "All incoming SMI-S commands are recorded in audit log files, which enables auditors to track activities of WBEM client operations and provider use. You can enable or disable the logging of these incoming commands by setting a dynamic configuration property."
 ---
-= Enabling or disabling audit logging for SMI-S commands
+= Enable or disable audit log for SMI-S commands
 :icons: font
 :imagesdir: ./media/
 

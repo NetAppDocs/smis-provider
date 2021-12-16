@@ -1,10 +1,10 @@
 ---
-permalink: task_adding_cim_server_users.html
+permalink: task_add_cim_server_users.html
 sidebar: sidebar
 keywords: validate, storage systems, cim user, cim server
 summary: "Before you can validate the storage system, you must add a CIM user authorized to use the CIM server."
 ---
-= Adding a CIM server user
+= Add a CIM server user
 :icons: font
 :imagesdir: ./media/
 

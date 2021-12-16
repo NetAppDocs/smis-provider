@@ -1,10 +1,10 @@
 ---
-permalink: task_enabling_indications_in_smi_s_agent.html
+permalink: task_enable_indications_in_smi_s_agent.html
 sidebar: sidebar
 keywords: netApp smi-s provider, lifecycle, disable, default, indication
 summary: "Alert, FileSystem Quota, and Lifecycle indications are disabled by default. You can enable these indications by setting the environment variable PEGASUS_DISABLE_INDICATIONS to false."
 ---
-= Enabling indications in SMI-S Provider
+= Enable indications in SMI-S Provider
 :icons: font
 :imagesdir: ./media/
 

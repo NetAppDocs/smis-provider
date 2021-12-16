@@ -1,10 +1,10 @@
 ---
-permalink: task_enabling_or_disabling_authentication_for_smi_s_provider.html
+permalink: task_enable_or_disable_authentication_for_smi_s_provider.html
 sidebar: sidebar
 keywords: smi-s provider, authentication, enable, errors, system, disable
 summary: "By default, authentication is enabled for SMI-S Provider. If authentication causes errors on your system, you can optionally disable it. If authentication has been disabled and you want to reenable it, you can do so."
 ---
-= Enabling or disabling authentication for NetApp SMI-S Provider
+= Enable or disable authentication for NetApp SMI-S Provider
 :icons: font
 :imagesdir: ./media/
 

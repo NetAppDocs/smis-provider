@@ -1,10 +1,10 @@
 ---
-permalink: task_managing_cimom_configuration_settings.html
+permalink: task_manage_cimom_configuration_settings.html
 sidebar: sidebar
 keywords: smi-s provider, to manage, cimom configuration, enable, disable, http, https, port numbers
 summary: "You can use SMI-S Provider to manage the CIMOM configuration, such as enabling or disabling HTTP and HTTPS connections and changing HTTP and HTTPS port numbers. By default, HTTP connections are enabled, allowing clients to connect to the CIM server without using SSL encryption."
 ---
-= Managing CIMOM configuration settings
+= Manage CIMOM configuration settings
 :icons: font
 :imagesdir: ./media/
 
