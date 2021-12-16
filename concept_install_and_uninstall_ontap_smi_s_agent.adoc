@@ -1,10 +1,10 @@
 ---
-permalink: concept_installing_and_uninstalling_ontap_smi_s_agent.html
+permalink: concept_install_and_uninstall_ontap_smi_s_agent.html
 sidebar: sidebar
 keywords: netapp, smis-provider, windows host, downgrade, earlier
 summary: "You can install NetApp SMI-S Provider on a Windows host. However, you cannot revert or downgrade to an earlier version."
 ---
-= Installing NetApp SMI-S Provider
+= Install NetApp SMI-S Provider
 :icons: font
 :imagesdir: ./media/
 

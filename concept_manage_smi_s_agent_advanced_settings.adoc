@@ -1,10 +1,10 @@
 ---
-permalink: concept_managing_smi_s_agent_advanced_settings.html
+permalink: concept_manage_smi_s_agent_advanced_settings.html
 sidebar: sidebar
-keywords: manage, advance, smis-provider, smis-s cache, refresh, interval, ontapi, timeout, thread, service, queue 
+keywords: manage, advance, smis-provider, smis-s cache, refresh, interval, ontapi, timeout, thread, service, queue
 summary: "You can manage advanced settings for SMI-S Provider, such as specifying the SMI-S cache refresh interval, ONTAPI timeout, and maximum number of threads per message service queue."
 ---
-= Managing SMI-S Provider advanced settings
+= Manage SMI-S Provider advanced settings
 :icons: font
 :imagesdir: ./media/
 

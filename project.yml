@@ -30,8 +30,8 @@ sidebar:
       url: "/concept_smi_s_profiles.html"
   - title: Deployment workflow
     url: "/concept_deployment_workflow.html"
-  - title: Preparing for deployment
-    url: "/concept_preparing_for_deployment.html"
+  - title: Prepare for deployment
+    url: "/concept_prepare_for_deployment.html"
     entries:
     - title: Supported operating system versions
       url: "/reference_supported_operating_systems.html"
@@ -43,13 +43,13 @@ sidebar:
       url: "/reference_supported_platforms.html"
     - title: Downloading the NetApp SMI-S Provider software package
       url: "/task_downloading_smi_s_provider.html"
-  - title: Installing NetApp SMI-S Provider
-    url: "/concept_installing_and_uninstalling_ontap_smi_s_agent.html"
+  - title: Install NetApp SMI-S Provider
+    url: "/concept_install_and_uninstall_ontap_smi_s_agent.html"
     entries:
     - title: Installing NetApp SMI-S Provider on a Windows host
       url: "/task_installing_smi_s_agent_on_a_windows_host.html"
-  - title: Uninstalling NetApp SMI-S Provider
-    url: "/concept_uninstalling_smi_s_provider.html"
+  - title: Uninstall NetApp SMI-S Provider
+    url: "/concept_uninstall_smi_s_provider.html"
     entries:
     - title: Uninstalling NetApp SMI-S Provider from a Windows host
       url: "/task_uninstalling_smi_s_agent_from_a_windows_host.html"
@@ -75,16 +75,16 @@ sidebar:
       url: "/reference_types_of_cim_users_and_associated_operations.html"
   - title: Managing CIMOM configuration settings
     url: "/task_managing_cimom_configuration_settings.html"
-  - title: Managing logging and tracing
-    url: "/concept_managing_logging_and_tracing.html"
+  - title: Manage logging and tracing
+    url: "/concept_manage_logging_and_tracing.html"
     entries:
     - title: Configuring log settings
       url: "/task_configuring_log_settings.html"
       entries:
       - title: Logging levels
         url: "/reference_logging_levels.html"
-    - title: Managing tracing
-      url: "/concept_managing_tracing.html"
+    - title: Manage tracing
+      url: "/concept_manage_tracing.html"
       entries:
       - title: Specifying trace settings
         url: "/task_specifying_trace_settings.html"
@@ -97,8 +97,8 @@ sidebar:
         url: "/task_specifying_the_number_of_trace_files_saved.html"
     - title: Enabling or disabling audit logging for SMI-S commands
       url: "/task_enabling_or_disabling_audit_logging_for_smi_s_commands.html"
-  - title: Managing SMI-S Provider advanced settings
-    url: "/concept_managing_smi_s_agent_advanced_settings.html"
+  - title: Manage SMI-S Provider advanced settings
+    url: "/concept_manage_smi_s_agent_advanced_settings.html"
     entries:
     - title: Specifying the SMI-S Provider automatic cache refresh interval
       url: "/task_specifying_the_smi_s_agent_cache_refresh_interval.html"
@@ -112,11 +112,11 @@ sidebar:
       url: "/task_enabling_or_disabling_authentication_for_smi_s_provider.html"
     - title: Enabling indications in SMI-S Provider
       url: "/task_enabling_indications_in_smi_s_agent.html"
-  - title: Managing SLP
-    url: "/concept_managing_slp.html"
+  - title: Manage SLP
+    url: "/concept_manage_slp.html"
     entries:
-    - title: Specifying SLP configuration options
-      url: "/concept_specifying_slp_configuration_options.html"
+    - title: Specify SLP configuration options
+      url: "/concept_specify_slp_configuration_options.html"
       entries:
       - title: slp.conf file management
         url: "/reference_editing_the_slp_conf_file.html"
@@ -184,8 +184,8 @@ sidebar:
       url: "/reference_slptool_findattrs.html"
     - title: slptool findsrvs
       url: "/reference_slptool_findsrvs.html"
-  - title: Troubleshooting SMI-S Provider
-    url: "/concept_troubleshooting_smi_s_agent.html"
+  - title: Troubleshoot SMI-S Provider
+    url: "/concept_troubleshoot_smi_s_agent.html"
     entries:
     - title: Access is denied error
       url: "/reference_access_is_denied_error.html"
@@ -209,10 +209,10 @@ sidebar:
       url: "/reference_handling_smi_s_agent_crashes_in_windows.html"
     - title: Issue entering passwords containing special characters
       url: "/reference_entering_passwords_containing_special_characters.html"
-    - title: Cloning technology used in SMI-S Provider
-      url: "/concept_cloning_technology_used_in_smi_s_agent_4_0.html"
-    - title: Confirming visibility of important objects
-      url: "/concept_confirming_visibility_of_important_objects.html"
+    - title: Clone technology used in SMI-S Provider
+      url: "/concept_clone_technology_used_in_smi_s_agent_4_0.html"
+    - title: Confirm visibility of important objects
+      url: "/concept_confirm_visibility_of_important_objects.html"
     - title: Requirement for using fileshares on Windows
       url: "/concept_requirement_for_using_fileshares_in_windows.html"
     - title: Nondefault firewalls must have ports manually added as exceptions
