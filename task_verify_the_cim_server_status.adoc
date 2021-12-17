@@ -1,10 +1,10 @@
 ---
-permalink: task_verifying_the_cim_server_status.html
+permalink: task_verify_the_cim_server_status.html
 sidebar: sidebar
 keywords: install, netapp smi-s provider, verify, cim server, automatic, access
 summary: "After installing NetApp SMI-S Provider, you must verify that the CIM server automatically started after you access SMI-S Provider."
 ---
-= Verifying the CIM server status
+= Verify the CIM server status
 :icons: font
 :imagesdir: ./media/
 

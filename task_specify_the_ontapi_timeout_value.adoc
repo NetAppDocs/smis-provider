@@ -1,10 +1,10 @@
 ---
-permalink: task_specifying_the_ontapi_timeout_value.html
+permalink: task_specify_the_ontapi_timeout_value.html
 sidebar: sidebar
 keywords: smi-s provider, ontap api, calls, storage systems, ontapi, default, 300 sec
 summary: "SMI-S Provider makes ONTAP API (ONTAPI) calls to storage systems. By default, the ONTAPI timeout is 300 seconds. You can set the timeout to a value from 60 to 300 seconds."
 ---
-= Specifying the ONTAPI timeout value
+= Specify the ONTAPI timeout value
 :icons: font
 :imagesdir: ./media/
 

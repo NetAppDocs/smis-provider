@@ -1,10 +1,10 @@
 ---
-permalink: task_specifying_the_maximum_number_of_threads_per_message_service_queue.html
+permalink: task_specify_the_maximum_number_of_threads_per_message_service_queue.html
 sidebar: sidebar
 keywords: default, smi-s provider, 80 threads, per message, service queue, machine performance
 summary: "By default, SMI-S Provider allows 80 threads per message service queue. You can specify the maximum thread value as 1 through 5000. Increasing the maximum number of threads can impact the SMI-S Provider machine’s performance, so carefully consider whether you need to increase this value."
 ---
-= Specifying the maximum number of threads per message service queue
+= Specify the maximum number of threads per message service queue
 :icons: font
 :imagesdir: ./media/
 

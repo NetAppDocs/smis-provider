@@ -51,23 +51,23 @@ sidebar:
   - title: Uninstall NetApp SMI-S Provider
     url: "/concept_uninstall_smi_s_provider.html"
     entries:
-    - title: Uninstalling NetApp SMI-S Provider from a Windows host
-      url: "/task_uninstalling_smi_s_agent_from_a_windows_host.html"
+    - title: Uninstall NetApp SMI-S Provider from a Windows host
+      url: "/task_uninstall_smi_s_agent_from_a_windows_host.html"
   - title: Preconfiguration validation
     url: "/concept_preconfiguration_task_overview.html"
     entries:
-    - title: Verifying the CIM server status
-      url: "/task_verifying_the_cim_server_status.html"
+    - title: Verify the CIM server status
+      url: "/task_verify_the_cim_server_status.html"
     - title: Add a CIM server user
       url: "/task_add_cim_server_users.html"
-    - title: Verifying that the storage system is working correctly
-      url: "/task_verifying_that_the_storage_system_is_working_correctly.html"
+    - title: Verify that the storage system is working correctly
+      url: "/task_verify_that_the_storage_system_is_working_correctly.html"
     - title: Generate a self-signed certificate for the CIM server
       url: "/task_generate_a_self_signed_certificate_for_the_cim_server_windows.html"
-  - title: Managing the CIM server
-    url: "/task_managing_the_cim_server.html"
-  - title: Managing storage systems
-    url: "/task_managing_storage_systems.html"
+  - title: Manage the CIM server
+    url: "/task_manage_the_cim_server.html"
+  - title: Manage storage systems
+    url: "/task_manage_storage_systems.html"
   - title: Manage CIM server users
     url: "/task_manage_cim_server_users.html"
     entries:
@@ -86,28 +86,28 @@ sidebar:
     - title: Manage tracing
       url: "/concept_manage_tracing.html"
       entries:
-      - title: Specifying trace settings
-        url: "/task_specifying_trace_settings.html"
+      - title: Specify trace settings
+        url: "/task_specify_trace_settings.html"
         entries:
         - title: Trace setting values
           url: "/reference_trace_setting_values.html"
-      - title: Specifying trace file size
-        url: "/task_specifying_trace_file_size.html"
-      - title: Specifying the number of trace files saved
-        url: "/task_specifying_the_number_of_trace_files_saved.html"
+      - title: Specify trace file size
+        url: "/task_specify_trace_file_size.html"
+      - title: Specify the number of trace files saved
+        url: "/task_specify_the_number_of_trace_files_saved.html"
     - title: Enable or disable audit log for SMI-S commands
       url: "/task_enable_or_disable_audit_log_for_smi_s_commands.html"
   - title: Manage SMI-S Provider advanced settings
     url: "/concept_manage_smi_s_agent_advanced_settings.html"
     entries:
-    - title: Specifying the SMI-S Provider automatic cache refresh interval
-      url: "/task_specifying_the_smi_s_agent_cache_refresh_interval.html"
-    - title: Specifying the concrete job lifetime value
-      url: "/task_specifying_the_concrete_job_lifetime_value.html"
-    - title: Specifying the ONTAPI timeout value
-      url: "/task_specifying_the_ontapi_timeout_value.html"
-    - title: Specifying the maximum number of threads per message service queue
-      url: "/task_specifying_the_maximum_number_of_threads_per_message_service_queue.html"
+    - title: Specify the SMI-S Provider automatic cache refresh interval
+      url: "/task_specify_the_smi_s_agent_cache_refresh_interval.html"
+    - title: Specify the concrete job lifetime value
+      url: "/task_specify_the_concrete_job_lifetime_value.html"
+    - title: Specify the ONTAPI timeout value
+      url: "/task_specify_the_ontapi_timeout_value.html"
+    - title: Specify the maximum number of threads per message service queue
+      url: "/task_specify_the_maximum_number_of_threads_per_message_service_queue.html"
     - title: Enable or disable authentication for NetApp SMI-S Provider
       url: "/task_enable_or_disable_authentication_for_smi_s_provider.html"
     - title: Enable indications in SMI-S Provider

@@ -1,10 +1,10 @@
 ---
-permalink: task_managing_storage_systems.html
+permalink: task_manage_storage_systems.html
 sidebar: sidebar
 keywords: smis-provider, commands, add, delete, list, storage, systems, cimom repository
 summary: "You can use NetApp SMI-S Provider commands to add, delete, and list storage systems in the CIMOM repository. You can also list NFS and CIFS exports and exported LUNs for storage systems."
 ---
-= Managing storage systems
+= Manage storage systems
 :icons: font
 :imagesdir: ./media/
 

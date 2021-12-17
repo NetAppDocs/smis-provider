@@ -1,10 +1,10 @@
 ---
-permalink: task_specifying_trace_file_size.html
+permalink: task_specify_trace_file_size.html
 sidebar: sidebar
 keywords: trace, enable, trace, file, size, environment, variable, 10 mb
 summary: "If tracing is enabled, the maximum trace file size is 100 MB by default. You can increase or decrease the maximum trace file size by setting the environment variable PEGASUS_TRACE_FILE_SIZE. The value of the trace file size can be 10 MB through 2 GB."
 ---
-= Specifying trace file size
+= Specify trace file size
 :icons: font
 :imagesdir: ./media/
 

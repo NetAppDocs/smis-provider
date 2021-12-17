@@ -1,10 +1,10 @@
 ---
-permalink: task_specifying_the_smi_s_agent_cache_refresh_interval.html
+permalink: task_specify_the_smi_s_agent_cache_refresh_interval.html
 sidebar: sidebar
 keywords: smi-s provider, automatic, retrieves, information, storage systems, 300 sec, cache, refresh
 summary: "By default, SMI-S Provider automatically retrieves information from storage systems every five minutes (300 seconds). You can set the automatic cache refresh interval (CACHE_REFRESH_SEC environment variable) to a value from 300 through 86400 seconds (24 hours)."
 ---
-= Specifying the SMI-S Provider automatic cache refresh interval
+= Specify the SMI-S Provider automatic cache refresh interval
 :icons: font
 :imagesdir: ./media/
 

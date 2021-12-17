@@ -1,5 +1,5 @@
 ---
-permalink: task_specifying_trace_settings.html
+permalink: task_specify_trace_settings.html
 sidebar: sidebar
 keywords: trace, enable, important, gathering, information, troubleshooting, performance, impact
 summary: "Having tracing enabled is important for gathering information for troubleshooting. However, having tracing enabled can impact performance, so carefully consider what must be traced and how long you need tracing enabled."

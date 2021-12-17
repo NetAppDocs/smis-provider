@@ -1,10 +1,10 @@
 ---
-permalink: task_managing_the_cim_server.html
+permalink: task_manage_the_cim_server.html
 sidebar: sidebar
 keywords: smi-s provider, start, stop, cim server, review, status
 summary: 'You can use SMI-S Provider to start, stop, and restart the CIM server and to review its status.'
 ---
-= Managing the CIM server
+= Manage the CIM server
 :icons: font
 :imagesdir: ./media/
 

@@ -1,10 +1,10 @@
 ---
-permalink: task_uninstalling_smi_s_agent_from_a_windows_host.html
+permalink: task_uninstall_smi_s_agent_from_a_windows_host.html
 sidebar: sidebar
 keywords: uninstall, smi-s provider, version, exiting, installation, uninstall, latest version
 summary: "You can uninstall SMI-S Provider as needed. For example, depending on the version of your existing installation, you might need to uninstall the existing installation of SMI-S Provider before you can install the latest version."
 ---
-= Uninstalling NetApp SMI-S Provider from a Windows host
+= Uninstall NetApp SMI-S Provider from a Windows host
 :icons: font
 :imagesdir: ./media/
 

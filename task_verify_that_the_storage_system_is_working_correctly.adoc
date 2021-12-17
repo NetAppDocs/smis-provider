@@ -1,10 +1,10 @@
 ---
-permalink: task_verifying_that_the_storage_system_is_working_correctly.html
+permalink: task_verify_that_the_storage_system_is_working_correctly.html
 sidebar: sidebar
 keywords: smi-s provider, configure, least storage, cimom repository storage, working, correctly
 summary: "Before SMI-S Provider can be configured, you must add at least one storage system to the CIMOM repository, and then verify that the storage system is working correctly."
 ---
-= Verifying that the storage system is working correctly
+= Verify that the storage system is working correctly
 :icons: font
 :imagesdir: ./media/
 

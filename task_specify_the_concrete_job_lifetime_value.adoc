@@ -1,10 +1,10 @@
 ---
-permalink: task_specifying_the_concrete_job_lifetime_value.html
+permalink: task_specify_the_concrete_job_lifetime_value.html
 sidebar: sidebar
 keywords: smi-s provider, asynchronous, operation, concrete job, increase, lifetime, 60 minutes, 24 hours
 summary: "SMI-S Provider tracks the progress of asynchronous operations by creating concrete jobs. You can increase the concrete job lifetime from the default of 60 minutes (3600 seconds) to a value through 86400 seconds (24 hours)."
 ---
-= Specifying the concrete job lifetime value
+= Specify the concrete job lifetime value
 :icons: font
 :imagesdir: ./media/
 
