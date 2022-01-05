@@ -1,8 +1,8 @@
 ---
 permalink: reference_smb_share_size_dropping_to_0_in_scvmm.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = SMB share size dropping to 0 in SCVMM
 :icons: font

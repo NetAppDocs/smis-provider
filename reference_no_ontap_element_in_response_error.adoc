@@ -1,8 +1,8 @@
 ---
 permalink: reference_no_ontap_element_in_response_error.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = Filer return: No ontap element in response
 :icons: font
@@ -19,7 +19,3 @@ This message occurs when the ONTAPI API times out. The default ONTAPI API timeou
 * *Corrective action*
 +
 Change the ONTAPI API timeout to a value greater than 60 seconds by setting the environment variable `ONTAPI_TIMEOUT_SEC`, and then restart SMI-S Provider.
-
-*Related information*
-
-xref:task_specifying_the_ontapi_timeout_value.adoc[Specifying the ONTAPI timeout value]

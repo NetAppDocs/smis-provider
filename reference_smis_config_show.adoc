@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_config_show.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis config show command lists the current CIM server configuration information.'
+keywords: smis config show, list, current cim server, configuration, information
+summary: "The smis config show command lists the current CIM server configuration information."
 ---
 = smis config show
 :icons: font
@@ -13,10 +13,7 @@ The `smis config show` command lists the current CIM server configuration inform
 
 == Syntax
 
-----
-
-        smis config show
-----
+`smis config show`
 
 == Location
 

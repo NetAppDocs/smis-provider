@@ -1,8 +1,8 @@
 ---
 permalink: reference_network_path_not_found_error_during_vm_deployment.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = Network path not found
 :icons: font

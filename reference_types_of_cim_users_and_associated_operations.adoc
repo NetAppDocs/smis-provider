@@ -1,8 +1,8 @@
 ---
 permalink: reference_types_of_cim_users_and_associated_operations.html
 sidebar: sidebar
-keywords: 
-summary: 'When using SMI-S Provider, there are various types of user that you can assign to a user to control their access to the CIM server.'
+keywords: smi-s provider, various types, control, access
+summary: "When using SMI-S Provider, there are various types of user that you can assign to a user to control their access to the CIM server."
 ---
 = Types of CIM users and associated operations
 :icons: font
@@ -15,11 +15,12 @@ Starting with this release, the Domain user is allowed to modify the SMI-S Provi
 
 The following table lists the supported users of the CIM server and the operations that each type can perform.
 
+[cols="2*",options="header"]
 |===
-| Type of user| Operations
+|Type of user| Operations
 a|
 Domain administrator of the Administrators group
-a|
+.5+a|
 SMI-S Provider configuration and user management using `cimconfig` and `cimuser` commands. For example:
 
 * Add or remove a user to or from the trust store of SMI-S Provider.
@@ -33,7 +34,6 @@ Storage management and verification using `smis` and `cimcli` commands. For exam
 * Verify storage controller or SVM management.
 
 SCVMM discovery operations using the SCVMM GUI.
-
 a|
 Domain user of the Local Administrators group
 a|
@@ -44,7 +44,7 @@ a|
 Built-in Local Administrator user
 a|
 Domain user of the Users group
-a|
+.2+a|
 SCVMM discovery operations using the SCVMM GUI.
 a|
 Local user of the Users group

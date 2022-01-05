@@ -1,8 +1,8 @@
 ---
 permalink: reference_smi_s_agent_takes_a_long_time_to_start.html
 sidebar: sidebar
-keywords: NetApp SMI-S Provider
-summary: ''
+keywords: netapp smi-s provider
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = NetApp SMI-S Provider takes a long time to start
 :icons: font

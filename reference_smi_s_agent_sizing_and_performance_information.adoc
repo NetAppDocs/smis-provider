@@ -1,8 +1,8 @@
 ---
 permalink: reference_smi_s_agent_sizing_and_performance_information.html
 sidebar: sidebar
-keywords: Vserver
-summary: 'Knowing the maximum number of systems managed by NetApp SMI-S Provider helps you understand its performance capabilities.'
+keywords: maximum, systems, netapp smi-s provider, help, understand, performance, capability
+summary: "Knowing the maximum number of systems managed by NetApp SMI-S Provider helps you understand its performance capabilities."
 ---
 = NetApp SMI-S Provider sizing and performance
 :icons: font
@@ -31,7 +31,3 @@ For configurations with 5,000 FlexVol volumes or 300,000 Snapshot copies, you mi
 * `cimcli ei ONTAP_StorageVolumeStats -n root/ontap`
 
 The Interoperability Matrix Tool (IMT) contains the latest information about sizing and performance.
-
-*Related information*
-
-https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]

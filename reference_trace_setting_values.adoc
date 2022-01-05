@@ -1,8 +1,8 @@
 ---
 permalink: reference_trace_setting_values.html
 sidebar: sidebar
-keywords: 
-summary: 'You can specify the components to trace, the trace target, and the level of tracing. Optionally, you can change the name and location of the trace file if you do not want to use the default trace file name and location.'
+keywords: specify, comments, trace, target, change, location
+summary: "You can specify the components to trace, the trace target, and the level of tracing. Optionally, you can change the name and location of the trace file if you do not want to use the default trace file name and location."
 ---
 = Trace setting values
 :icons: font
@@ -37,6 +37,8 @@ Specifies the location of the trace file. By default, the trace is file is named
 +
 Specifies the level of tracing. By default, tracing is disabled.
 +
+
+[cols="2*",options="header"]
 |===
 | Trace level| Trace messages written
 a|
@@ -64,11 +66,3 @@ a|
 a|
 High data detail + Method enter and exit
 |===
-
-*Related information*
-
-xref:task_specifying_trace_settings.adoc[Specifying trace settings]
-
-xref:task_specifying_trace_file_size.adoc[Specifying trace file size]
-
-xref:task_specifying_the_number_of_trace_files_saved.adoc[Specifying the number of trace files saved]

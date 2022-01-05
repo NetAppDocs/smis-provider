@@ -1,8 +1,8 @@
 ---
 permalink: reference_connection_refused_error.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = Connection refused
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: reference_cimuser_command_options.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the cimuser options to add, remove, modify, and list CIM server users.'
+keywords: cimuser, options, add, remove, modify, list, cim server
+summary: "You can use the cimuser options to add, remove, modify, and list CIM server users."
 ---
 = cimuser
 :icons: font
@@ -13,10 +13,7 @@ You can use the `cimuser` options to add, remove, modify, and list CIM server us
 
 == Syntax
 
-----
-
-        cimuser options
-----
+`cimuser _options_`
 
 == Location
 

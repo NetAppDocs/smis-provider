@@ -1,8 +1,8 @@
 ---
 permalink: reference_clone_snapshot_operations_are_not_allowed.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = Clone/Snapshot operations are not allowed
 :icons: font

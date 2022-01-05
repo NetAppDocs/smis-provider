@@ -1,8 +1,8 @@
 ---
 permalink: reference_vm_provisioning_in_scvmm_fails_with_insufficient_system_resources_error.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = Insufficient system resources exist to complete the requested service
 :icons: font
@@ -22,4 +22,6 @@ The default value of `Max Same User Session Per Connection` is 50. This limit bl
 
 * *Corrective action*
 +
-Increase the counter that controls the maximum number of sessions on the same connection for CIFS protocol. For example, the following command changes the maximum user sessions on the same connection from the default 50 to 100:``SVM::*> cifs op modify -max-same-user-sessions-per-connection 100``
+Increase the counter that controls the maximum number of sessions on the same connection for CIFS protocol. For example, the following command changes the maximum user sessions on the same connection from the default 50 to 100:
++
+`*SVM::***> cifs op modify -max-same-user-sessions-per-connection 100*`

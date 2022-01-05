@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_licensed.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis licensed command lists the licensed features for storage systems.'
+keywords: smis licensed, command, lists, licensed, storage systems
+summary: "The smis licensed command lists the licensed features for storage systems."
 ---
 = smis licensed
 :icons: font
@@ -13,11 +13,9 @@ The `smis licensed` command lists the licensed features for storage systems.
 
 == Syntax
 
-----
+smis licensed
 
-        smis licensed
- \[-t \{http | https\}\]
-----
+`[-t {*http* | *https*}]`
 
 == Location
 
@@ -29,7 +27,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 

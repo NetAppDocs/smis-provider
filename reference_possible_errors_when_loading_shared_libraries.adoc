@@ -1,8 +1,8 @@
 ---
 permalink: reference_possible_errors_when_loading_shared_libraries.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = Possible errors while loading shared libraries
 :icons: font

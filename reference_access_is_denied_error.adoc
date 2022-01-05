@@ -1,8 +1,8 @@
 ---
 permalink: reference_access_is_denied_error.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = Access is denied error
 :icons: font

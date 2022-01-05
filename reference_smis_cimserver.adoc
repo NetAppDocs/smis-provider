@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_cimserver.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis cimserver command starts, stops, restarts, or gets the status of the CIM server.'
+keywords: smis cimserver, command, start, stop, restart, cim server
+summary: "The smis cimserver command starts, stops, restarts, or gets the status of the CIM server."
 ---
 = smis cimserver
 :icons: font
@@ -13,11 +13,10 @@ The `smis cimserver` command starts, stops, restarts, or gets the status of the 
 
 == Syntax
 
-----
+`smis cimserver`
 
-        smis cimserver
- \{start | stop | restart | status\}
-----
+`{*start* | *stop* | *restart* | *status*}`
+
 
 == Location
 

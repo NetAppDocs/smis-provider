@@ -1,8 +1,8 @@
 ---
 permalink: reference_required_licenses.html
 sidebar: sidebar
-keywords: SMI-S Provider
-summary: 'To use NetApp SMI-S Provider, you must have the required licenses.'
+keywords: smi-s provider, required, license
+summary: "To use NetApp SMI-S Provider, you must have the required licenses."
 ---
 = Required licenses
 :icons: font

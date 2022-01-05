@@ -1,8 +1,8 @@
 ---
 permalink: reference_slptool_command_options.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use these options with the slptool command.'
+keywords: slptool, command
+summary: "You can use these options with the slptool command."
 ---
 = slptool
 :icons: font
@@ -13,10 +13,7 @@ You can use these options with the `slptool` command.
 
 == Syntax
 
-----
-
-        slptool \[options\] subcommand
-----
+`slptool [options] _subcommand_`
 
 == Location
 

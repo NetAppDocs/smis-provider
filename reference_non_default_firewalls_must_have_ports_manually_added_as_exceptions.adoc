@@ -1,8 +1,8 @@
 ---
 permalink: reference_non_default_firewalls_must_have_ports_manually_added_as_exceptions.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = Nondefault firewalls must have ports manually added as exceptions
 :icons: font
