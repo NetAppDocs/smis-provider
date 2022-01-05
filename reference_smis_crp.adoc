@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_crp.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis crp command describes CIM-registered profiles supported by NetApp SMI-S Provider, including NetApp SMI-S Provider profiles.'
+keywords: smis crp, command, describe, cim registered, profile, netapp smi-s provider
+summary: "The smis crp command describes CIM-registered profiles supported by NetApp SMI-S Provider, including NetApp SMI-S Provider profiles."
 ---
 = smis crp
 :icons: font
@@ -13,11 +13,9 @@ The `smis crp` command describes CIM-registered profiles supported by NetApp SMI
 
 == Syntax
 
-----
+smis crp
 
-        smis crp
- \[-t \{http | https\}\]
-----
+`[-t {*http* | *https*}]`
 
 == Location
 
@@ -29,7 +27,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 

@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_initiators.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis initiators command displays Fibre Channel and iSCSI port information for storage systems.'
+keywords: smis initiators, display, fibre channel, iscsi, storage systems
+summary: "The smis initiators command displays Fibre Channel and iSCSI port information for storage systems."
 ---
 = smis initiators
 :icons: font
@@ -13,11 +13,9 @@ The `smis initiators` command displays Fibre Channel and iSCSI port information 
 
 == Syntax
 
-----
+smis initiators
 
-        smis initiators
- \[-t \{http | https\}\]
-----
+`[-t {*http* | *https*}]`
 
 == Location
 
@@ -29,7 +27,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 

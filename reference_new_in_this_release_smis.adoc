@@ -1,8 +1,8 @@
 ---
 permalink: reference_new_in_this_release_smis.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: new, release 
+summary: 'New in this release'
 ---
 = New in this release
 :icons: font

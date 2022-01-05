@@ -1,8 +1,8 @@
 ---
 permalink: reference_no_response_from_the_server.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = No response from the server
 :icons: font
@@ -24,4 +24,4 @@ Enter the following command to verify that a storage system is added:
 +
 If there is no storage system listed, add a storage system by entering the following command:
 +
-`smis add storage_sys storage_sys_user storage_sys_pwd`
+`smis add _storage_sys storage_sys_user storage_sys_pwd_`

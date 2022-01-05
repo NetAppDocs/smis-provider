@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_pools.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis pools command lists the storage pools for storage systems.'
+keywords: smis pools, command, list, storage, pools
+summary: "The smis pools command lists the storage pools for storage systems."
 ---
 = smis pools
 :icons: font
@@ -13,11 +13,9 @@ The `smis pools` command lists the storage pools for storage systems.
 
 == Syntax
 
-----
+`smis pools`
 
-        smis pools
- \[-t \{http | https\}\]
-----
+`[-t {*http* | *https*}]`
 
 == Location
 
@@ -29,7 +27,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 

@@ -1,8 +1,8 @@
 ---
 permalink: reference_slptool_findattrs.html
 sidebar: sidebar
-keywords: 
-summary: 'The slptool findattrs command finds WBEM attributes that run on a network.'
+keywords: slptool, findattrs, command, wbem attributes, run, network
+summary: "The slptool findattrs command finds WBEM attributes that run on a network."
 ---
 = slptool findattrs
 :icons: font
@@ -13,10 +13,7 @@ The `slptool findattrs` command finds WBEM attributes that run on a network.
 
 == Syntax
 
-----
-
-        slptool findattrs service
-----
+`slptool findattrs _service_`
 
 == Location
 
@@ -28,7 +25,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *`service`*
+* `*_service_*`
 +
 Specifies the service type.
 

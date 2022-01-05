@@ -1,8 +1,8 @@
 ---
 permalink: reference_logging_levels.html
 sidebar: sidebar
-keywords: 
-summary: 'You can specify the types of messages that are logged \(for example, you want only fatal system messages to be logged\).'
+keywords: messages, specify, logged
+summary: "You can specify the types of messages that are logged (for example, you want only fatal system messages to be logged)."
 ---
 = Logging levels
 :icons: font

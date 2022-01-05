@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_volumes.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis volumes command lists the traditional and flexible volumes for storage systems.'
+keywords: smis volume, command, list, traditional, storage systems
+summary: "The smis volumes command lists the traditional and flexible volumes for storage systems."
 ---
 = smis volumes
 :icons: font
@@ -13,11 +13,10 @@ The `smis volumes` command lists the traditional and flexible volumes for storag
 
 == Syntax
 
-----
+`smis volumes`
 
-        smis volumes
- \[-t \{http | https\}\]
-----
+`[-t {*http* | *https*}]`
+
 
 [NOTE]
 ====
@@ -34,7 +33,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 

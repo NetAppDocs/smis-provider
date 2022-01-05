@@ -1,8 +1,8 @@
 ---
 permalink: reference_data_ontap_smi_s_agent_protocols.html
 sidebar: sidebar
-keywords: 
-summary: 'NetApp SMI-S Provider uses CIM-XML encoding over HTTPS and Service Location Protocol \(SLP\).'
+keywords: netapp smi-s provider, cim-xml, encoding, https, service, location, protocol
+summary: "NetApp SMI-S Provider uses CIM-XML encoding over HTTPS and Service Location Protocol (SLP)."
 ---
 = NetApp SMI-S Provider protocols
 :icons: font

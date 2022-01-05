@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_crsp.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis crsp command describes CIM-registered subprofiles supported by NetApp SMI-S Provider, including NetApp SMI-S Provider subprofiles.'
+keywords: smis crsp, cim-resgistered subprofiles, netapp smi-s provider
+summary: "The smis crsp command describes CIM-registered subprofiles supported by NetApp SMI-S Provider, including NetApp SMI-S Provider subprofiles."
 ---
 = smis crsp
 :icons: font
@@ -13,11 +13,9 @@ The `smis crsp` command describes CIM-registered subprofiles supported by NetApp
 
 == Syntax
 
-----
+smis crsp
 
-        smis crsp
- \[-t \{http | https\}\]
-----
+`[-t {*http* | *https*}]`
 
 == Location
 
@@ -29,7 +27,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 

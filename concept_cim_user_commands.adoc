@@ -1,8 +1,8 @@
 ---
 permalink: concept_cim_user_commands.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the cimuser command to add, delete, and list CIM server users, as well as manage their passwords.'
+keywords: cimuser, command, add, delete, list, cim server, manage, password
+summary: "You can use the cimuser command to add, delete, and list CIM server users, as well as manage their passwords."
 ---
 = CIM user commands
 :icons: font

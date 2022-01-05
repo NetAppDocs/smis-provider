@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_exports.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis exports command displays Network Attached Storage \(NAS\) exports for storage systems.'
+keywords: smis exports, command display, network attached storage
+summary: "The smis exports command displays Network Attached Storage (NAS) exports for storage systems."
 ---
 = smis exports
 :icons: font
@@ -13,11 +13,8 @@ The `smis exports` command displays Network Attached Storage (NAS) exports for s
 
 == Syntax
 
-----
-
-        smis exports
- \[-t \{http | https\}\]
-----
+smis exports
+`[-t {*http* | *https*}]`
 
 == Location
 
@@ -29,7 +26,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 

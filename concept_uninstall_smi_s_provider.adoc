@@ -1,0 +1,12 @@
+---
+permalink: concept_uninstall_smi_s_provider.html
+sidebar: sidebar
+keywords: uninstalling, smi-s provider, version, existing installation, latest version
+summary: "You can uninstall SMI-S Provider as needed. For example, depending on the version of your existing installation, you might need to uninstall the existing installation of SMI-S Provider before you can install the latest version."
+---
+= Uninstall NetApp SMI-S Provider
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You can uninstall SMI-S Provider as needed. For example, depending on the version of your existing installation, you might need to uninstall the existing installation of SMI-S Provider before you can install the latest version.

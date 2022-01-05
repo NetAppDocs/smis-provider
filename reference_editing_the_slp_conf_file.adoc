@@ -1,8 +1,8 @@
 ---
 permalink: reference_editing_the_slp_conf_file.html
 sidebar: sidebar
-keywords: 
-summary: 'The slp.conf configuration file provides additional options that enable you to manage a service location protocol daemon \(SLPD\) server.'
+keywords: slp.conf, configuration, additional options, manage, service location,daemon (SLPD) server
+summary: "The slp.conf configuration file provides additional options that enable you to manage a service location protocol daemon (SLPD) server."
 ---
 = slp.conf file management
 :icons: font

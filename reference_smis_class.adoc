@@ -1,8 +1,8 @@
 ---
 permalink: reference_smis_class.html
 sidebar: sidebar
-keywords: 
-summary: 'The smis class command lists information about a specified class or all classes.'
+keywords: smis class, command, lists, information,
+summary: "The smis class command lists information about a specified class or all classes."
 ---
 = smis class
 :icons: font
@@ -13,11 +13,9 @@ The `smis class` command lists information about a specified class or all classe
 
 == Syntax
 
-----
+`smis class`
 
-        smis class
- name_space \{niall  \| \{ei | ni | gi | gc\} class_name}} \[-t \{http | https\}\]
-----
+`_name_space_ {*niall*  | {*ei* | *ni* | *gi* | *gc*} _class_name_}} [-t {*http* | *https*}]`
 
 == Location
 
@@ -29,7 +27,7 @@ A user with a valid user name and password
 
 == Parameters
 
-* *`name_space`*
+* `*_name_space_*`
 +
 Name space supported by the CIMOM
 
@@ -53,11 +51,11 @@ Get instances for a class
 +
 Get class for a class name
 
-* *`class_name`*
+* `*_class_name_*`
 +
 Name of the class for which you want information
 
-* *[`-t` {`http | https`}]*
+* `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 

@@ -1,8 +1,8 @@
 ---
 permalink: reference_total_managed_space_for_a_storage_pool_aggregate_discrepancy.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = Total managed space for a storage pool (volume) discrepancy
 :icons: font

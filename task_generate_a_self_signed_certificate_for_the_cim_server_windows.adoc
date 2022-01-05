@@ -1,0 +1,39 @@
+---
+permalink: task_generate_a_self_signed_certificate_for_the_cim_server_windows.html
+sidebar: sidebar
+keywords: ssl authentication, enable, cim server, installation, self-signed certificate
+summary: "By default, SSL authentication is enabled for the CIM server. During the SMI-S Provider installation, a self-signed certificate for the CIM server is installed in the pegasus directory. You can generate your own self-signed certificate and use it rather than the default certificate."
+---
+= Generate a self-signed certificate for the CIM server
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+By default, SSL authentication is enabled for the CIM server. During the SMI-S Provider installation, a self-signed certificate for the CIM server is installed in the `pegasus` directory. You can generate your own self-signed certificate and use it rather than the default certificate.
+
+== Before you begin
+
+* You must already have logged in as Administrator.
+* You must already have accessed SMI-S Provider.
+
+== Steps
+
+. Generate a private key:
++
+`*openssl genrsa -out cimom.key 2048*`
+. Generate a certificate request:
++
+`*openssl req -new -key cimom.key -out cimom.csr*`
+
+. Enter your information for the certificate request when prompted.
+. Generate the self-signed certificate:
++
+`*openssl x509 -in cimom.csr -out cimom.cert -req -signkey cimom.key -days 1095*`
++
+You can provide a different number of days for which the certificate is valid.
+
+. Copy the `cimom.key` and `cimom.cert` files to the `pegasus` directory (Windows: `C:\Program Files (x86)\NetApp\smis\pegasus`).
+
+== Result
+
+The certificate date range starts at the current date and runs for the number of days specified.

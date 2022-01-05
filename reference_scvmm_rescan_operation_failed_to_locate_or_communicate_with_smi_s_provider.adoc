@@ -1,8 +1,8 @@
 ---
 permalink: reference_scvmm_rescan_operation_failed_to_locate_or_communicate_with_smi_s_provider.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: troubleshooting, issue, encounter
+summary: "Issues encountered with NetApp SMI-S Provider."
 ---
 = SCVMM rescan operation failed to locate or communicate with SMI-S Provider
 :icons: font
