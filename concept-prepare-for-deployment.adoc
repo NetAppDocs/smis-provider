@@ -1,0 +1,12 @@
+---
+permalink: concept-prepare-for-deployment.html
+sidebar: sidebar
+keywords: netapp, smis-provider, verify, supported, operating system, platform, licenses, minimum, requirements
+summary: "Before you deploy NetApp SMI-S Provider, you must verify that you have a supported operating system and platform, that you have the required licenses, and that your hosts meet the minimum requirements."
+---
+= Prepare for deployment
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Before you deploy NetApp SMI-S Provider, you must verify that you have a supported operating system and platform, that you have the required licenses, and that your hosts meet the minimum requirements.

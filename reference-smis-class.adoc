@@ -1,0 +1,78 @@
+---
+permalink: reference-smis-class.html
+sidebar: sidebar
+keywords: smis class, command, lists, information,
+summary: "The smis class command lists information about a specified class or all classes."
+---
+= smis class
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `smis class` command lists information about a specified class or all classes.
+
+== Syntax
+
+`smis class`
+
+`_name_space_ {*niall*  | {*ei* | *ni* | *gi* | *gc*} _class_name_}} [-t {*http* | *https*}]`
+
+== Location
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+== Privilege level
+
+A user with a valid user name and password
+
+== Parameters
+
+* `*_name_space_*`
++
+Name space supported by the CIMOM
+
+* *niall*
++
+Enumerate all instance names
+
+* *ei*
++
+Enumerate instances for a class
+
+* *ni*
++
+Enumerate instance names for a class
+
+* *gi*
++
+Get instances for a class
+
+* *gc*
++
+Get class for a class name
+
+* `*_class_name_*`
++
+Name of the class for which you want information
+
+* `*[-t {http | https}]*`
++
+Protocol to be used: HTTPS (default) or HTTP
+
+== Example
+
+The `smis class` command and its abbreviated output:
+
+----
+smis class root/ontap gi CIM_StorageVolume
+1:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJdC-mN5",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+2:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJcmzpHt",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+3:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJc30t26",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+4:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJcSgbiT",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+5:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJcSgrA9",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+----

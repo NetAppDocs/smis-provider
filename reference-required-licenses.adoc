@@ -1,0 +1,18 @@
+---
+permalink: reference-required-licenses.html
+sidebar: sidebar
+keywords: smi-s provider, required, license
+summary: "To use NetApp SMI-S Provider, you must have the required licenses."
+---
+= Required licenses
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+To use NetApp SMI-S Provider, you must have the required licenses.
+
+The following licenses are required for NetApp SMI-S Provider:
+
+* FCP, iSCSI, or both FCP and iSCSI licenses are required for creating LUNs on the storage systems.
+* A CIFS license is required for creating file shares on supported ONTAP storage systems.
+* A FlexClone license is required to create LUN clones on clustered storage systems running supported ONTAP versions.

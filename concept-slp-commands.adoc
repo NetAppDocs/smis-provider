@@ -1,0 +1,12 @@
+---
+permalink: concept-slp-commands.html
+sidebar: sidebar
+keywords: slptool, command, display information, wbem services
+summary: "You can use the slptool command to display information about WBEM services."
+---
+= SLP commands
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You can use the `slptool` command to display information about WBEM services.
