@@ -1,0 +1,12 @@
+---
+permalink: concept-troubleshoot-smi-s-agent.html
+sidebar: sidebar
+keywords: encountering, problem, netapp smi-s provider, error message, troubleshooting
+summary: "If you encounter a problem with NetApp SMI-S Provider, you should use any error messages that you receive to help with troubleshooting."
+---
+= Troubleshoot SMI-S Provider
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+If you encounter a problem with NetApp SMI-S Provider, you should use any error messages that you receive to help with troubleshooting.

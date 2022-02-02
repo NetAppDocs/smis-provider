@@ -1,0 +1,42 @@
+---
+permalink: reference-hardware-requirements.html
+sidebar: sidebar
+keywords: smi-s provider, smi-s agent
+summary: "You must verify that the Windows host meets the minimum hardware requirements before installing NetApp SMI-S Provider."
+---
+= Hardware requirements
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You must verify that the Windows host meets the minimum hardware requirements before installing NetApp SMI-S Provider.
+
+[cols="2*",options="header"]
+|===
+| Hardware| Requirements
+a|
+Memory
+a|
+
+* 4 GB RAM (minimum)
+* 8 GB RAM (recommended)
+
+a|
+Disk space
+a|
+
+* 1 GB (minimum)
+* 4 GB (recommended)
+
+Enabling logging and tracing requires additional disk space of up to 1 GB, depending on the log and trace file rotation settings.
+
+You must have 100 MB temporary disk space available for installation.
+
+a|
+CPU
+a|
+
+* Dual-core 2.0 GHz (minimum)
+* Quad-core 2.0 GHz (recommended)
+
+|===
