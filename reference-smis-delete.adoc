@@ -1,0 +1,46 @@
+---
+permalink: reference-smis-delete.html
+sidebar: sidebar
+keywords: smis debate, command, storage system
+summary: "The smis delete command deletes a storage system."
+---
+= smis delete
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `smis delete` command deletes a storage system.
+
+== Syntax
+
+`smis delete`
+
+`_storage_sys_`
+
+`[-t {*http* | *https*}]`
+
+== Location
+
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+== Privilege level
+
+Administrator (Windows)
+
+== Parameters
+
+* `*_storage_sys_*`
++
+Name or the IP address of the storage system that you are adding
+
+* `*[-t {http | https}]*`
++
+Protocol to be used: HTTPS (default) or HTTP
+
+== Example
+
+Delete a storage system labeled mgt-1:
+
+`*smis delete mgt-1*`
+
+If no error message appears, the storage system was successfully deleted.
