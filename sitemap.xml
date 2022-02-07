@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-cim-user-commands.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-cimom-commands.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-clone-technology-used-in-smi-s-agent-4-0.html</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-confirm-visibility-of-important-objects.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-data-ontap-smi-s-agent-overview.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-deployment-workflow.html</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-how-smi-s-provider-interacts-with-a-host.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-install-and-uninstall-ontap-smi-s-agent.html</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-manage-logging-and-tracing.html</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-manage-slp.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-manage-smi-s-agent-advanced-settings.html</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-manage-tracing.html</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-preconfiguration-task-overview.html</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-prepare-for-deployment.html</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-requirement-for-using-fileshares-in-windows.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-slp-commands.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-smi-s-profiles.html</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-smi-s-provider-commands.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-specify-slp-configuration-options.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-troubleshoot-smi-s-agent.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/concept-uninstall-smi-s-provider.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-access-is-denied-error.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-cannot-add-a-storage-system-using-a-nondefault-http-or-https-port.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-cannot-connect-to-localhost-5988-error.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-cannot-connect-to-localhost-5989-error.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-cimconfig-command-options.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-cimuser-command-options.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-clone-snapshot-operations-are-not-allowed.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-connection-refused-error.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-data-ontap-smi-s-agent-components.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-data-ontap-smi-s-agent-protocols.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-editing-the-slp-conf-file.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-entering-passwords-containing-special-characters.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-handling-smi-s-agent-crashes-in-windows.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-hardware-requirements.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-hostagentaccessdenied-error-id-26263.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-legal-notices.html</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-logging-levels.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-network-path-not-found-error-during-vm-deployment.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-new-in-this-release-smis.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-no-ontap-element-in-response-error.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-no-response-from-the-server.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-possible-errors-when-loading-shared-libraries.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-required-licenses.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-runtime-library-issues.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-slptool-command-options.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-slptool-findattrs.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-slptool-findsrvs.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smb-share-size-dropping-to-0-in-scvmm.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smi-s-agent-sizing-and-performance-information.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smi-s-agent-takes-a-long-time-to-start.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-add.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-addsecure.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-cimom.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-cimserver.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-class.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-config-show.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-crp.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-crsp.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-delete.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-disks.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-exports.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-initiators.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-licensed.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-list.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-luns.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-namespaces.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-pools.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-refresh.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-slpd.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-version.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-smis-volumes.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-supported-operating-systems.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-supported-platforms.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-total-managed-space-for-a-storage-pool-aggregate-discrepancy.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-trace-setting-values.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-types-of-cim-users-and-associated-operations.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-uses-of-data-ontap-smi-s-agent.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-vm-provisioning-in-scvmm-fails-with-insufficient-system-resources-error.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/reference-warning-26130.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/releasenotes.html</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider//search.html</loc>
+      
+      <lastmod>2022-02-07T14:14:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-add-cim-server-users.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-configure-log-settings.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-download-smi-s-provider.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-enable-indications-in-smi-s-agent.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-enable-or-disable-audit-log-for-smi-s-commands.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-enable-or-disable-authentication-for-smi-s-provider.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-generate-a-self-signed-certificate-for-the-cim-server-windows.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-install-smi-s-agent-on-a-windows-host.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-manage-cim-server-users.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-manage-cimom-configuration-settings.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-manage-storage-systems.html</loc>
+      
+      <lastmod>2022-02-07T07:28:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-manage-the-cim-server.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-specify-the-concrete-job-lifetime-value.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-specify-the-maximum-number-of-threads-per-message-service-queue.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-specify-the-number-of-trace-files-saved.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-specify-the-ontapi-timeout-value.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-specify-the-smi-s-agent-cache-refresh-interval.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-specify-trace-file-size.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-specify-trace-settings.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-uninstall-smi-s-agent-from-a-windows-host.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-verify-that-the-storage-system-is-working-correctly.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/smis-provider/task-verify-the-cim-server-status.html</loc>
+      
+      <lastmod>2022-01-07T12:47:53+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>

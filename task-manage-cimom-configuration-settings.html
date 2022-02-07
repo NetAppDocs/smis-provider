@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>Manage CIMOM configuration settings</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Manage CIMOM configuration settings" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/smis-provider/task-manage-cimom-configuration-settings.html" />
+	<meta property="og:description" content="You can use SMI-S Provider to manage the CIMOM configuration, such as enabling or disabling HTTP and HTTPS connections and changing HTTP and HTTPS port numbe..." />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/smis-provider/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="You can use SMI-S Provider to manage the CIMOM configuration, such as enabling or disabling HTTP and HTTPS connections and changing HTTP and HTTPS port numbe...">
+  <meta name="keywords" content=" smi-s provider, to manage, cimom configuration, enable, disable, http, https, port numbers">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/us-en/smis-provider/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/us-en/smis-provider/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/us-en/smis-provider/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/smis-provider/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/smis-provider/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/us-en/smis-provider/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/us-en/smis-provider/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/us-en/smis-provider/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/us-en/smis-provider/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/us-en/smis-provider/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/us-en/smis-provider/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/smis-provider/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/smis-provider/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/us-en/smis-provider/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/smis-provider/css/tabbed-blocks.css" type="text/css">
+  <link rel="stylesheet" href='/us-en/smis-provider/css/product-family.css' type="text/css">
+  
+
+  
+  <link rel='stylesheet' href='/us-en/smis-provider/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/us-en/smis-provider/js/na-search.js'></script>
+  
+
+  
+  <script src='/us-en/smis-provider/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/us-en/smis-provider/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/smis-provider/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/us-en/smis-provider/js/na-utility.js'></script>
+  <script src='/us-en/smis-provider/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/us-en/smis-provider/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/us-en/smis-provider/js/toc.js'></script>
+  <script src='/us-en/smis-provider/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/us-en/smis-provider/js/version-dropdown.js'></script>
+  <script src='/us-en/smis-provider/js/product-family.js'></script>
+  <script src='/us-en/smis-provider/js/FileSaver.min.js'></script>
+  <script src='/us-en/smis-provider/js/jszip-utils.min.js'></script>
+  <script src='/us-en/smis-provider/js/jszip.min.js'></script>
+  <script src='/us-en/smis-provider/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Product and Solutions</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Support and Training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Customer Stories</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/us-en/smis-provider/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/us-en/smis-provider/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/us-en/smis-provider/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/us-en/smis-provider/search.html"
+          data-type="widget" 
+          data-placeholder="Search Documentation" 
+          data-no-results-found="No results were found for {query}" 
+          data-did-you-mean="Search for {suggestion}." 
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
+          data-results-found="{hitCount} results found"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/smis-provider/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">English</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/smis-provider/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/smis-provider/task-manage-cimom-configuration-settings.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/smis-provider/task-manage-cimom-configuration-settings.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/smis-provider/task-manage-cimom-configuration-settings.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/smis-provider/task-manage-cimom-configuration-settings.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>Available PDFs<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/us-en/smis-provider/pdfs/fullsite-sidebar/NetApp_SMI_S_Provider_Documentation.pdf" >
+          <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>PDF of this doc site</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/NetApp_SMI_S_Provider_overview.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            NetApp SMI-S Provider overview
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Prepare_for_deployment.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Prepare for deployment
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Install_NetApp_SMI_S_Provider.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Install NetApp SMI-S Provider
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Uninstall_NetApp_SMI_S_Provider.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Uninstall NetApp SMI-S Provider
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Preconfiguration_validation.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Preconfiguration validation
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Manage_CIM_server_users.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Manage CIM server users
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/us-en/smis-provider/pdfs/pages/task-manage-cimom-configuration-settings.pdf" >
+    <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Manage_logging_and_tracing.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Manage logging and tracing
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Configure_log_settings.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Configure log settings
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Manage_tracing.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Manage tracing
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Specify_trace_settings.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Specify trace settings
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Manage_SMI_S_Provider_advanced_settings.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Manage SMI-S Provider advanced settings
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Manage_SLP.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Manage SLP
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Specify_SLP_configuration_options.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Specify SLP configuration options
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/CIMOM_commands.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            CIMOM commands
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/CIM_user_commands.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            CIM user commands
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/SMI_S_Provider_commands.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            SMI-S Provider commands
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/SLP_commands.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            SLP commands
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Troubleshoot_SMI_S_Provider.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf.png" width="16" height="16"/>
+            Troubleshoot SMI-S Provider
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/us-en/smis-provider/images/pdf-zip.png" width="16" height="16"/>
+      <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/index.html">
+        NetApp SMI-S Provider docs
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/releasenotes.html">
+        Release notes
+      </a></li><li class="subfolders "><a href="/us-en/smis-provider/concept-data-ontap-smi-s-agent-overview.html">
+        <div class="na-navbar-padding"> NetApp SMI-S Provider overview</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-new-in-this-release-smis.html">
+        New in this release
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-uses-of-data-ontap-smi-s-agent.html">
+        Uses of NetApp SMI-S Provider
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smi-s-agent-sizing-and-performance-information.html">
+        NetApp SMI-S Provider sizing and performance
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-data-ontap-smi-s-agent-components.html">
+        NetApp SMI-S Provider components
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-data-ontap-smi-s-agent-protocols.html">
+        NetApp SMI-S Provider protocols
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/concept-how-smi-s-provider-interacts-with-a-host.html">
+        How NetApp SMI-S Provider interacts with a host
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/concept-smi-s-profiles.html">
+        SMI-S profiles
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/concept-deployment-workflow.html">
+        Deployment workflow
+      </a></li><li class="subfolders "><a href="/us-en/smis-provider/concept-prepare-for-deployment.html">
+        <div class="na-navbar-padding"> Prepare for deployment</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-supported-operating-systems.html">
+        Supported operating system versions
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-hardware-requirements.html">
+        Hardware requirements
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-required-licenses.html">
+        Required licenses
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-supported-platforms.html">
+        Supported cluster platforms
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-download-smi-s-provider.html">
+        Download the NetApp SMI-S Provider software package
+      </a></li></ul></li><li class="subfolders "><a href="/us-en/smis-provider/concept-install-and-uninstall-ontap-smi-s-agent.html">
+        <div class="na-navbar-padding"> Install NetApp SMI-S Provider</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-install-smi-s-agent-on-a-windows-host.html">
+        Install NetApp SMI-S Provider on a Windows host
+      </a></li></ul></li><li class="subfolders "><a href="/us-en/smis-provider/concept-uninstall-smi-s-provider.html">
+        <div class="na-navbar-padding"> Uninstall NetApp SMI-S Provider</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-uninstall-smi-s-agent-from-a-windows-host.html">
+        Uninstall NetApp SMI-S Provider from a Windows host
+      </a></li></ul></li><li class="subfolders "><a href="/us-en/smis-provider/concept-preconfiguration-task-overview.html">
+        <div class="na-navbar-padding"> Preconfiguration validation</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-verify-the-cim-server-status.html">
+        Verify the CIM server status
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-add-cim-server-users.html">
+        Add a CIM server user
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-verify-that-the-storage-system-is-working-correctly.html">
+        Verify that the storage system is working correctly
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-generate-a-self-signed-certificate-for-the-cim-server-windows.html">
+        Generate a self-signed certificate for the CIM server
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-manage-the-cim-server.html">
+        Manage the CIM server
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-manage-storage-systems.html">
+        Manage storage systems
+      </a></li><li class="subfolders "><a href="/us-en/smis-provider/task-manage-cim-server-users.html">
+        <div class="na-navbar-padding"> Manage CIM server users</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-types-of-cim-users-and-associated-operations.html">
+        Types of CIM users and associated operations
+      </a></li></ul></li><li class="  active "><a class="na-navbar-padding" href="/us-en/smis-provider/task-manage-cimom-configuration-settings.html">
+        Manage CIMOM configuration settings
+      </a></li><li class="subfolders "><a href="/us-en/smis-provider/concept-manage-logging-and-tracing.html">
+        <div class="na-navbar-padding"> Manage logging and tracing</div>
+      </a>
+      <ul><li class="subfolders "><a href="/us-en/smis-provider/task-configure-log-settings.html">
+        <div class="na-navbar-padding"> Configure log settings</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-logging-levels.html">
+        Logging levels
+      </a></li></ul></li><li class="subfolders "><a href="/us-en/smis-provider/concept-manage-tracing.html">
+        <div class="na-navbar-padding"> Manage tracing</div>
+      </a>
+      <ul><li class="subfolders "><a href="/us-en/smis-provider/task-specify-trace-settings.html">
+        <div class="na-navbar-padding"> Specify trace settings</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-trace-setting-values.html">
+        Trace setting values
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-specify-trace-file-size.html">
+        Specify trace file size
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-specify-the-number-of-trace-files-saved.html">
+        Specify the number of trace files saved
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-enable-or-disable-audit-log-for-smi-s-commands.html">
+        Enable or disable audit log for SMI-S commands
+      </a></li></ul></li><li class="subfolders "><a href="/us-en/smis-provider/concept-manage-smi-s-agent-advanced-settings.html">
+        <div class="na-navbar-padding"> Manage SMI-S Provider advanced settings</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-specify-the-smi-s-agent-cache-refresh-interval.html">
+        Specify the SMI-S Provider automatic cache refresh interval
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-specify-the-concrete-job-lifetime-value.html">
+        Specify the concrete job lifetime value
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-specify-the-ontapi-timeout-value.html">
+        Specify the ONTAPI timeout value
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-specify-the-maximum-number-of-threads-per-message-service-queue.html">
+        Specify the maximum number of threads per message service queue
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-enable-or-disable-authentication-for-smi-s-provider.html">
+        Enable or disable authentication for NetApp SMI-S Provider
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/task-enable-indications-in-smi-s-agent.html">
+        Enable indications in SMI-S Provider
+      </a></li></ul></li><li class="subfolders "><a href="/us-en/smis-provider/concept-manage-slp.html">
+        <div class="na-navbar-padding"> Manage SLP</div>
+      </a>
+      <ul><li class="subfolders "><a href="/us-en/smis-provider/concept-specify-slp-configuration-options.html">
+        <div class="na-navbar-padding"> Specify SLP configuration options</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-editing-the-slp-conf-file.html">
+        slp.conf file management
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/smis-provider/concept-cimom-commands.html">
+        <div class="na-navbar-padding"> CIMOM commands</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-cimconfig-command-options.html">
+        cimconfig
+      </a></li></ul></li><li class="subfolders "><a href="/us-en/smis-provider/concept-cim-user-commands.html">
+        <div class="na-navbar-padding"> CIM user commands</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-cimuser-command-options.html">
+        cimuser
+      </a></li></ul></li><li class="subfolders "><a href="/us-en/smis-provider/concept-smi-s-provider-commands.html">
+        <div class="na-navbar-padding"> SMI-S Provider commands</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-add.html">
+        smis add
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-addsecure.html">
+        smis addsecure
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-cimom.html">
+        smis cimom
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-cimserver.html">
+        smis cimserver
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-class.html">
+        smis class
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-config-show.html">
+        smis config show
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-crp.html">
+        smis crp
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-crsp.html">
+        smis crsp
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-delete.html">
+        smis delete
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-disks.html">
+        smis disks
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-exports.html">
+        smis exports
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-initiators.html">
+        smis initiators
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-licensed.html">
+        smis licensed
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-list.html">
+        smis list
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-luns.html">
+        smis luns
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-namespaces.html">
+        smis namespaces
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-pools.html">
+        smis pools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-refresh.html">
+        smis refresh
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-slpd.html">
+        smis slpd
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-version.html">
+        smis version
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smis-volumes.html">
+        smis volumes
+      </a></li></ul></li><li class="subfolders "><a href="/us-en/smis-provider/concept-slp-commands.html">
+        <div class="na-navbar-padding"> SLP commands</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-slptool-command-options.html">
+        slptool
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-slptool-findattrs.html">
+        slptool findattrs
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-slptool-findsrvs.html">
+        slptool findsrvs
+      </a></li></ul></li><li class="subfolders "><a href="/us-en/smis-provider/concept-troubleshoot-smi-s-agent.html">
+        <div class="na-navbar-padding"> Troubleshoot SMI-S Provider</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-access-is-denied-error.html">
+        Access is denied error
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-possible-errors-when-loading-shared-libraries.html">
+        Possible errors while loading shared libraries
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-connection-refused-error.html">
+        Connection refused
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-no-ontap-element-in-response-error.html">
+        Filer return: No ontap element in response
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-clone-snapshot-operations-are-not-allowed.html">
+        Clone/Snapshot operations are not allowed
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-warning-26130.html">
+        Warning 26130
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-hostagentaccessdenied-error-id-26263.html">
+        HostAgentAccessDenied (ID: 26263)
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-cannot-connect-to-localhost-5988-error.html">
+        Cannot connect to localhost:5988
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-cannot-connect-to-localhost-5989-error.html">
+        Cannot connect to localhost:5989
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-handling-smi-s-agent-crashes-in-windows.html">
+        SMI-S Provider crashes in Windows
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-entering-passwords-containing-special-characters.html">
+        Issue entering passwords containing special characters
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/concept-clone-technology-used-in-smi-s-agent-4-0.html">
+        Clone technology used in SMI-S Provider
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/concept-confirm-visibility-of-important-objects.html">
+        Confirm visibility of important objects
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/concept-requirement-for-using-fileshares-in-windows.html">
+        Requirement for using fileshares on Windows
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html">
+        Nondefault firewalls must have ports manually added as exceptions
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-cannot-add-a-storage-system-using-a-nondefault-http-or-https-port.html">
+        Cannot add a storage system using a nondefault HTTP or HTTPS port
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-no-response-from-the-server.html">
+        No response from the server
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-runtime-library-issues.html">
+        Runtime library issues
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smi-s-agent-takes-a-long-time-to-start.html">
+        NetApp SMI-S Provider takes a long time to start
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-total-managed-space-for-a-storage-pool-aggregate-discrepancy.html">
+        Total managed space for a storage pool (volume) discrepancy
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-network-path-not-found-error-during-vm-deployment.html">
+        Network path not found
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-vm-provisioning-in-scvmm-fails-with-insufficient-system-resources-error.html">
+        Insufficient system resources exist to complete the requested service
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-smb-share-size-dropping-to-0-in-scvmm.html">
+        SMB share size dropping to 0 in SCVMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html">
+        SCVMM rescan operation failed to locate or communicate with SMI-S Provider
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/smis-provider/reference-legal-notices.html">
+        Legal notices
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">Home</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">Documentation</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/us-en/smis-provider/">NetApp&nbsp;SMI-S&nbsp;Provider</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          Manage CIMOM configuration settings
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Manage CIMOM configuration settings</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-01-07 12:47:53 +0000">01/07/2022</time>
+    
+  
+
+<span>Contributors
+</span>
+
+
+</p>
+
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>You can use SMI-S Provider to manage the CIMOM configuration, such as enabling or disabling HTTP and HTTPS connections and changing HTTP and HTTPS port numbers. By default, HTTP connections are enabled, allowing clients to connect to the CIM server without using SSL encryption.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="before-you-begin">Before you begin</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>You must already have login credentials as Administrator.</p>
+</li>
+<li>
+<p>You must already have logged in to the host system as Administrator.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="about-this-task">About this task</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If your environment requires encrypted traffic to and from the CIM server, you must first disable HTTP connections and then verify that HTTPS connections for the CIM server are enabled.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="steps">Steps</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access NetApp SMI-S Provider.</p>
+</li>
+<li>
+<p>Complete one of the following actions:</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Action</th>
+<th class="tableblock halign-left valign-top">Command</th>
+<th class="tableblock halign-left valign-top">Additional information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Enable the HTTP connection</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code><strong>cimconfig -s enableHttpConnection=true -p</strong></code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>NA</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Disable the HTTP connection</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code><strong>cimconfig -s enableHttpConnection=false -p</strong></code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>NA</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Enable the HTTPS connection</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code><strong>cimconfig -s enableHttpsConnection=true -p</strong></code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>NA</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Disable the HTTPS connection</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code><strong>cimconfig -s enableHttpsConnection=false -p</strong></code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>NA</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Modify the HTTP port number</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code><strong>cimconfig -s httpPort=<em>new_port_number</em> -p</strong></code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>By default, the HTTP port number is 5988. If you wanted to change it to 5555, for example, you would input this command:</p>
+</div>
+<div class="paragraph">
+<p><code><strong>cimconfig -s httpPort=5555 -p</strong></code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Modify the HTTPS port number</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code><strong>cimconfig -s httpsPort=<em>new_port_number</em> -p</strong></code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>By default, the HTTP port number is 5989. If you wanted to change it to 5556, for example, you would input this command:</p>
+</div>
+<div class="paragraph">
+<p><code><strong>cimconfig -s httpsPort=5556 -p</strong></code></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Restart the CIM server:</p>
+<div class="paragraph">
+<p><code><strong>smis cimserver restart</strong></code></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/smis-provider/issues/new?body=Page%3A%20[Manage CIMOM configuration settings](https://docs.netapp.com/us-en/smis-provider/task-manage-cimom-configuration-settings.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/smis-provider/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/smis-provider/blob/main/task-manage-cimom-configuration-settings.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/smis-provider/images/edit-sm.svg" class="github-icon" />Edit this page</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/smis-provider/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/smis-provider/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/smis-provider/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/smis-provider/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/smis-provider/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/smis-provider/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/smis-provider/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/smis-provider/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright">Announcements</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/smis-provider/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/smis-provider/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/smis-provider/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/smis-provider/js/www-ntap.js'></script>
+    <script src='/us-en/smis-provider/js/tabbed-blocks.js'></script>
+  </body>
+
+  
+</html>
