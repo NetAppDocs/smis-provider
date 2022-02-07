@@ -1,7 +1,7 @@
 ---
 permalink: concept-clone-technology-used-in-smi-s-agent-4-0.html
 sidebar: sidebar
-keywords: flexclone, license, smis-provider, create, lun clones
+keywords: flexclone, license, smi-s provider, create, lun clones
 summary: "You must have a FlexClone license for SMI-S Provider to create LUN clones."
 ---
 = Clone technology used in SMI-S Provider

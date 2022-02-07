@@ -1,7 +1,7 @@
 ---
 permalink: concept-deployment-workflow.html
 sidebar: sidebar
-keywords: manage, monitor, storage, systems, smis-provider, software, validate, preliminary, configuration
+keywords: manage, monitor, storage, systems, smi-s provider, software, validate, preliminary, configuration
 summary: "Before you can manage and monitor your storage systems using SMI-S Provider, you must install the SMI-S Provider software and validate your preliminary configuration."
 ---
 = Deployment workflow
