@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: smi-s provider, first time, validate, preliminary, configuration
 summary: "Before using SMI-S Provider for the first time, you must validate your preliminary configuration."
 ---
-= Preconfiguration validation
+= Overview
 :icons: font
 :imagesdir: ./media/
 
