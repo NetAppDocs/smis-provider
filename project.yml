@@ -70,112 +70,116 @@ sidebar:
   - title: Manage storage systems
     url: "/task-manage-storage-systems.html"
   - title: Manage CIM server users
-    url: "/task-manage-cim-server-users.html"
     entries:
-    - title: Types of CIM users and associated operations
-      url: "/reference-types-of-cim-users-and-associated-operations.html"
+      - title: Overview
+        url: "/task-manage-cim-server-users-overview.html"
+      - title: Types of CIM users and associated operations
+        url: "/reference-types-of-cim-users-and-associated-operations.html"
   - title: Manage CIMOM configuration settings
     url: "/task-manage-cimom-configuration-settings.html"
   - title: Manage logging and tracing
-    url: "/concept-manage-logging-and-tracing.html"
     entries:
-    - title: Configure log settings
-      url: "/task-configure-log-settings.html"
-      entries:
-      - title: Logging levels
-        url: "/reference-logging-levels.html"
-    - title: Manage tracing
-      url: "/concept-manage-tracing.html"
-      entries:
-      - title: Specify trace settings
-        url: "/task-specify-trace-settings.html"
+      - title: Overview
+        url: "/concept-manage-logging-and-tracing-overview.html"
+      - title: Configure log settings
+        url: "/task-configure-log-settings.html"
         entries:
-        - title: Trace setting values
-          url: "/reference-trace-setting-values.html"
-      - title: Specify trace file size
-        url: "/task-specify-trace-file-size.html"
-      - title: Specify the number of trace files saved
-        url: "/task-specify-the-number-of-trace-files-saved.html"
-    - title: Enable or disable audit log for SMI-S commands
-      url: "/task-enable-or-disable-audit-log-for-smi-s-commands.html"
+        - title: Logging levels
+          url: "/reference-logging-levels.html"
+      - title: Manage tracing
+        url: "/concept-manage-tracing.html"
+        entries:
+        - title: Specify trace settings
+          url: "/task-specify-trace-settings.html"
+          entries:
+          - title: Trace setting values
+            url: "/reference-trace-setting-values.html"
+        - title: Specify trace file size
+          url: "/task-specify-trace-file-size.html"
+        - title: Specify the number of trace files saved
+          url: "/task-specify-the-number-of-trace-files-saved.html"
+      - title: Enable or disable audit log for SMI-S commands
+        url: "/task-enable-or-disable-audit-log-for-smi-s-commands.html"
   - title: Manage SMI-S Provider advanced settings
-    url: "/concept-manage-smi-s-agent-advanced-settings.html"
     entries:
-    - title: Specify the SMI-S Provider automatic cache refresh interval
-      url: "/task-specify-the-smi-s-agent-cache-refresh-interval.html"
-    - title: Specify the concrete job lifetime value
-      url: "/task-specify-the-concrete-job-lifetime-value.html"
-    - title: Specify the ONTAPI timeout value
-      url: "/task-specify-the-ontapi-timeout-value.html"
-    - title: Specify the maximum number of threads per message service queue
-      url: "/task-specify-the-maximum-number-of-threads-per-message-service-queue.html"
-    - title: Enable or disable authentication for NetApp SMI-S Provider
-      url: "/task-enable-or-disable-authentication-for-smi-s-provider.html"
-    - title: Enable indications in SMI-S Provider
-      url: "/task-enable-indications-in-smi-s-agent.html"
+      - title: Overview
+        url: "/concept-manage-smi-s-agent-advanced-settings-overview.html"
+      - title: Specify the SMI-S Provider automatic cache refresh interval
+        url: "/task-specify-the-smi-s-agent-cache-refresh-interval.html"
+      - title: Specify the concrete job lifetime value
+        url: "/task-specify-the-concrete-job-lifetime-value.html"
+      - title: Specify the ONTAPI timeout value
+        url: "/task-specify-the-ontapi-timeout-value.html"
+      - title: Specify the maximum number of threads per message service queue
+        url: "/task-specify-the-maximum-number-of-threads-per-message-service-queue.html"
+      - title: Enable or disable authentication for NetApp SMI-S Provider
+        url: "/task-enable-or-disable-authentication-for-smi-s-provider.html"
+      - title: Enable indications in SMI-S Provider
+        url: "/task-enable-indications-in-smi-s-agent.html"
   - title: Manage SLP
-    url: "/concept-manage-slp.html"
     entries:
-    - title: Specify SLP configuration options
-      url: "/concept-specify-slp-configuration-options.html"
-      entries:
-      - title: slp.conf file management
-        url: "/reference-editing-the-slp-conf-file.html"
+      - title: Overview
+        url: "/concept-manage-slp-overview.html"
+      - title: Specify SLP configuration options
+        url: "/concept-specify-slp-configuration-options.html"
+        entries:
+        - title: slp.conf file management
+          url: "/reference-editing-the-slp-conf-file.html"
   - title: CIMOM commands
-    url: "/concept-cimom-commands.html"
     entries:
     - title: cimconfig
       url: "/reference-cimconfig-command-options.html"
   - title: CIM user commands
-    url: "/concept-cim-user-commands.html"
     entries:
     - title: cimuser
       url: "/reference-cimuser-command-options.html"
   - title: SMI-S Provider commands
     url: "/concept-smi-s-provider-commands.html"
     entries:
-    - title: smis add
-      url: "/reference-smis-add.html"
-    - title: smis addsecure
-      url: "/reference-smis-addsecure.html"
-    - title: smis cimom
-      url: "/reference-smis-cimom.html"
-    - title: smis cimserver
-      url: "/reference-smis-cimserver.html"
-    - title: smis class
-      url: "/reference-smis-class.html"
-    - title: smis config show
-      url: "/reference-smis-config-show.html"
-    - title: smis crp
-      url: "/reference-smis-crp.html"
-    - title: smis crsp
-      url: "/reference-smis-crsp.html"
-    - title: smis delete
-      url: "/reference-smis-delete.html"
-    - title: smis disks
-      url: "/reference-smis-disks.html"
-    - title: smis exports
-      url: "/reference-smis-exports.html"
-    - title: smis initiators
-      url: "/reference-smis-initiators.html"
-    - title: smis licensed
-      url: "/reference-smis-licensed.html"
-    - title: smis list
-      url: "/reference-smis-list.html"
-    - title: smis luns
-      url: "/reference-smis-luns.html"
-    - title: smis namespaces
-      url: "/reference-smis-namespaces.html"
-    - title: smis pools
-      url: "/reference-smis-pools.html"
-    - title: smis refresh
-      url: "/reference-smis-refresh.html"
-    - title: smis slpd
-      url: "/reference-smis-slpd.html"
-    - title: smis version
-      url: "/reference-smis-version.html"
-    - title: smis volumes
-      url: "/reference-smis-volumes.html"
+      - title: Overview
+        url: "/concept-smi-s-provider-commands-overview.html"
+      - title: smis add
+        url: "/reference-smis-add.html"
+      - title: smis addsecure
+        url: "/reference-smis-addsecure.html"
+      - title: smis cimom
+        url: "/reference-smis-cimom.html"
+      - title: smis cimserver
+        url: "/reference-smis-cimserver.html"
+      - title: smis class
+        url: "/reference-smis-class.html"
+      - title: smis config show
+        url: "/reference-smis-config-show.html"
+      - title: smis crp
+        url: "/reference-smis-crp.html"
+      - title: smis crsp
+        url: "/reference-smis-crsp.html"
+      - title: smis delete
+        url: "/reference-smis-delete.html"
+      - title: smis disks
+        url: "/reference-smis-disks.html"
+      - title: smis exports
+        url: "/reference-smis-exports.html"
+      - title: smis initiators
+        url: "/reference-smis-initiators.html"
+      - title: smis licensed
+        url: "/reference-smis-licensed.html"
+      - title: smis list
+        url: "/reference-smis-list.html"
+      - title: smis luns
+        url: "/reference-smis-luns.html"
+      - title: smis namespaces
+        url: "/reference-smis-namespaces.html"
+      - title: smis pools
+        url: "/reference-smis-pools.html"
+      - title: smis refresh
+        url: "/reference-smis-refresh.html"
+      - title: smis slpd
+        url: "/reference-smis-slpd.html"
+      - title: smis version
+        url: "/reference-smis-version.html"
+      - title: smis volumes
+        url: "/reference-smis-volumes.html"
   - title: SLP commands
     url: "/concept-slp-commands.html"
     entries:

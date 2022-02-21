@@ -9,7 +9,7 @@ summary: "You can use the cimuser options to add, remove, modify, and list CIM s
 :imagesdir: ./media/
 
 [.lead]
-You can use the `cimuser` options to add, remove, modify, and list CIM server users.
+You can use the `cimuser` command to add, remove, delete, modify, and list CIM server users, as well as manage their passwords.
 
 == Syntax
 
