@@ -241,5 +241,5 @@ sidebar:
             url: "/reference-smb-share-size-dropping-to-0-in-scvmm.html"
           - title: SCVMM rescan operation failed to locate or communicate with SMI-S Provider
             url: "/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html"
-        - title: Legal notices
-          url: "/reference-legal-notices.html"
+  - title: Legal notices
+    url: "/reference-legal-notices.html"
