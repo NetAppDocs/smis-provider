@@ -9,7 +9,7 @@ summary: "You can use these options with the slptool command."
 :imagesdir: ./media/
 
 [.lead]
-You can use these options with the `slptool` command.
+You can use the `slptool` command to display information about WBEM services.
 
 == Syntax
 
