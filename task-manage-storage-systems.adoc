@@ -11,12 +11,12 @@ summary: "You can use NetApp SMI-S Provider commands to add, delete, and list st
 [.lead]
 You can use NetApp SMI-S Provider commands to add, delete, and list storage systems in the CIMOM repository. You can also list NFS and CIFS exports and exported LUNs for storage systems.
 
-== Before you begin
+.Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
 
-== About this task
+.About this task
 
 For ONTAP, you must specify a management IP address for an SVM, not a cluster IP address, and you must provide the credentials for a vsadmin user. SMI-S Provider does not support cluster IP addresses or node management IP addresses, nor does it support node admin or node SVMs.
 
@@ -25,7 +25,7 @@ For ONTAP, you must specify a management IP address for an SVM, not a cluster IP
 You should set the data protocol value to `none` for the management LIF when you add it to the SMI-S Provider.
 ====
 
-== Steps
+.Steps
 
 . Access NetApp SMI-S Provider.
 . Complete one of the following actions:
