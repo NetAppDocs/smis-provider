@@ -23,7 +23,7 @@ You can use the `cimconfig` command to configure CIMOM settings, such as enablin
 
 Administrator (Windows)
 
-== Options
+.Options
 
 * *-c*
 +
@@ -61,7 +61,7 @@ Resets the configuration property to its default value.
 +
 Displays the version of the CIM server.
 
-== Example
+.Example
 
 Change the maximum log file size to 15000 KB:
 

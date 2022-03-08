@@ -23,7 +23,7 @@ The `smis config show` command lists the current CIM server configuration inform
 
 Administrator (Windows)
 
-== Example
+.Example
 
 The `smis config show` and its output:
 

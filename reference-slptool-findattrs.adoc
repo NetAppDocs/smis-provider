@@ -29,7 +29,7 @@ A user with a valid user name and password
 +
 Specifies the service type.
 
-== Example
+.Example
 
 The `slptool findattrs` command and its abbreviated output:
 

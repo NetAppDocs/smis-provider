@@ -62,7 +62,7 @@ The `smis addsecure` command and the `[-t {*https*}]` parameter connects using S
 
 You should consider your environment's security needs before disabling SSL-encrypted connections.
 
-== Example
+.Example
 
 Add a storage system using IPv4 with an IP address of 10.32.1.4 over HTTP:
 
@@ -72,7 +72,7 @@ smis add 10.32.1.4 user2
 
 A confirmation message appears that the storage system was successfully added. If an error occurred, an error message appears.
 
-== Example
+.Example
 
 Add a storage system using IPv6 over HTTP:
 
@@ -83,7 +83,7 @@ smis add 1001:2::3:4 user2
 
 A confirmation message appears that the storage system was successfully added. If an error occurred, an error message appears.
 
-== Example
+.Example
 
 Add a storage system with an IP address of 10.32.1.4 over HTTP on a non-English-language system:
 

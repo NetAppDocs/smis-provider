@@ -23,7 +23,7 @@ You can use the `cimuser` command to add, remove, delete, modify, and list CIM s
 
 Administrator (Windows)
 
-== Options
+.Options
 
 * *-a*
 +
@@ -61,7 +61,7 @@ Displays the version of the CIM server.
 +
 Specifies the password for the specified user.
 
-== Example
+.Example
 
 Create a CIM user named sydney with a password of password1:
 

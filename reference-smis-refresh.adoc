@@ -36,7 +36,7 @@ Refreshes a specific storage system.
 +
 Protocol to be used: HTTPS (default) or HTTP
 
-== Example
+.Example
 
 The `smis refresh` command and its output:
 

@@ -59,7 +59,7 @@ Name of the class for which you want information
 +
 Protocol to be used: HTTPS (default) or HTTP
 
-== Example
+.Example
 
 The `smis class` command and its abbreviated output:
 

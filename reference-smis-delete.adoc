@@ -37,7 +37,7 @@ Name or the IP address of the storage system that you are adding
 +
 Protocol to be used: HTTPS (default) or HTTP
 
-== Example
+.Example
 
 Delete a storage system labeled mgt-1:
 

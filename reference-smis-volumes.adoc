@@ -37,7 +37,7 @@ A user with a valid user name and password
 +
 Protocol to be used: HTTPS (default) or HTTP
 
-== Example
+.Example
 
 The `smis volumes` command and its abbreviated output:
 

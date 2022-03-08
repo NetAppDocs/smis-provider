@@ -23,7 +23,7 @@ You can use the `slptool` command to display information about WBEM services.
 
 Administrator (Windows)
 
-== Options
+.Options
 
 * *-i*
 +

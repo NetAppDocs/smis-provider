@@ -43,7 +43,7 @@ Forces the use of the broadcast option, instead of using the multicast option, w
 +
 Enables security for received URLs and attribute lists.
 
-== Example
+.Example
 
 The following is an abbreviated example of the `slp.conf` configuration file:
 

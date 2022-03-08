@@ -31,7 +31,7 @@ A user with a valid user name and password
 +
 Protocol to be used: HTTPS (default) or HTTP
 
-== Example
+.Example
 
 The `smis crp` command and its output:
 
