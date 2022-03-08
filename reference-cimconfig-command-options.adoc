@@ -19,7 +19,7 @@ You can use the `cimconfig` command to configure CIMOM settings, such as enablin
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 

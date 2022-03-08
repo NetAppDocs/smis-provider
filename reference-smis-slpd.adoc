@@ -22,7 +22,7 @@ The `smis slpd` command starts or stops the SLP daemon.
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 

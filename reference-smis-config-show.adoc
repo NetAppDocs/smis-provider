@@ -19,7 +19,7 @@ The `smis config show` command lists the current CIM server configuration inform
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 

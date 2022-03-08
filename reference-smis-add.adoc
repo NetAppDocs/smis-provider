@@ -28,11 +28,11 @@ Operating systems using languages other than U.S. English cannot use the `add` c
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 
-== Parameters
+.Parameters
 
 * `*_storage_sys_*`
 +

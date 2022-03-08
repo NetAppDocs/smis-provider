@@ -19,11 +19,11 @@ The `slptool findattrs` command finds WBEM attributes that run on a network.
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 A user with a valid user name and password
 
-== Parameters
+.Parameters
 
 * `*_service_*`
 +

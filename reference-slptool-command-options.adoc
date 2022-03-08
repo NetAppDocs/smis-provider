@@ -19,7 +19,7 @@ You can use the `slptool` command to display information about WBEM services.
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 

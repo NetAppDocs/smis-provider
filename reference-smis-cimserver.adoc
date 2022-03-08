@@ -22,11 +22,11 @@ The `smis cimserver` command starts, stops, restarts, or gets the status of the 
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 
-== Parameters
+.Parameters
 
 * *start*
 +

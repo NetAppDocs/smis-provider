@@ -22,11 +22,11 @@ By default, SMI-S Provider automatically gets information from storage systems e
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 A user with a valid user name and password
 
-== Parameters
+.Parameters
 
 * `*_storage_system_ip_*`
 +

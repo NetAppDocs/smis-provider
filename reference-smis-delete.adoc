@@ -23,11 +23,11 @@ The `smis delete` command deletes a storage system.
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 
-== Parameters
+.Parameters
 
 * `*_storage_sys_*`
 +

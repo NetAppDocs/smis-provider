@@ -21,11 +21,11 @@ The `smis class` command lists information about a specified class or all classe
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 A user with a valid user name and password
 
-== Parameters
+.Parameters
 
 * `*_name_space_*`
 +

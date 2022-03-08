@@ -21,11 +21,11 @@ The `smis pools` command lists the storage pools for storage systems.
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 A user with a valid user name and password
 
-== Parameters
+.Parameters
 
 * `*[-t {http | https}]*`
 +

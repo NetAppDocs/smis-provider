@@ -19,7 +19,7 @@ You can use the `cimuser` command to add, remove, delete, modify, and list CIM s
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 

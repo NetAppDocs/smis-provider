@@ -15,7 +15,7 @@ The `slp.conf` configuration file provides additional options that enable you to
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\cfg`
 
-== Privilege level
+.Privilege level
 
 A user with a valid user name and password
 
@@ -25,7 +25,7 @@ The `slp.conf` configuration file enables you to change the number of interfaces
 
 Use a text editor to open the `slp.conf`.
 
-== Parameters
+.Parameters
 
 * *`interfaces`*
 +
