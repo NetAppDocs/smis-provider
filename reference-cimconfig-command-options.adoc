@@ -11,11 +11,11 @@ summary: "You can use the cimconfig command to manage CIMOM configuration settin
 [.lead]
 You can use the `cimconfig` command to configure CIMOM settings, such as enabling and disabling HTTP and HTTPS and changing the HTTP and HTTPS port numbers. After entering the `cimconfig` command or creating an environment variable for the NetApp SMI-S Provider configuration value, you must restart the CIM server by using the `smis cimserver restart` command.
 
-== Syntax
+.Syntax
 
 `cimconfig _options_`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

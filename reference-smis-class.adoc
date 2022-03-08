@@ -11,13 +11,13 @@ summary: "The smis class command lists information about a specified class or al
 [.lead]
 The `smis class` command lists information about a specified class or all classes.
 
-== Syntax
+.Syntax
 
 `smis class`
 
 `_name_space_ {*niall*  | {*ei* | *ni* | *gi* | *gc*} _class_name_}} [-t {*http* | *https*}]`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

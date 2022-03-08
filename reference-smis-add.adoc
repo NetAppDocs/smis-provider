@@ -11,7 +11,7 @@ summary: "The smis add command adds a storage system with an HTTP connection to 
 [.lead]
 The `smis add` command adds a storage system with an HTTP connection to your configuration to enable you to manage and monitor the device. Unless is it necessary, you should use `smis addsecure` instead of `smis add`.
 
-== Syntax
+.Syntax
 
 `smis add`
 
@@ -24,7 +24,7 @@ The `smis add` command adds a storage system with an HTTP connection to your con
 Operating systems using languages other than U.S. English cannot use the `add` command.
 ====
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

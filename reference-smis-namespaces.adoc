@@ -11,13 +11,13 @@ summary: "The smis namespaces command lists the registered namespaces for the CI
 [.lead]
 The `smis namespaces` command lists the registered namespaces for the CIMOM.
 
-== Syntax
+.Syntax
 
 smis namespaces
 
 `[-t {*http* | *https*}]`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

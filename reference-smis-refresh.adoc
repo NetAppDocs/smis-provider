@@ -11,14 +11,14 @@ summary: "By default, SMI-S Provider automatically gets information from storage
 [.lead]
 By default, SMI-S Provider automatically gets information from storage systems every 60 minutes (3600 seconds). You can use the `smis refresh` command to manually refresh a particular storage system.
 
-== Syntax
+.Syntax
 
 `smis refresh _storage_system_ip_`
 
 `[-t {*http* | *https*}]`
 
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

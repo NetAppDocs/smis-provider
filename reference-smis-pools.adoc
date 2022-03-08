@@ -11,13 +11,13 @@ summary: "The smis pools command lists the storage pools for storage systems."
 [.lead]
 The `smis pools` command lists the storage pools for storage systems.
 
-== Syntax
+.Syntax
 
 `smis pools`
 
 `[-t {*http* | *https*}]`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

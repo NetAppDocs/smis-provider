@@ -11,13 +11,13 @@ summary: "The smis luns command displays LUN information for storage systems."
 [.lead]
 The `smis luns` command displays LUN information for storage systems.
 
-== Syntax
+.Syntax
 
 smis luns
 
 `[-t {*http* | *https*}]`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

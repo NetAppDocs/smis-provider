@@ -11,13 +11,13 @@ summary: "The smis version command displays the version of NetApp SMI-S Provider
 [.lead]
 The `smis version` command displays the version of NetApp SMI-S Provider.
 
-== Syntax
+.Syntax
 
 `smis version`
 
 `[-t {*http* | *https*}]`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

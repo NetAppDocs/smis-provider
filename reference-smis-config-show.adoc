@@ -11,11 +11,11 @@ summary: "The smis config show command lists the current CIM server configuratio
 [.lead]
 The `smis config show` command lists the current CIM server configuration information.
 
-== Syntax
+.Syntax
 
 `smis config show`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

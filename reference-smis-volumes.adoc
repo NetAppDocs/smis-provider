@@ -11,7 +11,7 @@ summary: "The smis volumes command lists the traditional and flexible volumes fo
 [.lead]
 The `smis volumes` command lists the traditional and flexible volumes for storage systems.
 
-== Syntax
+.Syntax
 
 `smis volumes`
 
@@ -23,7 +23,7 @@ The `smis volumes` command lists the traditional and flexible volumes for storag
 For clustered Data ONTAP, you must use the `smis pools` command instead of the `smis volumes` command.
 ====
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

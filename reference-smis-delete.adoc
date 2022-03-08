@@ -11,7 +11,7 @@ summary: "The smis delete command deletes a storage system."
 [.lead]
 The `smis delete` command deletes a storage system.
 
-== Syntax
+.Syntax
 
 `smis delete`
 
@@ -19,7 +19,7 @@ The `smis delete` command deletes a storage system.
 
 `[-t {*http* | *https*}]`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

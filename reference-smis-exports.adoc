@@ -11,12 +11,12 @@ summary: "The smis exports command displays Network Attached Storage (NAS) expor
 [.lead]
 The `smis exports` command displays Network Attached Storage (NAS) exports for storage systems.
 
-== Syntax
+.Syntax
 
 smis exports
 `[-t {*http* | *https*}]`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

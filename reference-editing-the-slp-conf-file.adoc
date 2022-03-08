@@ -11,7 +11,7 @@ summary: "The slp.conf configuration file provides additional options that enabl
 [.lead]
 The `slp.conf` configuration file provides additional options that enable you to manage a service location protocol daemon (SLPD) server.
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\cfg`
 

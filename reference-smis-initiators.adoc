@@ -11,13 +11,13 @@ summary: "The smis initiators command displays Fibre Channel and iSCSI port info
 [.lead]
 The `smis initiators` command displays Fibre Channel and iSCSI port information for storage systems.
 
-== Syntax
+.Syntax
 
 smis initiators
 
 `[-t {*http* | *https*}]`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

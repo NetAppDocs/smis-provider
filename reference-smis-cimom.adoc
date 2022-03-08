@@ -11,13 +11,13 @@ summary: "The smis cimom command describes the CIM object manager."
 [.lead]
 The `smis cimom` command describes the CIM object manager.
 
-== Syntax
+.Syntax
 
 smis cimom
  `[-t {*http* | *https*}]`
 
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 

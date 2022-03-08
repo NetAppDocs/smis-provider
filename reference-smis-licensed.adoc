@@ -11,13 +11,13 @@ summary: "The smis licensed command lists the licensed features for storage syst
 [.lead]
 The `smis licensed` command lists the licensed features for storage systems.
 
-== Syntax
+.Syntax
 
 smis licensed
 
 `[-t {*http* | *https*}]`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
