@@ -11,13 +11,13 @@ summary: "You can uninstall SMI-S Provider as needed. For example, depending on 
 [.lead]
 You can uninstall SMI-S Provider as needed. For example, depending on the version of your existing installation, you might need to uninstall the existing installation of SMI-S Provider before you can install the latest version.
 
-== About this task
+.About this task
 
 If you plan to uninstall SMI-S Provider and want a clean reinstall, you must manually delete all of the content from the CIM server.
 
 If you do not want a clean reinstall, SMI-S Provider retains the configuration, user, and other database files after the uninstall.
 
-== Steps
+.Steps
 
 . Log in as Administrator.
 . Uninstall NetApp SMI-S Provider from a Windows host by using the Windows Add/Remove Programs utility.

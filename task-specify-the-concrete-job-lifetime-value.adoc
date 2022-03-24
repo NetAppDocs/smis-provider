@@ -11,12 +11,12 @@ summary: "SMI-S Provider tracks the progress of asynchronous operations by creat
 [.lead]
 SMI-S Provider tracks the progress of asynchronous operations by creating _concrete jobs_. You can increase the concrete job lifetime from the default of 60 minutes (3600 seconds) to a value through 86400 seconds (24 hours).
 
-== Before you begin
+.Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
 
-== Step
+.Step
 
 . Create a system or user environment variable named `JOB_LIFETIME_SEC` with the new lifetime value (in seconds).
 +

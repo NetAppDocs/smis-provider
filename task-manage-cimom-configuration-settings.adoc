@@ -11,16 +11,16 @@ summary: "You can use SMI-S Provider to manage the CIMOM configuration, such as 
 [.lead]
 You can use SMI-S Provider to manage the CIMOM configuration, such as enabling or disabling HTTP and HTTPS connections and changing HTTP and HTTPS port numbers. By default, HTTP connections are enabled, allowing clients to connect to the CIM server without using SSL encryption.
 
-== Before you begin
+.Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
 
-== About this task
+.About this task
 
 If your environment requires encrypted traffic to and from the CIM server, you must first disable HTTP connections and then verify that HTTPS connections for the CIM server are enabled.
 
-== Steps
+.Steps
 
 . Access NetApp SMI-S Provider.
 . Complete one of the following actions:

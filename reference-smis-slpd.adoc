@@ -11,22 +11,22 @@ summary: "The smis slpd command starts or stops the SLP daemon."
 [.lead]
 The `smis slpd` command starts or stops the SLP daemon.
 
-== Syntax
+.Syntax
 
 `smis slpd`
 
 `{*start* | *stop*}`
 
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 
-== Example
+.Example
 
 Start the SLP daemon:
 

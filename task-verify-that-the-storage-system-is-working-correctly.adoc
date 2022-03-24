@@ -11,12 +11,12 @@ summary: "Before SMI-S Provider can be configured, you must add at least one sto
 [.lead]
 Before SMI-S Provider can be configured, you must add at least one storage system to the CIMOM repository, and then verify that the storage system is working correctly.
 
-== Before you begin
+.Before you begin
 
 * You must already have logged in as Administrator.
 * You must already have accessed SMI-S Provider.
 
-== Steps
+.Steps
 
 . Add at least one storage system to the CIMOM repository:
 +

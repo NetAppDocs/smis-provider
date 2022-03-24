@@ -11,11 +11,11 @@ summary: "After installing NetApp SMI-S Provider, you must verify that the CIM s
 [.lead]
 After installing NetApp SMI-S Provider, you must verify that the CIM server automatically started after you access SMI-S Provider.
 
-== Before you begin
+.Before you begin
 
 You must already have login credentials as Administrator.
 
-== Steps
+.Steps
 
 . Log in as Administrator.
 . Access NetApp SMI-S Provider by navigating to the directory where the executables reside:

@@ -11,11 +11,11 @@ summary: "Before installing NetApp SMI-S Provider, you must download the softwar
 [.lead]
 Before installing NetApp SMI-S Provider, you must download the software package from the NetApp Support Site.
 
-== Before you begin
+.Before you begin
 
 You must have created a NetApp Support Site account from https://mysupport.netapp.com/site/global/dashboard[NetApp Support].
 
-== Steps
+.Steps
 
 . Go to the *Downloads* > *Software* page at the NetApp Support Site.
 . Locate SMI-S Provider (formerly Data ONTAP SMI-S Agent) and select Windows operating system, and then click *Go!*.

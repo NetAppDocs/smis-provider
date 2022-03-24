@@ -11,25 +11,25 @@ summary: "The slptool findsrvs command finds WBEM services that run on a network
 [.lead]
 The `slptool findsrvs` command finds WBEM services that run on a network.
 
-== Syntax
+.Syntax
 
 `slptool findsrvs _service_`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 A user with a valid user name and password
 
-== Parameters
+.Parameters
 
 * `*_service_*`
 +
 Specifies the service type.
 
-== Example
+.Example
 
 The `slptool findsrvs` command and its output:
 

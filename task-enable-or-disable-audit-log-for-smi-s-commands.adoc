@@ -11,12 +11,12 @@ summary: "All incoming SMI-S commands are recorded in audit log files, which ena
 [.lead]
 All incoming SMI-S commands are recorded in audit log files, which enables auditors to track activities of WBEM client operations and provider use. You can enable or disable the logging of these incoming commands by setting a dynamic configuration property.
 
-== Before you begin
+.Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
 
-== About this task
+.About this task
 
 Audit log data can provide a record of access, activity, and configuration change for a CIM server. The contents of the audit file include what command was issued, by whom the command was issued, and what time the command was issued.
 
@@ -30,7 +30,7 @@ The maximum size of the audit log file is 10 MB. After reaching the maximum limi
 
 NetApp SMI-S Provider maintains the six most recent audit log files: `cimserver_auditlog.0` through `cimserver_auditlog.5`.
 
-== Steps
+.Steps
 
 . Access NetApp SMI-S Provider.
 . Set the audit logging of SMI-S commands at runtime:

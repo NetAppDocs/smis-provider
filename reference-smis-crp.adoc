@@ -11,27 +11,27 @@ summary: "The smis crp command describes CIM-registered profiles supported by Ne
 [.lead]
 The `smis crp` command describes CIM-registered profiles supported by NetApp SMI-S Provider, including NetApp SMI-S Provider profiles.
 
-== Syntax
+.Syntax
 
 smis crp
 
 `[-t {*http* | *https*}]`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 A user with a valid user name and password
 
-== Parameters
+.Parameters
 
 * `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 
-== Example
+.Example
 
 The `smis crp` command and its output:
 

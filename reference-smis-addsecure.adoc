@@ -11,7 +11,7 @@ summary: "The smis addsecure command adds a storage system with an HTTPS connect
 [.lead]
 The `smis addsecure` command adds a storage system with an HTTPS connection to your configuration to enable you to manage and monitor the device. Unless is it necessary, you should use `smis addsecure` instead of `smis add`.
 
-== Syntax
+.Syntax
 
 `smis addsecure`
 
@@ -25,15 +25,15 @@ The `smis addsecure` command adds a storage system with an HTTPS connection to y
 Operating systems using languages other than U.S. English cannot use the `addsecure` command.
 ====
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 
-== Parameters
+.Parameters
 
 * `*_storage_sys_*`
 +
@@ -63,7 +63,7 @@ The `smis addsecure` command and the `[-t {*https*}]` parameter connects using S
 
 You should consider your environment's security needs before disabling SSL-encrypted connections.
 
-== Example
+.Example
 
 Add a storage system using IPv4 with an IP address of 10.32.1.4 over HTTPS:
 
@@ -73,7 +73,7 @@ smis addsecure 10.32.1.4 user2 password2
 
 A confirmation message appears that the storage system was successfully added. If an error occurred, an error message appears.
 
-== Example
+.Example
 
 Add a storage system using IPv6 over HTTPS:
 
@@ -84,7 +84,7 @@ smis addsecure 1001:2::3:4 user2 password2
 
 A confirmation message appears that the storage system was successfully added. If an error occurred, an error message appears.
 
-== Example
+.Example
 
 Add a storage system with an IP address of 10.32.1.4 over HTTPS on a non-English-language system:
 

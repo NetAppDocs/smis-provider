@@ -11,25 +11,25 @@ summary: "The slptool findattrs command finds WBEM attributes that run on a netw
 [.lead]
 The `slptool findattrs` command finds WBEM attributes that run on a network.
 
-== Syntax
+.Syntax
 
 `slptool findattrs _service_`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 A user with a valid user name and password
 
-== Parameters
+.Parameters
 
 * `*_service_*`
 +
 Specifies the service type.
 
-== Example
+.Example
 
 The `slptool findattrs` command and its abbreviated output:
 

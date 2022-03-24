@@ -11,12 +11,12 @@ summary: 'You can use SMI-S Provider to start, stop, and restart the CIM server 
 [.lead]
 You can use SMI-S Provider to start, stop, and restart the CIM server and to review its status.
 
-== Before you begin
+.Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
 
-== Steps
+.Steps
 
 . Access NetApp SMI-S Provider.
 . Complete one of the following actions:

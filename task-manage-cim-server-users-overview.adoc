@@ -1,22 +1,22 @@
 ---
-permalink: task-manage-cim-server-users.html
+permalink: task-manage-cim-server-users-overview.html
 sidebar: sidebar
 keywords: smi-s provider, add, remove, remove, cim users, authorized, cim server, cim user, password, modify
 summary: "You can use SMI-S Provider to add and remove CIM users that are authorized to use the CIM server. You can also list all current CIM users and modify their passwords."
 ---
-= Manage CIM server users
+= Overview
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
 You can use SMI-S Provider to add and remove CIM users that are authorized to use the CIM server. You can also list all current CIM users and modify their passwords.
 
-== Before you begin
+.Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
 
-== Steps
+.Steps
 
 . Access NetApp SMI-S Provider.
 . Create a local user account.

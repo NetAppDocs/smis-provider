@@ -11,27 +11,27 @@ summary: "Thesmis disks command displays disk information for storage systems. s
 [.lead]
 The``smis disks`` command displays disk information for storage systems. `smis disks` only functions when used with Data ONTAP 7-Mode controllers.
 
-== Syntax
+.Syntax
 
 smis disks
 
 `[-t {*http* | *https*}]`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 A user with a valid user name and password
 
-== Parameters
+.Parameters
 
 * `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 
-== Example
+.Example
 
 The `smis disks` command and its abbreviated output:
 
