@@ -11,16 +11,16 @@ summary: "If tracing is enabled, seven trace files are saved by default. If you 
 [.lead]
 If tracing is enabled, seven trace files are saved by default. If you need more trace files saved, you can increase the maximum number of trace files saved by setting the environment variable `PEGASUS_TRACE_FILE_NUM`. If you increase the maximum number of trace files saved, you must ensure that the system has enough space on its hard drive to accommodate the trace files.
 
-== Before you begin
+.Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
 
-== About this task
+.About this task
 
 If tracing is enabled, tracing information is written to the `cimserver.trc` file. The trace files are rotated. When `cimserver.trc` reaches the maximum trace file size, its contents are moved to the `cimserver.trc._n_` file. By default, `n` is a value from 0 through 5. If you need more trace files saved, you increase the value of `_n_`.
 
-== Steps
+.Steps
 
 . Access NetApp SMI-S Provider.
 . Create a system or user environment variable named `PEGASUS_TRACE_FILE_NUM` with the new number of trace files saved.

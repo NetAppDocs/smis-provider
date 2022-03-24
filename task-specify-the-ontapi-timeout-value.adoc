@@ -11,12 +11,12 @@ summary: "SMI-S Provider makes ONTAP API (ONTAPI) calls to storage systems. By d
 [.lead]
 SMI-S Provider makes ONTAP API (ONTAPI) calls to storage systems. By default, the ONTAPI timeout is 300 seconds. You can set the timeout to a value from 60 to 300 seconds.
 
-== Before you begin
+.Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
 
-== Step
+.Step
 
 . Create a system or user environment variable named `ONTAPI_TIMEOUT_SEC` with the new timeout value (in seconds).
 +

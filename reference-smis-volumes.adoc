@@ -11,7 +11,7 @@ summary: "The smis volumes command lists the traditional and flexible volumes fo
 [.lead]
 The `smis volumes` command lists the traditional and flexible volumes for storage systems.
 
-== Syntax
+.Syntax
 
 `smis volumes`
 
@@ -23,21 +23,21 @@ The `smis volumes` command lists the traditional and flexible volumes for storag
 For clustered Data ONTAP, you must use the `smis pools` command instead of the `smis volumes` command.
 ====
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 A user with a valid user name and password
 
-== Parameters
+.Parameters
 
 * `*[-t {http | https}]*`
 +
 Protocol to be used: HTTPS (default) or HTTP
 
-== Example
+.Example
 
 The `smis volumes` command and its abbreviated output:
 

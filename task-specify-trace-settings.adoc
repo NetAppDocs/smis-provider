@@ -11,12 +11,12 @@ summary: "Having tracing enabled is important for gathering information for trou
 [.lead]
 Having tracing enabled is important for gathering information for troubleshooting. However, having tracing enabled can impact performance, so carefully consider what must be traced and how long you need tracing enabled.
 
-== Before you begin
+.Before you begin
 
 * You must already have login credentials as Administrator.
 * You must already have logged in to the host system as Administrator.
 
-== Steps
+.Steps
 
 . Access NetApp SMI-S Provider.
 . Specify various trace settings as applicable:

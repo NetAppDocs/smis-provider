@@ -11,12 +11,12 @@ summary: "Before you can validate the storage system, you must add a CIM user au
 [.lead]
 Before you can validate the storage system, you must add a CIM user authorized to use the CIM server.
 
-== Before you begin
+.Before you begin
 
 * You must already have logged in as Administrator.
 * You must already have accessed SMI-S Provider.
 
-== Steps
+.Steps
 
 . Create a local user account.
 . Add the user to the Administrators group.

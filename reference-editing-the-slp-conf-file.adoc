@@ -11,11 +11,11 @@ summary: "The slp.conf configuration file provides additional options that enabl
 [.lead]
 The `slp.conf` configuration file provides additional options that enable you to manage a service location protocol daemon (SLPD) server.
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\cfg`
 
-== Privilege level
+.Privilege level
 
 A user with a valid user name and password
 
@@ -25,7 +25,7 @@ The `slp.conf` configuration file enables you to change the number of interfaces
 
 Use a text editor to open the `slp.conf`.
 
-== Parameters
+.Parameters
 
 * *`interfaces`*
 +
@@ -43,7 +43,7 @@ Forces the use of the broadcast option, instead of using the multicast option, w
 +
 Enables security for received URLs and attribute lists.
 
-== Example
+.Example
 
 The following is an abbreviated example of the `slp.conf` configuration file:
 

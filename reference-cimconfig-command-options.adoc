@@ -9,21 +9,21 @@ summary: "You can use the cimconfig command to manage CIMOM configuration settin
 :imagesdir: ./media/
 
 [.lead]
-You can use the `cimconfig` command to manage CIMOM configuration settings. After entering the `cimconfig` command or creating an environment variable for the NetApp SMI-S Provider configuration value, you must restart the CIM server by using the `smis cimserver restart` command.
+You can use the `cimconfig` command to configure CIMOM settings, such as enabling and disabling HTTP and HTTPS and changing the HTTP and HTTPS port numbers. After entering the `cimconfig` command or creating an environment variable for the NetApp SMI-S Provider configuration value, you must restart the CIM server by using the `smis cimserver restart` command.
 
-== Syntax
+.Syntax
 
 `cimconfig _options_`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 
-== Options
+.Options
 
 * *-c*
 +
@@ -61,7 +61,7 @@ Resets the configuration property to its default value.
 +
 Displays the version of the CIM server.
 
-== Example
+.Example
 
 Change the maximum log file size to 15000 KB:
 

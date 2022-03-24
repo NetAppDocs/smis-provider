@@ -9,21 +9,21 @@ summary: "You can use the cimuser options to add, remove, modify, and list CIM s
 :imagesdir: ./media/
 
 [.lead]
-You can use the `cimuser` options to add, remove, modify, and list CIM server users.
+You can use the `cimuser` command to add, remove, delete, modify, and list CIM server users, as well as manage their passwords.
 
-== Syntax
+.Syntax
 
 `cimuser _options_`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 
-== Options
+.Options
 
 * *-a*
 +
@@ -61,7 +61,7 @@ Displays the version of the CIM server.
 +
 Specifies the password for the specified user.
 
-== Example
+.Example
 
 Create a CIM user named sydney with a password of password1:
 

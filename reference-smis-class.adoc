@@ -11,21 +11,21 @@ summary: "The smis class command lists information about a specified class or al
 [.lead]
 The `smis class` command lists information about a specified class or all classes.
 
-== Syntax
+.Syntax
 
 `smis class`
 
 `_name_space_ {*niall*  | {*ei* | *ni* | *gi* | *gc*} _class_name_}} [-t {*http* | *https*}]`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 A user with a valid user name and password
 
-== Parameters
+.Parameters
 
 * `*_name_space_*`
 +
@@ -59,7 +59,7 @@ Name of the class for which you want information
 +
 Protocol to be used: HTTPS (default) or HTTP
 
-== Example
+.Example
 
 The `smis class` command and its abbreviated output:
 

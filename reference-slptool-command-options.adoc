@@ -9,21 +9,21 @@ summary: "You can use these options with the slptool command."
 :imagesdir: ./media/
 
 [.lead]
-You can use these options with the `slptool` command.
+You can use the `slptool` command to display information about WBEM services.
 
-== Syntax
+.Syntax
 
 `slptool [options] _subcommand_`
 
-== Location
+.Location
 
 `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
 
-== Privilege level
+.Privilege level
 
 Administrator (Windows)
 
-== Options
+.Options
 
 * *-i*
 +
