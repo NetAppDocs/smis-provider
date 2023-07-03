@@ -26,14 +26,14 @@ By default, SSL authentication is enabled for the CIM server. During the SMI-S P
 +
 `*C:\ >set OPENSSL_CONF=%PEGASUS_HOME%\bin\openssl.cnf*`
 +
-This only sets the variable location for the duration of the current Command Prompt session. To set the variable location permanently, you can use one of the following options:
+This only sets the environment variable location for the duration of the current Command Prompt session. To permanently set the environment variable, you can use one of the following options:
 + 
-* Navigate to  *Properties > Environmental Variables* and set the variable under *System*.
+* Navigate to  *Properties > Environmental Variables* and update the variable under *System*.
 * Use Command Prompt to permanently set the variable:
 +
 `*setx OPENSSL_CONF “%PEGASUS_HOME%\bin\openssl.cnf*`. 
 +
-The variable is available when you open a new Command Prompt session.
+The variable is set when you open a new Command Prompt session.
 
 . Navigate to the `%PEGASUS_HOME%\bin` directory:
 +
