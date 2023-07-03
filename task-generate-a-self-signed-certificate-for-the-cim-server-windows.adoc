@@ -21,19 +21,23 @@ By default, SSL authentication is enabled for the CIM server. During the SMI-S P
 . Download the `openssl.cnf` file from the following location: link:http://web.mit.edu/crypto/openssl.cnf[OpenSSL example configuration file^] 
 . Move the `openssl.cnf` file to the bin directory:
 +
-`%PEGASUS_HOME%\bin\openssl.cnf`
+`*%PEGASUS_HOME%\bin\openssl.cnf*`
 . Set the `OPENSSL_CONF` environmental variable to the location of the `openssl.cnf` file:
 +
-`C:\ >set OPENSSL_CONF=%PEGASUS_HOME%\bin\openssl.cnf`
+`*C:\ >set OPENSSL_CONF=%PEGASUS_HOME%\bin\openssl.cnf*`
 +
 This only sets the variable for the duration of the current CLI session. To set the variable permanently, you can use one of the following options:
 + 
 .. Right click  *Properties > Environmental Variables* and set the variable under *System*.
-.. Using the CLI, enter `setx OPENSSL_CONF “%PEGASUS_HOME%\bin\openssl.cnf`. The variable is available when you open a new CLI session.
+.. Use the CLI to permanently set the variable:
++
+`*setx OPENSSL_CONF “%PEGASUS_HOME%\bin\openssl.cnf*`. 
++
+The variable is available when you open a new CLI session.
 
 . Navigate to the `%PEGASUS_HOME%\bin` directory:
 +
-`C:\cd %pegasus_home%\bin`
+`*C:\cd %pegasus_home%\bin*`
 . Generate a private key:
 +
 `*openssl genrsa -out cimom.key 2048*`
