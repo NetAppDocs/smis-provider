@@ -18,7 +18,7 @@ By default, SSL authentication is enabled for the CIM server. During the SMI-S P
 
 .Steps
 
-. Download the `openssl.cnf` file from the following location: link:http://web.mit.edu/crypto/openssl.cnf[OpenSSL example configuration file^] 
+. Download the `openssl.cnf` file from the following location: link:http://web.mit.edu/crypto/openssl.cnf[http://web.mit.edu/crypto/openssl.cnf^] 
 . Move the `openssl.cnf` file to the bin directory:
 +
 `*%PEGASUS_HOME%\bin\openssl.cnf*`
