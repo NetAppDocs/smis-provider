@@ -28,8 +28,8 @@ By default, SSL authentication is enabled for the CIM server. During the SMI-S P
 +
 This only sets the variable for the duration of the current CLI session. To set the variable permanently, you can use one of the following options:
 + 
-.. Right click  *Properties > Environmental Variables* and set the variable under *System*.
-.. Use the CLI to permanently set the variable:
+* Option 1: Right click  *Properties > Environmental Variables* and set the variable under *System*.
+* Option 2: Use the CLI to permanently set the variable:
 +
 `*setx OPENSSL_CONF “%PEGASUS_HOME%\bin\openssl.cnf*`. 
 +
