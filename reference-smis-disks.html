@@ -1,0 +1,2592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>smis disks</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="smis disks" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/smis-provider/reference-smis-disks.html" />
+	<meta property="og:description" content="Thesmis disks command displays disk information for storage systems. smis disks only functions when used with Data ONTAP 7-Mode controllers." />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/smis-provider/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Thesmis disks command displays disk information for storage systems. smis disks only functions when used with Data ONTAP 7-Mode controllers.">
+  <meta name="keywords" content=" thesmis, disk, command, display, information, storage, systems"><!-- Icons -->
+  <link rel="icon" href="/us-en/smis-provider/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/us-en/smis-provider/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/us-en/smis-provider/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/smis-provider/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/us-en/smis-provider/reference-smis-disks.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/smis-provider/reference-smis-disks.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/smis-provider/reference-smis-disks.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/smis-provider/reference-smis-disks.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/smis-provider/reference-smis-disks.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/smis-provider/reference-smis-disks.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/smis-provider/reference-smis-disks.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/smis-provider/reference-smis-disks.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/smis-provider/reference-smis-disks.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/smis-provider/reference-smis-disks.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/smis-provider/reference-smis-disks.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/smis-provider/js/na-search.js'></script><script src='/us-en/smis-provider/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/us-en/smis-provider/js/custom-dropdown.js'></script>
+  <script src='/us-en/smis-provider/js/FileSaver.min.js'></script>
+  <script src='/us-en/smis-provider/js/jszip-utils.min.js'></script>
+  <script src='/us-en/smis-provider/js/jszip.min.js'></script><script src='/us-en/smis-provider/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/us-en/smis-provider/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/">
+                <image id="ie-header-logo" src="/us-en/smis-provider/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">Docs</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/us-en/smis-provider/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">English</span>
+                    <img src="/us-en/smis-provider/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/us-en/smis-provider/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/us-en/smis-provider/reference-smis-disks.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/smis-provider/reference-smis-disks.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/smis-provider/reference-smis-disks.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/smis-provider/reference-smis-disks.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/smis-provider/reference-smis-disks.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/smis-provider/reference-smis-disks.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/smis-provider/reference-smis-disks.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/smis-provider/reference-smis-disks.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/smis-provider/reference-smis-disks.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/us-en/smis-provider/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">All NetApp</span>
+                    <img src="/us-en/smis-provider/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/us-en/smis-provider/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Support</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Knowledge Base</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Training</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/us-en/smis-provider/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/us-en/smis-provider/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">All docs</a>
+    </li>
+    
+    
+
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/us-en/smis-provider/">-->
+      NetApp SMI-S Provider
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/us-en/smis-provider/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/us-en/smis-provider/search.html" 
+        data-type="widget"
+        data-placeholder="Search documentation"
+        data-no-results-found="No results were found for {query}"
+        data-did-you-mean="Search for {suggestion}."
+        data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+        data-results-found="{hitCount} results found"
+        data-error-message="An error occurred. Please try again."
+        data-error-reset="Reset search"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp SMI-S Provider docs"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/smis-provider/index.html">
+        NetApp SMI-S Provider docs
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Release notes"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/releasenotes.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/smis-provider/releasenotes.html">
+        Release notes
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp SMI-S Provider overview"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> NetApp SMI-S Provider overview</div>-->
+         NetApp SMI-S Provider overview
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-overview.html">
+        Overview
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="New in this release"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-new-in-this-release-smis.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-new-in-this-release-smis.html">
+        New in this release
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Uses of NetApp SMI-S Provider"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-uses-of-data-ontap-smi-s-agent.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-uses-of-data-ontap-smi-s-agent.html">
+        Uses of NetApp SMI-S Provider
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp SMI-S Provider sizing and performance"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smi-s-agent-sizing-and-performance-information.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smi-s-agent-sizing-and-performance-information.html">
+        NetApp SMI-S Provider sizing and performance
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp SMI-S Provider components"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-data-ontap-smi-s-agent-components.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-data-ontap-smi-s-agent-components.html">
+        NetApp SMI-S Provider components
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp SMI-S Provider protocols"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-data-ontap-smi-s-agent-protocols.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-data-ontap-smi-s-agent-protocols.html">
+        NetApp SMI-S Provider protocols
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="How NetApp SMI-S Provider interacts with a host"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-how-smi-s-provider-interacts-with-a-host.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-how-smi-s-provider-interacts-with-a-host.html">
+        How NetApp SMI-S Provider interacts with a host
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SMI-S profiles"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-smi-s-profiles.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-smi-s-profiles.html">
+        SMI-S profiles
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deployment workflow"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-deployment-workflow.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/smis-provider/concept-deployment-workflow.html">
+        Deployment workflow
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepare for deployment"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Prepare for deployment</div>-->
+         Prepare for deployment
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-prepare-for-deployment-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-prepare-for-deployment-overview.html">
+        Overview
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Supported operating system versions"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-supported-operating-systems.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-supported-operating-systems.html">
+        Supported operating system versions
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Hardware requirements"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-hardware-requirements.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-hardware-requirements.html">
+        Hardware requirements
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Required licenses"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-required-licenses.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-required-licenses.html">
+        Required licenses
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Supported cluster platforms"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-supported-platforms.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-supported-platforms.html">
+        Supported cluster platforms
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Download the NetApp SMI-S Provider software package"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-download-smi-s-provider.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-download-smi-s-provider.html">
+        Download the NetApp SMI-S Provider software package
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Install NetApp SMI-S Provider"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Install NetApp SMI-S Provider</div>-->
+         Install NetApp SMI-S Provider
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Install NetApp SMI-S Provider on a Windows host"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-install-smi-s-agent-on-a-windows-host.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-install-smi-s-agent-on-a-windows-host.html">
+        Install NetApp SMI-S Provider on a Windows host
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Uninstall NetApp SMI-S Provider"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Uninstall NetApp SMI-S Provider</div>-->
+         Uninstall NetApp SMI-S Provider
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Uninstall NetApp SMI-S Provider from a Windows host"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-uninstall-smi-s-agent-from-a-windows-host.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-uninstall-smi-s-agent-from-a-windows-host.html">
+        Uninstall NetApp SMI-S Provider from a Windows host
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Preconfiguration validation"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Preconfiguration validation</div>-->
+         Preconfiguration validation
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-preconfiguration-task-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-preconfiguration-task-overview.html">
+        Overview
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Verify the CIM server status"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-verify-the-cim-server-status.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-verify-the-cim-server-status.html">
+        Verify the CIM server status
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Add a CIM server user"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-add-cim-server-users.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-add-cim-server-users.html">
+        Add a CIM server user
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Verify that the storage system is working correctly"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-verify-that-the-storage-system-is-working-correctly.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-verify-that-the-storage-system-is-working-correctly.html">
+        Verify that the storage system is working correctly
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Generate a self-signed certificate for the CIM server"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-generate-a-self-signed-certificate-for-the-cim-server-windows.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-generate-a-self-signed-certificate-for-the-cim-server-windows.html">
+        Generate a self-signed certificate for the CIM server
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage the CIM server"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-manage-the-cim-server.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/smis-provider/task-manage-the-cim-server.html">
+        Manage the CIM server
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage storage systems"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-manage-storage-systems.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/smis-provider/task-manage-storage-systems.html">
+        Manage storage systems
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage CIM server users"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manage CIM server users</div>-->
+         Manage CIM server users
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-manage-cim-server-users-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-manage-cim-server-users-overview.html">
+        Overview
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Types of CIM users and associated operations"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-types-of-cim-users-and-associated-operations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-types-of-cim-users-and-associated-operations.html">
+        Types of CIM users and associated operations
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage CIMOM configuration settings"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-manage-cimom-configuration-settings.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/smis-provider/task-manage-cimom-configuration-settings.html">
+        Manage CIMOM configuration settings
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage logging and tracing"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manage logging and tracing</div>-->
+         Manage logging and tracing
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-manage-logging-and-tracing-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-manage-logging-and-tracing-overview.html">
+        Overview
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure log settings"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-configure-log-settings.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-configure-log-settings.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure log settings</div>-->
+         Configure log settings
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Logging levels"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-logging-levels.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/smis-provider/reference-logging-levels.html">
+        Logging levels
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage tracing"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-manage-tracing.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-manage-tracing.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manage tracing</div>-->
+         Manage tracing
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Specify trace settings"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-specify-trace-settings.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/smis-provider/task-specify-trace-settings.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Specify trace settings</div>-->
+         Specify trace settings
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Trace setting values"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-trace-setting-values.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/smis-provider/reference-trace-setting-values.html">
+        Trace setting values
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Specify trace file size"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-specify-trace-file-size.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/smis-provider/task-specify-trace-file-size.html">
+        Specify trace file size
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Specify the number of trace files saved"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-specify-the-number-of-trace-files-saved.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/smis-provider/task-specify-the-number-of-trace-files-saved.html">
+        Specify the number of trace files saved
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Enable or disable audit log for SMI-S commands"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-enable-or-disable-audit-log-for-smi-s-commands.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-enable-or-disable-audit-log-for-smi-s-commands.html">
+        Enable or disable audit log for SMI-S commands
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage SMI-S Provider advanced settings"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manage SMI-S Provider advanced settings</div>-->
+         Manage SMI-S Provider advanced settings
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-manage-smi-s-agent-advanced-settings-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-manage-smi-s-agent-advanced-settings-overview.html">
+        Overview
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Specify the SMI-S Provider automatic cache refresh interval"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-specify-the-smi-s-agent-cache-refresh-interval.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-specify-the-smi-s-agent-cache-refresh-interval.html">
+        Specify the SMI-S Provider automatic cache refresh interval
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Specify the concrete job lifetime value"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-specify-the-concrete-job-lifetime-value.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-specify-the-concrete-job-lifetime-value.html">
+        Specify the concrete job lifetime value
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Specify the ONTAPI timeout value"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-specify-the-ontapi-timeout-value.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-specify-the-ontapi-timeout-value.html">
+        Specify the ONTAPI timeout value
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Specify the maximum number of threads per message service queue"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-specify-the-maximum-number-of-threads-per-message-service-queue.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-specify-the-maximum-number-of-threads-per-message-service-queue.html">
+        Specify the maximum number of threads per message service queue
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Enable or disable authentication for NetApp SMI-S Provider"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-enable-or-disable-authentication-for-smi-s-provider.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-enable-or-disable-authentication-for-smi-s-provider.html">
+        Enable or disable authentication for NetApp SMI-S Provider
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Enable indications in SMI-S Provider"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/task-enable-indications-in-smi-s-agent.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/task-enable-indications-in-smi-s-agent.html">
+        Enable indications in SMI-S Provider
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage SLP"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manage SLP</div>-->
+         Manage SLP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-manage-slp-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-manage-slp-overview.html">
+        Overview
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Specify SLP configuration options"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-specify-slp-configuration-options.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-specify-slp-configuration-options.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Specify SLP configuration options</div>-->
+         Specify SLP configuration options
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="slp.conf file management"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-editing-the-slp-conf-file.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/smis-provider/reference-editing-the-slp-conf-file.html">
+        slp.conf file management
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="CIMOM commands"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> CIMOM commands</div>-->
+         CIMOM commands
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="cimconfig"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-cimconfig-command-options.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-cimconfig-command-options.html">
+        cimconfig
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="CIM user commands"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> CIM user commands</div>-->
+         CIM user commands
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="cimuser"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-cimuser-command-options.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-cimuser-command-options.html">
+        cimuser
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SMI-S Provider commands"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> SMI-S Provider commands</div>-->
+         SMI-S Provider commands
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-smi-s-provider-commands-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-smi-s-provider-commands-overview.html">
+        Overview
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis add"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-add.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-add.html">
+        smis add
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis addsecure"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-addsecure.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-addsecure.html">
+        smis addsecure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis cimom"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-cimom.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-cimom.html">
+        smis cimom
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis cimserver"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-cimserver.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-cimserver.html">
+        smis cimserver
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis class"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-class.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-class.html">
+        smis class
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis config show"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-config-show.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-config-show.html">
+        smis config show
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis crp"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-crp.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-crp.html">
+        smis crp
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis crsp"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-crsp.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-crsp.html">
+        smis crsp
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis delete"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-delete.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-delete.html">
+        smis delete
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis disks"
+      data-li-level="2#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-disks.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-disks.html">
+        smis disks
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis exports"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-exports.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-exports.html">
+        smis exports
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis initiators"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-initiators.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-initiators.html">
+        smis initiators
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis licensed"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-licensed.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-licensed.html">
+        smis licensed
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis list"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-list.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-list.html">
+        smis list
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis luns"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-luns.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-luns.html">
+        smis luns
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis namespaces"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-namespaces.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-namespaces.html">
+        smis namespaces
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis pools"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-pools.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-pools.html">
+        smis pools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis refresh"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-refresh.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-refresh.html">
+        smis refresh
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis slpd"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-slpd.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-slpd.html">
+        smis slpd
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis version"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-version.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-version.html">
+        smis version
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="smis volumes"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smis-volumes.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smis-volumes.html">
+        smis volumes
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SLP commands"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> SLP commands</div>-->
+         SLP commands
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="slptool"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-slptool-command-options.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-slptool-command-options.html">
+        slptool
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="slptool findattrs"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-slptool-findattrs.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-slptool-findattrs.html">
+        slptool findattrs
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="slptool findsrvs"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-slptool-findsrvs.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-slptool-findsrvs.html">
+        slptool findsrvs
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Troubleshoot SMI-S Provider"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/smis-provider/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/smis-provider/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Troubleshoot SMI-S Provider</div>-->
+         Troubleshoot SMI-S Provider
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-troubleshoot-smi-s-agent-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-troubleshoot-smi-s-agent-overview.html">
+        Overview
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Access is denied error"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-access-is-denied-error.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-access-is-denied-error.html">
+        Access is denied error
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Possible errors while loading shared libraries"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-possible-errors-when-loading-shared-libraries.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-possible-errors-when-loading-shared-libraries.html">
+        Possible errors while loading shared libraries
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connection refused"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-connection-refused-error.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-connection-refused-error.html">
+        Connection refused
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Filer return: No ontap element in response"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-no-ontap-element-in-response-error.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-no-ontap-element-in-response-error.html">
+        Filer return: No ontap element in response
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Clone/Snapshot operations are not allowed"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-clone-snapshot-operations-are-not-allowed.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-clone-snapshot-operations-are-not-allowed.html">
+        Clone/Snapshot operations are not allowed
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Warning 26130"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-warning-26130.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-warning-26130.html">
+        Warning 26130
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HostAgentAccessDenied (ID: 26263)"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-hostagentaccessdenied-error-id-26263.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-hostagentaccessdenied-error-id-26263.html">
+        HostAgentAccessDenied (ID: 26263)
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cannot connect to localhost:5988"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-cannot-connect-to-localhost-5988-error.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-cannot-connect-to-localhost-5988-error.html">
+        Cannot connect to localhost:5988
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cannot connect to localhost:5989"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-cannot-connect-to-localhost-5989-error.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-cannot-connect-to-localhost-5989-error.html">
+        Cannot connect to localhost:5989
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SMI-S Provider crashes in Windows"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-handling-smi-s-agent-crashes-in-windows.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-handling-smi-s-agent-crashes-in-windows.html">
+        SMI-S Provider crashes in Windows
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Issue entering passwords containing special characters"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-entering-passwords-containing-special-characters.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-entering-passwords-containing-special-characters.html">
+        Issue entering passwords containing special characters
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Clone technology used in SMI-S Provider"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-clone-technology-used-in-smi-s-agent-4-0.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-clone-technology-used-in-smi-s-agent-4-0.html">
+        Clone technology used in SMI-S Provider
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Confirm visibility of important objects"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-confirm-visibility-of-important-objects.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-confirm-visibility-of-important-objects.html">
+        Confirm visibility of important objects
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Requirement for using fileshares on Windows"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/concept-requirement-for-using-fileshares-in-windows.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/concept-requirement-for-using-fileshares-in-windows.html">
+        Requirement for using fileshares on Windows
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Nondefault firewalls must have ports manually added as exceptions"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html">
+        Nondefault firewalls must have ports manually added as exceptions
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cannot add a storage system using a nondefault HTTP or HTTPS port"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-cannot-add-a-storage-system-using-a-nondefault-http-or-https-port.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-cannot-add-a-storage-system-using-a-nondefault-http-or-https-port.html">
+        Cannot add a storage system using a nondefault HTTP or HTTPS port
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="No response from the server"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-no-response-from-the-server.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-no-response-from-the-server.html">
+        No response from the server
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Runtime library issues"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-runtime-library-issues.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-runtime-library-issues.html">
+        Runtime library issues
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp SMI-S Provider takes a long time to start"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smi-s-agent-takes-a-long-time-to-start.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smi-s-agent-takes-a-long-time-to-start.html">
+        NetApp SMI-S Provider takes a long time to start
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Total managed space for a storage pool (volume) discrepancy"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-total-managed-space-for-a-storage-pool-aggregate-discrepancy.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-total-managed-space-for-a-storage-pool-aggregate-discrepancy.html">
+        Total managed space for a storage pool (volume) discrepancy
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Network path not found"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-network-path-not-found-error-during-vm-deployment.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-network-path-not-found-error-during-vm-deployment.html">
+        Network path not found
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Insufficient system resources exist to complete the requested service"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-vm-provisioning-in-scvmm-fails-with-insufficient-system-resources-error.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-vm-provisioning-in-scvmm-fails-with-insufficient-system-resources-error.html">
+        Insufficient system resources exist to complete the requested service
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SMB share size dropping to 0 in SCVMM"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-smb-share-size-dropping-to-0-in-scvmm.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-smb-share-size-dropping-to-0-in-scvmm.html">
+        SMB share size dropping to 0 in SCVMM
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SCVMM rescan operation failed to locate or communicate with SMI-S Provider"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/smis-provider/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html">
+        SCVMM rescan operation failed to locate or communicate with SMI-S Provider
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Legal notices"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/reference-smis-disks.html" 
+      dale-entry-url="/reference-legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/smis-provider/reference-legal-notices.html">
+        Legal notices
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/us-en/smis-provider"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/us-en/smis-provider"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">smis disks</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2022-03-08 07:33:42 +0000">03/08/2022</time>
+        
+    
+    
+        <span>Contributors
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/us-en/smis-provider/images/discuss-sm.svg" alt="" class="github-icon" />Suggest changes</span>
+        <img src="/us-en/smis-provider/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/us-en/smis-provider/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/smis-provider/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/smis-provider/reference-smis-disks.html&page-title=smis disks" class="page-nav-contribute-link" role="button">Request doc changes</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/smis-provider/blob/main/reference-smis-disks.adoc" class="page-nav-contribute-link" role="button">Edit this page</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Learn how to contribute</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>PDFs<img src="/us-en/smis-provider/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/us-en/smis-provider/pdfs/fullsite-sidebar/NetApp_SMI_S_Provider_Documentation.pdf" >
+                    <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>PDF of this doc site</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/NetApp_SMI_S_Provider_overview.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            NetApp SMI-S Provider overview
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Prepare_for_deployment.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Prepare for deployment
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Install_NetApp_SMI_S_Provider.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Install NetApp SMI-S Provider
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Uninstall_NetApp_SMI_S_Provider.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Uninstall NetApp SMI-S Provider
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Preconfiguration_validation.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Preconfiguration validation
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Manage_CIM_server_users.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manage CIM server users
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Manage_logging_and_tracing.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manage logging and tracing
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Configure_log_settings.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure log settings
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Manage_tracing.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manage tracing
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Specify_trace_settings.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Specify trace settings
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Manage_SMI_S_Provider_advanced_settings.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manage SMI-S Provider advanced settings
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Manage_SLP.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manage SLP
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Specify_SLP_configuration_options.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Specify SLP configuration options
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/CIMOM_commands.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            CIMOM commands
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/CIM_user_commands.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            CIM user commands
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/SMI_S_Provider_commands.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            SMI-S Provider commands
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/SLP_commands.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            SLP commands
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/smis-provider/pdfs/sidebar/Troubleshoot_SMI_S_Provider.pdf" 
+            
+          >
+            <img src="/us-en/smis-provider/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Troubleshoot SMI-S Provider
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/us-en/smis-provider/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div class="paragraph lead">
+<p>The<code>smis disks</code> command displays disk information for storage systems. <code>smis disks</code> only functions when used with Data ONTAP 7-Mode controllers.</p>
+</div>
+<div class="paragraph">
+<div class="title">Syntax</div>
+<p>smis disks</p>
+</div>
+<div class="paragraph">
+<p><code>[-t {<strong>http</strong> | <strong>https</strong>}]</code></p>
+</div>
+<div class="paragraph">
+<div class="title">Location</div>
+<p><code>C:\Program Files (x86)\NetApp\smis\pegasus\bin</code></p>
+</div>
+<div class="paragraph">
+<div class="title">Privilege level</div>
+<p>A user with a valid user name and password</p>
+</div>
+<div class="ulist">
+<div class="title">Parameters</div>
+<ul>
+<li>
+<p><code><strong>[-t {http | https}]</strong></code></p>
+<div class="paragraph">
+<p>Protocol to be used: HTTPS (default) or HTTP</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Example</div>
+<p>The <code>smis disks</code> command and its abbreviated output:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>smis disks
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.3",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.5",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.7",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.6",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.1",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.8",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"</pre>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/us-en/smis-provider/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/us-en/smis-provider/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">On this page</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Terms of use</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie settings</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Send feedback about this page</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/smis-provider/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/smis-provider/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/smis-provider/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/smis-provider/js/ie-tabbed-blocks.js'></script>
+    <script src='/us-en/smis-provider/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
