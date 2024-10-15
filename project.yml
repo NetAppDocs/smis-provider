@@ -15,7 +15,7 @@ sidebar:
     entries:
       - title: Overview
         url: "/concept-overview.html"
-      - title: New in this release
+      - title: What's new
         url: "/reference-new-in-this-release-smis.html"
       - title: Uses of NetApp SMI-S Provider
         url: "/reference-uses-of-data-ontap-smi-s-agent.html"
