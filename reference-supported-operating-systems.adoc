@@ -21,6 +21,7 @@ a|
 
 * Microsoft Windows Server 2016
 * Microsoft Windows Server 2019
+* Microsoft Windows Server 2022
 
 a|
 The Microsoft Visual C{pp} 2010 runtime libraries are automatically installed during the SMI-S Provider installation. To avoid potential issues related to runtime libraries, you must install Microsoft Visual C{pp} 2010 Redistributable Package (x86). from the following location: http://www.microsoft.com
@@ -46,3 +47,4 @@ The following hypervisors are supported:
 * VMware ESX 5.1
 * VMware ESX 5.5
 * VMware ESX 6.0
+// 2024-10-15, jira OTHERDOC86

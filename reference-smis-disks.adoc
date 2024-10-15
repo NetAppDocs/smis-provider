@@ -2,14 +2,14 @@
 permalink: reference-smis-disks.html
 sidebar: sidebar
 keywords: thesmis, disk, command, display, information, storage, systems
-summary: "Thesmis disks command displays disk information for storage systems. smis disks only functions when used with Data ONTAP 7-Mode controllers."
+summary: "Thesmis disks command displays disk information for storage systems. smis disks only functions when used with ONTAP 7-Mode controllers."
 ---
 = smis disks
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-The``smis disks`` command displays disk information for storage systems. `smis disks` only functions when used with Data ONTAP 7-Mode controllers.
+The``smis disks`` command displays disk information for storage systems. `smis disks` only functions when used with ONTAP 7-Mode controllers.
 
 .Syntax
 
@@ -44,3 +44,4 @@ ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.6",SystemC
 ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.1",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
 ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.8",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
 ----
+// 2024-10-15, jira OTHERDOC86

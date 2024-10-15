@@ -15,4 +15,5 @@ SMI-S Provider creates LUN clones on that storage system using only FlexClone te
 
 `FlexClone license is not enabled on the storage system.`
 
-If you have LUN clones that were created using LUN clone technology, and the Data ONTAP version is then upgraded to 7.3.1 or later, you cannot use SMI-S Provider to split those clones. They must be managed by the storage system administrator.
+If you have LUN clones that were created using LUN clone technology, and the ONTAP version is then upgraded to 7.3.1 or later, you cannot use SMI-S Provider to split those clones. They must be managed by the storage system administrator.
+// 2024-10-15, jira OTHERDOC86
