@@ -2,7 +2,7 @@
 permalink: reference-new-in-this-release-smis.html
 sidebar: sidebar
 keywords: new, release 
-summary: 'What's new in 5.2.6 P2 '
+summary: "What's new in 5.2.6 P2"
 ---
 = What's new in 5.2.6 P2
 :icons: font
