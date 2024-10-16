@@ -1,21 +1,14 @@
 ---
 permalink: reference-new-in-this-release-smis.html
 sidebar: sidebar
-keywords: new, release 
+keywords: new, release, new in this release 
 summary: "What's new in 5.2.6 P2"
 ---
 = What's new in 5.2.6 P2
 :icons: font
 :imagesdir: ./media/
 
-* There is no upgrade path available for SMI-S Provider 5.2.6 P2.
-* You must deploy SMI-S Provider 5.2.6 P2 as a new installation.
-* SnapMirror management with Azure Site Recovery is not supported in this version of SMI-S provider.
-
-*For Windows users:*
-
-* This release is not compatible with Windows Server 2012 or System Center Virtual Machine Manager (SCVMM) 2012.
-* SMI-S Provider 5.2.6 P2 supports Windows Server 2016, Windows Server 2019, SCVMM 2016 and SCVMM 2019
+* SnapMirror management with Azure Site Recovery is not supported.
 
 == What's new in 5.2.5
 
