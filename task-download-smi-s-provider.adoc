@@ -23,4 +23,3 @@ You must have created a NetApp Support Site account from https://mysupport.netap
 . From the *Software download* section, click *CONTINUE*.
 . Read and accept the End User License Agreement.
 . Select the software package file, and then save it to your desired location.
-// 2024-10-15, jira OTHERDOC86
