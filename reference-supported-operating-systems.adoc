@@ -47,4 +47,4 @@ The following hypervisors are supported:
 * VMware ESX 5.1
 * VMware ESX 5.5
 * VMware ESX 6.0
-// 2024-10-15, jira OTHERDOC86
+// 2024-11-6, jira OTHERDOC86
