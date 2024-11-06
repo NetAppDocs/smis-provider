@@ -14,7 +14,7 @@ New or existing SMB 3.0 share size can drop to 0 in System Center Virtual Machin
 
 * *Cause*
 +
-This issue occurs when quota reinitialization takes a long time in ONTAP due to heavy I/O, new or existing SMB 3.0 share size can drop to 0 in SCVMM. Because of this, new VMs cannot be provisioned on the new or existing SMB 3.0 shares.
+If quota reinitialization takes a long time in ONTAP due to heavy I/O, new or existing SMB 3.0 share size can drop to 0 in SCVMM.  When this issue occurs, new VMs cannot be provisioned on new or existing SMB 3.0 shares.
 
 * *Corrective action*
  .. Turn off the quotas.

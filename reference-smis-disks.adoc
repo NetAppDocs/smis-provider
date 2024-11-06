@@ -2,14 +2,14 @@
 permalink: reference-smis-disks.html
 sidebar: sidebar
 keywords: thesmis, disk, command, display, information, storage, systems
-summary: "Thesmis disks command displays disk information for storage systems. smis disks only functions when used with ONTAP 7-Mode controllers."
+summary: "The smis disks command displays disk information for storage systems. smis disks only functions when used with ONTAP 7-Mode controllers."
 ---
 = smis disks
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-The``smis disks`` command displays disk information for storage systems. `smis disks` only functions when used with ONTAP 7-Mode controllers.
+The `smis disks` command displays disk information for storage systems. The `smis disks` command is only supported on ONTAP 7-Mode controllers.
 
 .Syntax
 

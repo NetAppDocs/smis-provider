@@ -11,4 +11,4 @@ summary: "NetApp SMI-S Provider makes it easier for you to manage and monitor st
 [.lead]
 NetApp SMI-S Provider makes it easier for you to manage and monitor storage systems and to manage LUNs and volumes of storage systems.
 
-You can use NetApp SMI-S Provider to manage storage controllers using System Center 2016, 2019 and 2022.
+You can use NetApp SMI-S Provider to manage storage controllers using System Center 2016, 2019, and 2022.
