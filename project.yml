@@ -108,8 +108,8 @@ sidebar:
         url: "/task-specify-the-smi-s-agent-cache-refresh-interval.html"
       - title: Specify the concrete job lifetime value
         url: "/task-specify-the-concrete-job-lifetime-value.html"
-      - title: Specify the ONTAPI timeout value
-        url: "/task-specify-the-ontapi-timeout-value.html"
+      - title: Specify the ONTAP API call timeout value
+        url: "/task-specify-the-ontap-api-call-timeout-value.html"
       - title: Specify the maximum number of threads per message service queue
         url: "/task-specify-the-maximum-number-of-threads-per-message-service-queue.html"
       - title: Enable or disable authentication for NetApp SMI-S Provider

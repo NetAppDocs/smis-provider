@@ -20,7 +20,7 @@ The `smis volumes` command lists the traditional and flexible volumes for storag
 
 [NOTE]
 ====
-For clustered Data ONTAP, you must use the `smis pools` command instead of the `smis volumes` command.
+For ONTAP, you must use the `smis pools` command instead of the `smis volumes` command.
 ====
 
 .Location
@@ -56,3 +56,4 @@ ONTAP_LogicalDisk.CreationClassName="ONTAP_LogicalDisk",DeviceID="6c7ea0b0-3927-
 11df-8516-00a0980558ea",SystemCreationClassName="ONTAP_StorageSystem",SystemName
 ="ONTAP:0084259609"
 ----
+// 2024-9-12, Jira OTHERDOC97

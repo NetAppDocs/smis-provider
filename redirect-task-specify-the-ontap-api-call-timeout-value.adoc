@@ -1,0 +1,6 @@
+---
+permalink: task-specify-the-ontapi-timeout-value.html
+redirect: smis-provider/task-specify-the-ontap-api-call-timeout-value.html
+---
+
+//  2024-12-4, OTHERDOC97
