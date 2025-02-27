@@ -2,19 +2,19 @@
 permalink: reference-new-in-this-release-smis.html
 sidebar: sidebar
 keywords: new, release, new in this release, what's new 
-summary: "What's new in 5.2.6 P4"
+summary: "What's new in 5.2.6P4"
 ---
-= What's new in 5.2.6 P4
+= What's new in 5.2.6P4
 :icons: font
 :imagesdir: ./media/
 
-* There is no upgrade path available for SMI-S Provider 5.2.6 P4.
-* You must deploy SMI-S Provider 5.2.6 P4 as a new installation.
+* There is no upgrade path available for SMI-S Provider 5.2.6P4.
+* You must deploy SMI-S Provider 5.2.6P4 as a new installation.
 * SnapMirror management with Azure Site Recovery is not supported in this version of SMI-S provider.
-* SMI-S Provider 5.2.6 P4 is the only supported version of NetApp SMI-S Provider.
+* SMI-S Provider 5.2.6P4 is the only supported version of NetApp SMI-S Provider.
 
 *For Windows users*
 
 * This release is not compatible with Windows Server 2012 or System Center Virtual Machine Manager (SCVMM) 2012.
-* SMI-S Provider 5.2.6 P4 supports Windows Server 2016, Windows Server 2019, Windows Server 2022, SCVMM 2016, SCVMM 2019, and SCVMM 2022.
-// 2024-11-6, jira OTHERDOC104
+* SMI-S Provider 5.2.6P4 supports Windows Server 2016, Windows Server 2019, Windows Server 2022, SCVMM 2016, SCVMM 2019, and SCVMM 2022.
+// 2025-02-27, jira OTHERDOC104
