@@ -2,11 +2,11 @@
 permalink: releasenotes.html
 sidebar: sidebar
 keywords: netapp smi-s provider, relnotes, limitations, fixes, known issues
-summary: "Provides information about the features, limitations, and known issues for the NetApp SMI-S Provider 5.2.6 P4 software."
+summary: "Provides information about the features, limitations, and known issues for the NetApp SMI-S Provider 5.2.6P4 software."
 ---
 = NetApp SMI-S Provider Release Notes
 :icons: font
 :imagesdir: ./media/
 
 The https://library.netapp.com/ecm/ecm_download_file/ECMLP2862930[NetApp SMI-S Provider Release Notes^] describe new features, upgrade notes, fixed issues, known limitations, and known issues. 
-// 2024-10-15, jira OTHERDOC104
+// 2025-02-27, jira OTHERDOC104
