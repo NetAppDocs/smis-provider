@@ -18,13 +18,13 @@ sidebar:
       - title: New in this release
         url: "/reference-new-in-this-release-smis.html"
       - title: Uses of NetApp SMI-S Provider
-        url: "/reference-uses-of-data-ontap-smi-s-agent.html"
+        url: "/reference-uses-of-ontap-smi-s-agent.html"
       - title: NetApp SMI-S Provider sizing and performance
         url: "/reference-smi-s-agent-sizing-and-performance-information.html"
       - title: NetApp SMI-S Provider components
-        url: "/reference-data-ontap-smi-s-agent-components.html"
+        url: "/reference-ontap-smi-s-agent-components.html"
       - title: NetApp SMI-S Provider protocols
-        url: "/reference-data-ontap-smi-s-agent-protocols.html"
+        url: "/reference-ontap-smi-s-agent-protocols.html"
       - title: How NetApp SMI-S Provider interacts with a host
         url: "/concept-how-smi-s-provider-interacts-with-a-host.html"
       - title: SMI-S profiles

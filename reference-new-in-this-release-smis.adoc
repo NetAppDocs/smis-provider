@@ -21,7 +21,7 @@ summary: "What's new in 5.2.7"
 +
 [cols="2*",options="header"]
 |===
-| Version of Windows Server| Version of SCVMM| 
+| Microsoft Windows Server supported versions | SCVMM supported versions| 
 
 Windows Server 2025
 a|
