@@ -1,0 +1,6 @@
+---
+permalink: reference-uses-of-ontap-smi-s-agent.html
+redirect:  smis-provider/reference-uses-of-ontap-smi-s-agent.html
+---
+
+// 03-27-2025, OTHERDOC-116 
