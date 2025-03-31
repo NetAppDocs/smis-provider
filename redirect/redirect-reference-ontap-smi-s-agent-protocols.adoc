@@ -1,0 +1,6 @@
+---
+permalink: reference-data-ontap-smi-s-agent-protocols.html
+redirect: smis-provider/reference-ontap-smi-s-agent-protocols.html
+---
+
+// 03-27-2025, OTHERDOC-116 

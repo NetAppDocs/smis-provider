@@ -1,10 +1,10 @@
 ---
 permalink: reference-supported-platforms.html
 sidebar: sidebar
-keywords: netApp smi-s provider, cluster, platforms
+keywords: netApp smi-s provider, cluster, platforms, support for ONTAP systems
 summary: "NetApp SMI-S Provider supports cluster platforms that run ONTAP 9 and later."
 ---
-= Supported cluster platforms
+= NetApp SMI-S Provider support for ONTAP systems
 :icons: font
 :imagesdir: ./media/
 
@@ -19,4 +19,4 @@ NetApp SMI-S Provider supports the following platforms:
 * V-Series storage systems
 
 NetApp SMI-S Provider does not support ASA systems.
-//  2024-12-6, OTHERDOC97
+// 2024-03-31, OTHERDOC114
