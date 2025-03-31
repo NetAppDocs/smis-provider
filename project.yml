@@ -41,8 +41,8 @@ sidebar:
         url: "/reference-hardware-requirements.html"
       - title: Required licenses
         url: "/reference-required-licenses.html"
-      - title: Supported cluster platforms
-        url: "/reference-supported-platforms.html"
+      - title: NetApp SMI-S Provider support for ONTAP systems
+        url: "/reference-smi-s-support-ontap-systems.html"
       - title: Download the NetApp SMI-S Provider software package
         url: "/task-download-smi-s-provider.html"
   - title: Install NetApp SMI-S Provider

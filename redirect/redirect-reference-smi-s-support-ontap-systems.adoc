@@ -1,0 +1,6 @@
+---
+permalink: reference-supported-platforms.html
+redirect: smis-provider/reference-smi-s-support-ontap-systems.html
+---
+
+// 03-27-2025, OTHERDOC-114
