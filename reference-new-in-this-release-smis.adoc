@@ -16,28 +16,5 @@ summary: "What's new in 5.2.7"
 *For Windows users*
 
 * This release is not compatible with Windows Server 2012 or System Center Virtual Machine Manager (SCVMM) 2012.
-* SMI-S Provider 5.2.7 supports the following operating systems:
-
-+
-[cols="2*",options="header"]
-|===
-| Microsoft Windows Server supported versions | SCVMM supported versions| 
-
-Windows Server 2025
-a|
-SCVMM 2025
-a|
-Windows Server 2022
-a|
-SCVMM 2022
-a|
-Windows Server 2019
-a|
-SCVMM 2019
-a|
-Windows Server 2016
-a|
-SCVMM 2016
-|===
-
+* SMI-S Provider 5.2.7 supports Windows Server 2025, Windows Server 2022, Windows Server 2019, Windows Server 2016, SCVMM 2025, SCVMM 2022, SCVMM 2019 and SCVMM 2016.
 // 2025-03-27, jira OTHERDOC114

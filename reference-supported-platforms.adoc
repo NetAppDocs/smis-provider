@@ -15,8 +15,8 @@ For NetApp SMI-S Provider to create clones of storage volumes (LUNs), you must h
 
 NetApp SMI-S Provider supports the following platforms:
 
-* FAS series systems
+* FAS systems
 * V-Series storage systems
 
 NetApp SMI-S Provider does not support ASA systems.
-// 2024-03-31, OTHERDOC114
+// 2024-04-2, OTHERDOC114
