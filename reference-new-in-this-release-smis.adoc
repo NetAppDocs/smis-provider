@@ -11,10 +11,9 @@ summary: "What's new in 5.2.7"
 * There is no upgrade path available for SMI-S Provider 5.2.7.
 * You must deploy SMI-S Provider 5.2.7 as a new installation.
 * SnapMirror management with Azure Site Recovery is not supported in this version of SMI-S provider.
-* SMI-S Provider 5.2.7 is the only supported version of NetApp SMI-S Provider.
 
 *For Windows users*
 
 * This release is not compatible with Windows Server 2012 or System Center Virtual Machine Manager (SCVMM) 2012.
 * SMI-S Provider 5.2.7 supports Windows Server 2025, Windows Server 2022, Windows Server 2019, Windows Server 2016, SCVMM 2025, SCVMM 2022, SCVMM 2019 and SCVMM 2016.
-// 2025-03-27, jira OTHERDOC114
+// 2025-04-07, jira OTHERDOC 114
