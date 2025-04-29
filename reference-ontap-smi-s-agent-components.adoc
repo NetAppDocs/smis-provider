@@ -1,5 +1,5 @@
 ---
-permalink: reference-data-ontap-smi-s-agent-components.html
+permalink: reference-ontap-smi-s-agent-components.html
 sidebar: sidebar
 keywords: smi-s provider
 summary: "NetApp SMI-S Provider consists of three components that enable you to manage and monitor storage systems: CIMOM, provider objects, and a repository."
