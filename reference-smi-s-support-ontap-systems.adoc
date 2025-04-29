@@ -1,0 +1,19 @@
+---
+permalink: reference-supported-platforms.html
+sidebar: sidebar
+keywords: netApp smi-s provider, cluster, platforms, support for ONTAP systems
+summary: "NetApp SMI-S Provider supports cluster platforms that run ONTAP 9 and later."
+---
+= NetApp SMI-S Provider support for ONTAP systems
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+NetApp SMI-S Provider supports cluster platforms that run ONTAP 9 and later.
+
+For NetApp SMI-S Provider to create clones of storage volumes (LUNs), you must have installed a FlexClone license on the storage system.
+
+NetApp SMI-S Provider supports FAS systems.
+
+NetApp SMI-S Provider does not support ASA systems.
+// 2024-04-7, OTHERDOC 114

@@ -1,12 +1,13 @@
 ---
 permalink: concept-manage-smi-s-agent-advanced-settings-overview.html
 sidebar: sidebar
-keywords: manage, advance, smi-s provider, smis-s cache, refresh, interval, ontapi, timeout, thread, service, queue
-summary: "You can manage advanced settings for SMI-S Provider, such as specifying the SMI-S cache refresh interval, ONTAPI timeout, and maximum number of threads per message service queue."
+keywords: manage, advance, smi-s provider, smis-s cache, refresh, interval, ontap API call, timeout, thread, service, queue
+summary: "You can manage advanced settings for SMI-S Provider, such as specifying the SMI-S cache refresh interval, ONTAP API call timeout, and maximum number of threads per message service queue."
 ---
 = Overview
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-You can manage advanced settings for SMI-S Provider, such as specifying the SMI-S cache refresh interval, ONTAPI timeout, and maximum number of threads per message service queue.
+You can manage advanced settings for SMI-S Provider, such as specifying the SMI-S cache refresh interval, ONTAP API call timeout, and maximum number of threads per message service queue.
+//  2024-12-4, OTHERDOC97

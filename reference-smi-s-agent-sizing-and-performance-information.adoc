@@ -13,10 +13,11 @@ Knowing the maximum number of systems managed by NetApp SMI-S Provider helps you
 
 *Sizing*
 
-NetApp SMI-S Provider can manage up to the following numbers of objects in clustered Data ONTAP:
+NetApp SMI-S Provider can manage up to the following numbers of objects in ONTAP:
 
-* 100 storage virtual machines (SVMs) (without indications)
-* 10 Storage Virtual Machines (with indications)
+* 30 storage virtual machines (SVMs) 
+* 100 SVMs (without indications)
+* 10 SVMs (with indications)
 * 1,500 LUNs (per FlexVol volume)
 * 200 CIFS file shares (per FlexVol volume)
 
@@ -31,3 +32,4 @@ For configurations with 5,000 FlexVol volumes or 300,000 Snapshot copies, you mi
 * `cimcli ei ONTAP_StorageVolumeStats -n root/ontap`
 
 The Interoperability Matrix Tool (IMT) contains the latest information about sizing and performance.
+// 2024-10-15, jira OTHERDOC86
