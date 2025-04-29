@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+permalink: legal-notices.html
+keywords: copyrights, notice, trademarks, patents, privacy, open source
+summary: Legal notices provide access to copyright statements, trademarks, patents, and more.
+---
+
+= Legal notices
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+include::https://raw.githubusercontent.com/NetAppDocs/common/main/_include/common-legal-notices.adoc[]
+
+include::https://raw.githubusercontent.com/NetAppDocs/common/main/_include/open-source-notice-intro.adoc[]
+
+link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3344665[Notice for NetApp SMI-S Provider^]
+// 2024-03-27, jira OTHERDOC116
