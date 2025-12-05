@@ -23,7 +23,7 @@ A user with a valid user name and password
 
 The `slp.conf` configuration file enables you to change the number of interfaces a host listens to for SLP requests and the number of IP addresses a host uses for multicasting.
 
-Use a text editor to open the `slp.conf`.
+Use a text editor to open the `slp.conf` file.
 
 .Parameters
 
