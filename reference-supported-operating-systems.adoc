@@ -10,6 +10,8 @@ summary: "Before installing SMI-S Provider, you must verify that the Windows hos
 :pp: {plus}{plus}
 
 [.lead]
+We recommend you install SMI-S Provider on its own dedicated Windows virtual machine (VM). This VM can be on the same domain to allow for secure and convenient management.
+
 Before installing SMI-S Provider, you must verify that the Windows host is running a supported operating system.
 
 [cols="3*",options="header"]
@@ -25,7 +27,7 @@ a|
 * Microsoft Windows Server 2025
 
 a|
-The Microsoft Visual C{pp} 2010 runtime libraries are automatically installed during the SMI-S Provider installation. To avoid potential issues related to runtime libraries, you must install Microsoft Visual C{pp} 2010 Redistributable Package (x86). from the following location: http://www.microsoft.com
+The Microsoft Visual C{pp} 2010 runtime libraries are automatically installed during the SMI-S Provider installation. To avoid potential issues related to runtime libraries, you must install Microsoft Visual C{pp} 2010 Redistributable Package (x86) from the following location: http://www.microsoft.com
 |===
 
 == SCVMM UR 2.1 requirement
@@ -49,3 +51,4 @@ The following hypervisors are supported:
 * VMware ESX 5.5
 * VMware ESX 6.0
 // 2025-03-27, jira OTHERDOC114
+// 2025-12-5, jira OTHERDOC 173

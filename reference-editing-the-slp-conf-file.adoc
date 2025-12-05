@@ -48,7 +48,6 @@ Enables security for received URLs and attribute lists.
 The following is an abbreviated example of the `slp.conf` configuration file:
 
 ----
-
 ################################################################
 # OpenSLP configuration file
 # Format and contents conform to specification in IETF RFC 2614 so
@@ -70,3 +69,4 @@ DAs. If this setting is not used dynamic DA discovery will be used
 to determine which DAs to use. (Default is to use dynamic DA
 discovery)
 ----
+// 2025-12-5, GH issue 12
