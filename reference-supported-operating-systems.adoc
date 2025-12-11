@@ -40,4 +40,4 @@ To run SMI-S Provider, the provider host machine must meet the following specifi
 * The provider host machine must not run SMI-S Providers from any other vendor.
 
 // 2025-03-27, jira OTHERDOC114
-// 2025-12-11, jira OTHERDOC 173 naadia
+// 2025-12-12, jira OTHERDOC 173 naadia
