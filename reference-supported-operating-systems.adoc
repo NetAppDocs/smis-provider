@@ -35,7 +35,7 @@ The Microsoft Visual C{pp} 2010 runtime libraries are automatically installed du
 To run SMI-S Provider, the provider host machine must meet the following specifications:
 
 * The provider host machine cannot be used to host a Hyper-V node.
-* SCVMM must not be running on the provider host machine.
+* The System Center Virtual Machine Manager (SCVMM) must not be running on the provider host machine.
 * The provider host machine must not run other programs that are memory-intensive.
 * The provider host machine must not run SMI-S Providers from any other vendor.
 
