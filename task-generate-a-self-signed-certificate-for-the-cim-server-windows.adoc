@@ -9,7 +9,9 @@ summary: "By default, SSL authentication is enabled for the CIM server. During t
 :imagesdir: ./media/
 
 [.lead]
-By default, SSL authentication is enabled for the CIM server. During the SMI-S Provider installation, a self-signed certificate for the CIM server is installed in the `pegasus` directory. You can generate your own self-signed certificate and use it rather than the default certificate.
+By default, SSL authentication is enabled for the CIM server. During the SMI-S Provider installation, a self-signed certificate for the CIM server is installed in the `pegasus` directory. You need to generate your own self-signed certificate instead of using the default certificate.
+
+CAUTION: When you install SMI-S Provider, the default certificate that is installed is outdated. As a result, the SSL connection to the SMI-S provider fails from *Add Storage Devices* in the System Center Virtual Machine Manager (SCVMM). The solution is to generate a self-signed certificate for the CIM server and restart SMI-S service afterwards. For more information, review the link:https://kb.netapp.com/data-mgmt/SMI-S/SMI-S_Issues/CSMIS-3[NetApp Knowledge Base article CSMIS-3: cimom.cert in NetApp SMI-S Provider 5.2.7 is expired at the time of installation.^]
 
 .Before you begin
 
