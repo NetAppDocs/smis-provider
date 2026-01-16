@@ -57,7 +57,9 @@ You can provide a different number of days for which the certificate is valid.
 
 . Copy the `cimom.key` and `cimom.cert` files to the `pegasus` directory (Windows: `C:\Program Files (x86)\NetApp\smis\pegasus`).
 
-. Restart the SMI-S Provider service.
+. Restart the SMI-S Provider service:
++
+`smis cimserver restart`
 
 == Result
 
