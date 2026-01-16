@@ -9,12 +9,15 @@ summary: "By default, SSL authentication is enabled for the CIM server. During t
 :imagesdir: ./media/
 
 [.lead]
-By default, SSL authentication is enabled for the CIM server. During the SMI-S Provider installation, a self-signed certificate for the CIM server is installed in the `pegasus` directory. You can generate your own self-signed certificate and use it rather than the default certificate.
+By default, SSL authentication is enabled for the CIM server. During the SMI-S Provider installation, a self-signed certificate for the CIM server is installed in the `pegasus` directory. You need to generate your own self-signed certificate instead of using the default certificate.
+
+CAUTION: When you install the SMI-S Provider, the default self-signed certificate that is installed is outdated. As a result, the SSL connection to the SMI-S Provider fails from *Add Storage Devices* in the System Center Virtual Machine Manager (SCVMM). You need to generate a self-signed certificate for the CIM server and restart the SMI-S Provider service afterwards. For more information, refer to link:https://kb.netapp.com/data-mgmt/SMI-S/SMI-S_Issues/CSMIS-3[the NetApp Knowledge Base article: "CSMIS-3: cimom.cert in NetApp SMI-S Provider 5.2.7 is expired at the time of installation."^]
 
 .Before you begin
 
 * You must already have logged in as Administrator.
 * You must already have accessed SMI-S Provider.
+* You must have downloaded and installed OpenSSL on your Windows host.
 
 .Steps
 
@@ -54,8 +57,13 @@ You can provide a different number of days for which the certificate is valid.
 
 . Copy the `cimom.key` and `cimom.cert` files to the `pegasus` directory (Windows: `C:\Program Files (x86)\NetApp\smis\pegasus`).
 
+. Restart the SMI-S Provider service:
++
+`smis cimserver restart`
+
 == Result
 
 The certificate date range starts at the current date and runs for the number of days specified.
 
+// 2026 Jan 16, OTHERDOC-165
 // 2023 Jul 3, GH issue 4
