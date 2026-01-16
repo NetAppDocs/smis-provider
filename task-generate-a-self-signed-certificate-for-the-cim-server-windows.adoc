@@ -65,4 +65,5 @@ You can provide a different number of days for which the certificate is valid.
 
 The certificate date range starts at the current date and runs for the number of days specified.
 
+// 2026 Jan 16, OTHERDOC-165
 // 2023 Jul 3, GH issue 4
