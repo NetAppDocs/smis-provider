@@ -17,6 +17,7 @@ CAUTION: When you install the SMI-S Provider, the default self-signed certificat
 
 * You must already have logged in as Administrator.
 * You must already have accessed SMI-S Provider.
+* You must have downloaded and installed OpenSSL on your Windows host.
 
 .Steps
 
