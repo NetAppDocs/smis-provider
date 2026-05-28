@@ -15,7 +15,7 @@ NetApp SMI-S Provider is a command-based interface that detects and manages plat
 
 NetApp SMI-S Provider follows schemas standardized by two organizations:
 
-* http://www.dmtf.org/home[Distributed Management Task Force (DMTF)^]
+* http://www.dmtf.org[Distributed Management Task Force (DMTF)^]
 
 * http://www.snia.org/home[Storage Networking Industry Association (SNIA)^]
 
