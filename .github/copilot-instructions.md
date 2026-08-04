@@ -3,10 +3,9 @@
 ### Repository overview
 Product: NetApp SMI-S Provider
 
-NetApp SMI-S Provider is a command-based interface for detecting, managing, and monitoring NetApp storage systems that run ONTAP. It exposes storage management through WBEM standards and command-line tooling around a CIM server.
+NetApp SMI-S Provider is a command-based interface for detecting, managing, and monitoring NetApp storage systems that run ONTAP. It exposes storage management through Web-Based Enterprise Management (WBEM) standards and command-line tooling around a CIM server.
 
 ### Repository structure
-- `./` – Root-level AsciiDoc content is organized mainly as `concept-`, `task-`, and `reference-` files, with `index.adoc`, `releasenotes.adoc`, `legal-notices.adoc`, and `project.yml` defining site entry content and navigation.
 - `media/` – Images used by architecture and workflow topics.
 - `redirect/` – Redirect stub pages that map older permalinks to current documentation URLs.
 
@@ -15,7 +14,7 @@ NetApp SMI-S Provider is a command-based interface for detecting, managing, and 
 - *CIMOM* is the request-handling foundation; it validates and authenticates client requests, then invokes the correct provider implementation.
 - *Provider objects* are shared library implementations loaded by CIMOM to process commands and query storage systems through device-specific APIs.
 - *Repository* is a flat-file CIM-level data store used by CIMOM for persistent management data.
-- WBEM clients discover services through *SLP* and communicate with the CIM server using *CIM-XML* over HTTPS (HTTP is also supported).
+- WBEM clients discover services through Service Location Protocol *(SLP)* and communicate with the CIM server using *CIM-XML* over HTTPS (HTTP is also supported).
 
 **Key concepts:**
 - The *CIMOM repository* is where managed storage systems are registered for SMI-S operations and cache-backed queries.
