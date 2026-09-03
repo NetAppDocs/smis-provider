@@ -11,4 +11,4 @@ summary: "Before you can manage and monitor your storage systems using SMI-S Pro
 [.lead]
 Before you can manage and monitor your storage systems using SMI-S Provider, you must install the SMI-S Provider software and validate your preliminary configuration.
 
-image::../media/smi_s_provider_workflow.gif[]
+image::../media/smi_s_provider_workflow.gif["A diagram that shows SMI-S Provider deployment, preconfiguration validation, and management task workflows"]
