@@ -8,6 +8,9 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+The total managed space reported for a storage pool (volume) by NetApp SMI-S Provider can differ from the size shown by other storage management tools, such as FilerView. Learn why this discrepancy occurs and confirm that no corrective action is required.
+
 * *Issue*
 +
 If you are using another storage management tool, such as FilerView, you might notice a different size reported for the total managed space for a storage pool (volume) than the size returned by SMI-S Provider.

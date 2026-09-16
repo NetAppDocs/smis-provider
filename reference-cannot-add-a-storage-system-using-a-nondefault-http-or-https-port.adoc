@@ -8,6 +8,9 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+You cannot add a NetApp storage system to NetApp SMI-S Provider when that system uses HTTP or HTTPS on a nondefault port. Learn why this issue occurs and how to add the storage system by specifying the nondefault port explicitly.
+
 * *Issue*
 +
 You cannot add a storage system running HTTP or HTTPS on a nondefault port.
