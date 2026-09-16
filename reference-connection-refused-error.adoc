@@ -9,7 +9,7 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :imagesdir: ./media/
 
 [.lead]
-A `Connection refused` message indicates that the CIM server used by NetApp SMI-S Provider has not been started. Use this information to verify the CIM server status and start it if needed.
+A `Connection refused` message indicates that the CIM server used by NetApp SMI-S Provider has not been started. Verify the CIM server status and start it if needed.
 
 * *Message*
 +

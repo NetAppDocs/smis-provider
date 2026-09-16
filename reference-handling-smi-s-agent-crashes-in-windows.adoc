@@ -9,7 +9,7 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :imagesdir: ./media/
 
 [.lead]
-NetApp SMI-S Provider can occasionally crash in a Windows environment. Learn what information to collect and send to technical support so the cause of the crash can be diagnosed.
+NetApp SMI-S Provider can occasionally crash in a Windows environment. Collect the dump, log, and trace files generated at the time of the crash and send them to technical support for further analysis.
 
 * *Issue*
 +

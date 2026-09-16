@@ -10,7 +10,7 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :pp: {plus}{plus}
 
 [.lead]
-NetApp SMI-S Provider might encounter runtime library issues on Windows. Learn how to resolve them by installing the required Microsoft Visual C{pp} redistributable package.
+NetApp SMI-S Provider might encounter runtime library issues on Windows. Install the required Microsoft Visual C{pp} redistributable package to resolve them.
 
 * *Issue*
 +

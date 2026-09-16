@@ -9,7 +9,7 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :imagesdir: ./media/
 
 [.lead]
-The `HostAgentAccessDenied` error (ID: 26263) occurs when System Center Virtual Machine Manager (SCVMM) attempts to connect to NetApp SMI-S Provider using a user account that is not part of the SMI-S Provider trust store. Learn why this error occurs and how to add a valid CIM user to resolve it.
+The `HostAgentAccessDenied` error (ID: 26263) occurs when System Center Virtual Machine Manager (SCVMM) attempts to connect to NetApp SMI-S Provider using a user account that is not part of the SMI-S Provider trust store. Add a valid CIM user to the trust store to resolve this error.
 
 == Message
 

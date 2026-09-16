@@ -9,7 +9,7 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :imagesdir: ./media/
 
 [.lead]
-Warning 26130 occurs when storage capacity is allocated to a host group in which none of the hosts have access to the storage array, preventing you from placing virtual machines on the storage system. Learn how to grant the required access and resolve the warning.
+Warning 26130 occurs when storage capacity is allocated to a host group in which none of the hosts have access to the storage array, preventing you from placing virtual machines on the storage system. Grant the required access to each host to resolve this warning.
 
 == Message
 

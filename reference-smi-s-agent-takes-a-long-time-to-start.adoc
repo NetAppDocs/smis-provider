@@ -9,7 +9,7 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :imagesdir: ./media/
 
 [.lead]
-NetApp SMI-S Provider can take up to 15 minutes to start on Windows systems with storage systems already under management, because the `smis cimserver` command waits for the provider local cache to populate. Learn what to expect when starting the provider and why the `smis cimserver` command is the recommended method.
+NetApp SMI-S Provider can take up to 15 minutes to start on Windows systems with storage systems already under management, because the `smis cimserver` command waits for the provider local cache to populate. Use the `smis cimserver` command, the recommended method for starting the provider, and expect this delay before the provider becomes available.
 
 * *Description*
 +

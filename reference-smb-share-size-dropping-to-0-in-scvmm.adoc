@@ -9,7 +9,7 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :imagesdir: ./media/
 
 [.lead]
-An SMB 3.0 share size can drop to 0 in System Center Virtual Machine Manager (SCVMM) when quota reinitialization takes a long time in ONTAP due to heavy I/O, preventing new VMs from being provisioned. Learn how to resolve this issue by adjusting quota settings.
+An SMB 3.0 share size can drop to 0 in System Center Virtual Machine Manager (SCVMM) when quota reinitialization takes a long time in ONTAP due to heavy I/O, preventing new VMs from being provisioned. Resolve this issue by adjusting quota settings.
 
 * *Issue*
 +

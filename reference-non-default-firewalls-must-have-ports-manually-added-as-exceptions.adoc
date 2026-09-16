@@ -9,7 +9,7 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :imagesdir: ./media/
 
 [.lead]
-If you use a firewall other than the default Windows firewall, NetApp SMI-S Provider might be unable to communicate with clients or send indications unless the required ports are added as exceptions. Learn which ports to add to your firewall configuration.
+If you use a firewall other than the default Windows firewall, NetApp SMI-S Provider might be unable to communicate with clients or send indications unless the required ports are added as exceptions. Add these ports to your firewall configuration to resolve the issue.
 
 * *Issue*
 +

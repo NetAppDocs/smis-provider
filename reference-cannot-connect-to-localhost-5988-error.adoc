@@ -9,7 +9,7 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :imagesdir: ./media/
 
 [.lead]
-NetApp SMI-S Provider can fail to connect to `localhost:5988` when the required connection settings are disabled or misconfigured, or when the provider has stopped responding. Use this information to verify your connection settings and restart the provider to resolve the issue.
+NetApp SMI-S Provider can fail to connect to `localhost:5988` when the required connection settings are disabled or misconfigured, or when the provider has stopped responding. Verify your connection settings and restart the provider to resolve the issue.
 
 * *Message*
 +

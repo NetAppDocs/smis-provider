@@ -9,7 +9,7 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :imagesdir: ./media/
 
 [.lead]
-The `Insufficient system resources exist to complete the requested service` message occurs when the maximum limit on user sessions per connection is reached while provisioning a large number of VMs on a single file share in System Center Virtual Machine Manager (SCVMM). Learn why this limit is reached and how to increase it to support larger deployments.
+The `Insufficient system resources exist to complete the requested service` message occurs when the maximum limit on user sessions per connection is reached while provisioning a large number of VMs on a single file share in System Center Virtual Machine Manager (SCVMM). Increase this limit to support larger VM deployments.
 
 * *Message*
 +
