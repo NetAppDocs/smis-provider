@@ -8,5 +8,8 @@ summary: "Provides information about the features, limitations, and known issues
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+NetApp SMI-S Provider release notes describe new features, upgrade notes, fixed issues, and known limitations for each release. Find the current release notes for NetApp SMI-S Provider 5.2.7 here.
+
 The https://library.netapp.com/ecm/ecm_download_file/ECMLP3344664[NetApp SMI-S Provider Release Notes^] describe new features, upgrade notes, fixed issues, known limitations, and known issues. 
 // 2025-03-27, jira OTHERDOC114

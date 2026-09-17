@@ -9,6 +9,9 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :imagesdir: ./media/
 :pp: {plus}{plus}
 
+[.lead]
+NetApp SMI-S Provider might encounter runtime library issues on Windows. Install the required Microsoft Visual C{pp} redistributable package to resolve them.
+
 * *Issue*
 +
 You encounter runtime library issues.
