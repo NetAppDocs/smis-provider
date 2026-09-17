@@ -8,6 +8,9 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+You might encounter an error indicating that clone or Snapshot copy operations are not allowed while a LUN clone split operation is in progress. Wait for the LUN clone split to finish, and then retry the operation.
+
 * *Message*
 +
 `Clone/Snapshot operations are not allowed while LUN clone split operations are going on in the volume. Please wait for some time and try again.`

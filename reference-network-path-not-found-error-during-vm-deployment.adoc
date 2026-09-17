@@ -8,6 +8,9 @@ summary: "Issues encountered with NetApp SMI-S Provider."
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+A `Network path not found` message during VM deployment on an SMB share typically indicates a DNS issue in which the host does not yet have a record on the DNS server. Resolve this issue by updating the DNS record or the host file.
+
 * *Message*
 +
 `Network path not found`
