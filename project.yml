@@ -83,17 +83,14 @@ sidebar:
         url: "/concept-manage-logging-and-tracing-overview.html"
       - title: Configure log settings
         url: "/task-configure-log-settings.html"
-        entries:
-        - title: Logging levels
-          url: "/reference-logging-levels.html"
+      - title: Logging levels
+        url: "/reference-logging-levels.html"
       - title: Manage tracing
-        url: "/concept-manage-tracing.html"
         entries:
         - title: Specify trace settings
           url: "/task-specify-trace-settings.html"
-          entries:
-          - title: Trace setting values
-            url: "/reference-trace-setting-values.html"
+        - title: Trace setting values
+          url: "/reference-trace-setting-values.html"
         - title: Specify trace file size
           url: "/task-specify-trace-file-size.html"
         - title: Specify the number of trace files saved
@@ -120,11 +117,8 @@ sidebar:
     entries:
       - title: Overview
         url: "/concept-manage-slp-overview.html"
-      - title: Specify SLP configuration options
-        url: "/concept-specify-slp-configuration-options.html"
-        entries:
-        - title: slp.conf file management
-          url: "/reference-editing-the-slp-conf-file.html"
+      - title: slp.conf file management
+        url: "/reference-editing-the-slp-conf-file.html"
   - title: CIMOM commands
     entries:
     - title: cimconfig
