@@ -1,0 +1,4 @@
+---
+permalink: concept-manage-tracing.html
+redirect: smis-provider/task-specify-trace-settings.html
+---

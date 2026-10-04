@@ -1,0 +1,4 @@
+---
+permalink: concept-specify-slp-configuration-options.html
+redirect: smis-provider/reference-editing-the-slp-conf-file.html
+---
