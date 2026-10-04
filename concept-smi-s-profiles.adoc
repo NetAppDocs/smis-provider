@@ -2,7 +2,7 @@
 permalink: concept-smi-s-profiles.html
 sidebar: sidebar
 keywords: smi-s provider, profile, subprofile, comply, smis-s v1.7
-summary: "SMI-S Provider uses profiles and subprofiles that comply with SMI-S v1.7. See the SNIA Technology Standards and Software page for information about SMI-S v1.7."
+summary: "SMI-S Provider uses profiles and subprofiles that comply with SMI-S v1.7."
 ---
 = SMI-S profiles
 :icons: font
